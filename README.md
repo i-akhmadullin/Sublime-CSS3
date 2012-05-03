@@ -27,14 +27,12 @@ infinite
 ellipse
 linear
 webkit-gradient
-(ms-|webkit-|moz-)radial-gradient
+(webkit-|moz-|ms-)(radial-gradient transform linear-gradient)
 translateZ rotateY scaleX preserve-3d
-(webkit-|moz-|ms-)transform
 translate
 rotate
 farthest-side
 color-stop
-(ms-|webkit-|moz-)?linear-gradient
 scale
 antialiased
 ```
