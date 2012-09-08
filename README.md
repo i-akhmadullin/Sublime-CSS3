@@ -1,4 +1,4 @@
-# Sublime Text 2 better CSS syntax detection
+# Sublime Text 2 better CSS, CSS3 syntax highlighting
 
 Enchances Sublime Text 2 CSS3, CSS2.1 highlighting:
 
@@ -61,5 +61,3 @@ antialiased
 1. Open `Preferences` → `Browse Packages...` → `CSS`
 
 2. Rename or make backup copy of CSS.tmLanguage, copy new CSS.tmLanguage from this repository.
-
-
