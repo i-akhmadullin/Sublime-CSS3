@@ -1,6 +1,6 @@
 # Sublime Text 2 better CSS syntax detection
 
-Adds several missing (mostly CSS3) features into sublime text 2 css parsing:
+Enchances Sublime Text 2 CSS3, CSS2.1 highlighting:
 
 <table>
 <tr>
