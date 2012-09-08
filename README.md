@@ -2,7 +2,22 @@
 
 Adds several missing (mostly CSS3) features into sublime text 2 css parsing:
 
-### Property names
+<table>
+<tr>
+<td>
+Before:
+<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS/master/before.png">
+</td>
+<td>
+After:
+<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS/master/after.png">
+</td>
+</tr>
+</table>
+
+
+
+### Some of added names
 ```
 (moz-|webkit-)appearance
 (moz-|webkit-)animation(-duration|-delay|-name|-iteration-count)
@@ -19,7 +34,7 @@ webkit-mask-(image|size|position)
 (webkit-)font-smoothing
 ```
 
-### Property values
+### Some of added values
 ```
 border-box
 table-cell
@@ -37,7 +52,7 @@ scale
 antialiased
 ```
 
-### Pseudo selector: placeholder
+### Selector: placeholder
 
 
 
