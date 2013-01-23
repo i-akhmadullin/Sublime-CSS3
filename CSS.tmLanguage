@@ -3,11 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>comment</key>
-	<string></string>
+	<string>Better CSS, CSS3 syntax highlighting</string>
 	<key>fileTypes</key>
 	<array>
 		<string>css</string>
 		<string>css.erb</string>
+		<string>styl</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>/\*\*(?!\*)|\{\s*($|/\*(?!.*?\*/.*\S))</string>
@@ -1011,6 +1012,6 @@
 	<key>scopeName</key>
 	<string>source.css</string>
 	<key>uuid</key>
-	<string>69AA0917-B7BB-11D9-A7E2-000D93C8BE28</string>
+	<string>1C3803A6-C164-4E1B-880E-C6547410AF68</string>
 </dict>
 </plist>
