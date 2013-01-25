@@ -3,12 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>comment</key>
-	<string>Better CSS, CSS3 syntax highlighting</string>
+	<string></string>
 	<key>fileTypes</key>
 	<array>
 		<string>css</string>
 		<string>css.erb</string>
-		<string>styl</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>/\*\*(?!\*)|\{\s*($|/\*(?!.*?\*/.*\S))</string>
@@ -527,7 +526,28 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(absolute|all(-scroll)?|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|inline-block|inline|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|pointer|pre(-(wrap|line))?|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|table(-footer-group|-header-group|-cell)?|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|fill|stroke|border-box|padding-box|border-box|content-box|padding|border|content|infinite|ellipse|webkit-gradient|(webkit-|moz-|ms-|o-)?(radial-gradient|transform|linear-gradient)|linear|translateZ|rotateY|scaleX|preserve-3d|translate|rotate|farthest-side|color-stop|scale|textfield|antialiased|blink|touch|ease-in-out|ease-out|from|to|progid:DXImageTransform.Microsoft.gradient|startColorStr|EndColorStr)\b</string>
+					<string>\b(absolute|all(-scroll)?|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|inline-block|inline|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|pointer|pre(-(wrap|line))?|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|table(-footer-group|-header-group|-cell)?|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|fill|stroke|
+|bicubic|
+|border-box|padding-box|border-box|content-box|
+|padding|border|content|infinite|ellipse|
+|webkit-gradient|(webkit-|moz-|ms-|o-)?(radial-gradient|transform|linear-gradient)|
+|linear|
+|translate(X|Y|Z|3d)|
+|rotate(X|Y|Z|3d)|
+|scale(X|Y|Z|3d)|
+|preserve-3d|
+|farthest-side|
+|color-stop|
+|textfield|
+|antialiased|
+|blink|
+|touch|
+|ease-in-out|ease-out|ease-in|
+|from|to|
+|progid:DXImageTransform.Microsoft.gradient|
+|progid:DXImageTransform.Microsoft.Alpha|
+|alpha|
+|startColorStr|EndColorStr)\b</string>
 					<key>name</key>
 					<string>support.constant.property-value.css</string>
 				</dict>
@@ -672,7 +692,24 @@
 					<array>
 						<dict>
 							<key>match</key>
-							<string>((-moz-|-webkit-)?appearance|(-webkit-|-moz-)?background-clip|(-moz-|-webkit-)?animation(-duration|-delay|-name|-iteration-count)?|(-moz-|-webkit-|-ms-|-o-|-khtml-)?box(-shadow|-sizing)|(-moz-|-webkit-|-ms-|-o-|-khtml-)?border-(bottom-|top-)?(right-|left-)?radius(-bottomleft|-bottomright|-topleft|-topright)?|(-webkit-|-moz-|-ms-)?backface-visibility|(-moz-|-webkit-|-ms-|-o-|-khtml-)?transform(-style)?|(-webkit-|-moz-|-ms-|-o-)?transition(-delay|-duration|-property)?|(-moz-|-webkit-)?overflow-scrolling|(-moz-|-webkit-)?user-select|(-ms-|-o-)?text-overflow|-webkit-mask-(image|size|position)|(-webkit-|-moz-|-ms-)?perspective|(-webkit-)?font-smoothing|(-webkit-|-moz-)?hyphens|(-ms-)?filter|(-webkit-|-ms-)?text-size-adjust|-ms-interpolation-mode|behavior)\b</string>
+							<string>((-moz-|-webkit-)?appearance|
+|(-webkit-|-moz-)?background-clip|
+|(-moz-|-webkit-|-ms-|-o-)?animation(-duration|-delay|-name|-iteration-count|-fill-mode|-play-state|-timing-function)?|
+|(-moz-|-webkit-|-ms-|-o-)?box(-shadow|-sizing)|
+|(-moz-|-webkit-|-ms-|-o-)?border-(bottom-|top-)?(right-|left-)?radius(-bottomleft|-bottomright|-topleft|-topright)?|
+|(-moz-|-webkit-|-ms-)?backface-visibility|
+|(-moz-|-webkit-|-ms-|-o-)?transform(-style)?|
+|(-webkit-|-moz-|-ms-|-o-)?transition(-delay|-duration|-property|-timing-function)?|
+|(-moz-|-webkit-)?overflow-scrolling|
+|(-moz-|-webkit-)?user-select|
+|(-ms-|-o-)?text-overflow|
+|-webkit-mask-(image|size|position)|
+|(-webkit-|-moz-|-ms-)?perspective|
+|(-webkit-)?font-smoothing|
+|(-webkit-|-moz-)?hyphens|
+|(-ms-)?filter|
+|(-webkit-|-ms-)?text-size-adjust|
+|-ms-interpolation-mode|behavior)\b</string>
 							<key>name</key>
 							<string>support.type.property-vendor.css</string>
 						</dict>
@@ -777,7 +814,11 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(:+)(after|before|first-letter|first-line|(-moz-)?selection|(-webkit-input-|-moz-)?placeholder|-webkit-search-cancel-button|-webkit-search-decoration|-moz-focus-inner)\b</string>
+					<string>(:+)(after|before|first-letter|first-line|
+|(-moz-)?selection|
+|-moz|((-webkit|-ms)-input-)?placeholder|
+|-webkit-search-(cancel-button|decoration)|
+|-moz-focus-inner)\b</string>
 					<key>name</key>
 					<string>entity.other.attribute-name.pseudo-element.css</string>
 				</dict>
@@ -1012,6 +1053,6 @@
 	<key>scopeName</key>
 	<string>source.css</string>
 	<key>uuid</key>
-	<string>1C3803A6-C164-4E1B-880E-C6547410AF68</string>
+	<string>69AA0917-B7BB-11D9-A7E2-000D93C8BE28</string>
 </dict>
 </plist>
