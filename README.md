@@ -20,60 +20,113 @@ After:
 
 Adds several missing (mostly CSS3) features into sublime text 2 css parsing:
 
-### Property names
+### Property names (prefixes omitted):
 ```
-appearance, moz-appearance, webkit-appearance
+appearance
 
-animation, moz-animation, webkit-animation
-animation-name, moz-animation-name, webkit-animation-name
-animation-delay, moz-animation-delay, webkit-animation-delay
-animation-duration, moz-animation-duration, webkit-animation-duration
-animation-iteration-count, moz-animation-iteration-count, webkit-animation-iteration-count
+align-items
+align-content
+align-self
 
-box-shadow, moz-box-shadow, webkit-box-shadow, ms-box-shadow,
-box-sizing, moz-box-sizing, webkit-box-sizing, ms-box-sizing,
+animation
+animation-delay
+animation-duration
+animation-iteration-count
+animation-fill-mode
+animation-name
+animation-play-state
+animation-timing-function
 
-border-radius, moz-border-radius, webkit-border-radius
-backface-visibility, webkit-backface-visibility, moz-backface-visibility, ms-backface-visibility
+background-clip
+background-origin
+background-size
 
-transform, moz-transform, webkit-transform, ms-transform
-transform-style, moz-transform-style, webkit-transform-style, ms-transform-style
+border-image
+border-image-outset
+border-image-repeat
+border-image-slice
+border-image-source
+border-image-width
 
-transition, webkit-transition, moz-transition, ms-transition
-transition-delay, moz-transition-delay, webkit-transition-delay, ms-transition-delay
-transition-duration, moz-transition-duration, webkit-transition-duration, ms-transition-duration
-transition-property, moz-transition-property, webkit-transition-property, ms-transition-property
+box-shadow
+box-sizing
+border-radius
 
-overflow-scrolling, moz-overflow-scrolling, webkit-overflow-scrolling
-user-select, moz-user-select, webkit-user-select
+columns
+column-count
+column-fill
+column-gap
+column-rule
+column-rule-color
+column-rule-style
+column-rule-width
+column-span
+column-width
+
+flex
+flex-basis
+flex-direction
+flex-flow
+flex-grow
+flex-shrink
+flex-wrap
+
+backface-visibility
+perspective
+perspective-origin
+transform
+transform-style
+transform-origin
+
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+
+hyphens
+overflow-scrolling
+text-size-adjust
 text-overflow
+
+clip-path
+mask
+filter
+user-select
 webkit-mask-image, webkit-mask-size, webkit-mask-position
-perspective, webkit-perspective, moz-perspective, ms-perspective
 font-smoothing, webkit-font-smoothing
+behavior
+interpolation-mode
 ```
 
-### Property values
+
+### Property values (prefixes omitted):
 ```
+bicubic
 border-box, padding-box, border-box, content-box
-table-cell
-infinite
-ellipse
+table-cell, table-caption, table-column-group, table-column, table-row-group, table-row
+
 linear
-
+infinite
 webkit-gradient
-radial-gradient, webkit-radial-gradient, moz-radial-gradient, ms-radial-gradient
-transform, webkit-transform, moz-transform, ms-transform
-linear-gradient , webkit-linear-gradient, moz-linear-gradient, ms-linear-gradient
+radial-gradient
+repeating-radial-gradient
+linear-gradient
+repeating-linear-gradient
 
-translateZ, rotateY, scaleX, preserve-3d, translate
-rotate, farthest-side, color-stop, scale
-ease-in-out, ease-out, from, to
+flex-start, flex-end, space-between, space-around, stretch
 
-textfield
+transform, translate, rotate, scale, matrix, skew,
+farthest-side, color-stop, preserve-3d, ellipse
+ease-in-out, ease-in, ease-out, from, to
+
+content
 antialiased
 blink
+textfield
 touch
 
+progid:DXImageTransform.Microsoft.Alpha, alpha
 progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 ```
 
@@ -86,11 +139,11 @@ selection, -moz-selection
 -moz-focus-inner
 ```
 
-### Tag: svg
+### Tags: svg
 
 
-## Installation:
+## Installation (with Package Control):
 
-1. Open `Preferences` → `Browse Packages...` → `CSS`
+1. Ctrl+Shift+P → Package Control: Add Repository → https://github.com/i-akhmadullin/Sublime-CSS3
 
-2. Backup CSS.tmLanguage then replace with CSS.tmLanguage from this repository.
+2. (in .css file) View → Syntax → Open all with current extension as... → CSS3

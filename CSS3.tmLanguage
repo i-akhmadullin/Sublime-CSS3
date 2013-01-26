@@ -16,7 +16,7 @@
 	<key>keyEquivalent</key>
 	<string>^~C</string>
 	<key>name</key>
-	<string>CSS</string>
+	<string>CSS3</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -526,18 +526,25 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(absolute|all(-scroll)?|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|inline-block|inline|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|pointer|pre(-(wrap|line))?|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|table(-footer-group|-header-group|-cell)?|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|fill|stroke|
+					<string>\b(absolute|all(-scroll)?|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|inline-block|inline|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|pointer|pre(-(wrap|line))?|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|fill|stroke|
 |bicubic|
 |border-box|padding-box|border-box|content-box|
 |padding|border|content|infinite|ellipse|
-|webkit-gradient|(webkit-|moz-|ms-|o-)?(radial-gradient|transform|linear-gradient)|
+|webkit-gradient|
+|(webkit-|moz-|ms-|o-)?radial-gradient|
+|(webkit-|moz-|ms-|o-)?repeating-radial-gradient|
+|(webkit-|moz-|ms-|o-)?linear-gradient|
+|(webkit-|moz-|ms-|o-)?repeating-linear-gradient|
+|(webkit-|moz-|ms-|o-)?transform|
 |linear|
-|translate(X|Y|Z|3d)|
-|rotate(X|Y|Z|3d)|
-|scale(X|Y|Z|3d)|
+|color-stop|
+|translate(X|Y|Z|3d)?|
+|rotate(X|Y|Z|3d)?|
+|matrix(3d)?|
+|scale(X|Y|Z|3d)?|
+|skew(X|Y)?|
 |preserve-3d|
 |farthest-side|
-|color-stop|
 |textfield|
 |antialiased|
 |blink|
@@ -547,6 +554,7 @@
 |progid:DXImageTransform.Microsoft.gradient|
 |progid:DXImageTransform.Microsoft.Alpha|
 |alpha|
+|flex-start|flex-end|space-between|space-around|stretch|
 |startColorStr|EndColorStr)\b</string>
 					<key>name</key>
 					<string>support.constant.property-value.css</string>
@@ -692,30 +700,49 @@
 					<array>
 						<dict>
 							<key>match</key>
-							<string>((-moz-|-webkit-)?appearance|
-|(-webkit-|-moz-)?background-clip|
-|(-moz-|-webkit-|-ms-|-o-)?animation(-duration|-delay|-name|-iteration-count|-fill-mode|-play-state|-timing-function)?|
-|(-moz-|-webkit-|-ms-|-o-)?box(-shadow|-sizing)|
-|(-moz-|-webkit-|-ms-|-o-)?border-(bottom-|top-)?(right-|left-)?radius(-bottomleft|-bottomright|-topleft|-topright)?|
-|(-moz-|-webkit-|-ms-)?backface-visibility|
-|(-moz-|-webkit-|-ms-|-o-)?transform(-style)?|
-|(-webkit-|-moz-|-ms-|-o-)?transition(-delay|-duration|-property|-timing-function)?|
-|(-moz-|-webkit-)?overflow-scrolling|
-|(-moz-|-webkit-)?user-select|
-|(-ms-|-o-)?text-overflow|
-|-webkit-mask-(image|size|position)|
-|(-webkit-|-moz-|-ms-)?perspective|
-|(-webkit-)?font-smoothing|
-|(-webkit-|-moz-)?hyphens|
-|(-ms-)?filter|
-|(-webkit-|-ms-)?text-size-adjust|
-|-ms-interpolation-mode|behavior)\b</string>
+							<string>(-webkit-|-moz-|-ms-|-o-)</string>
 							<key>name</key>
 							<string>support.type.property-vendor.css</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>\b(azimuth|background-attachment|background-color|background-image|background-position|background-repeat|background|box-shadow|border-radius|border-bottom-color|border-bottom-style|border-bottom-width|border-bottom|border-collapse|border-color|border-left-color|border-left-style|border-left-width|border-left|border-right-color|border-right-style|border-right-width|border-right|border-spacing|border-style|border-top-color|border-top-style|border-top-width|border-top|border-width|border|bottom|caption-side|clear|clip|color|content|counter-increment|counter-reset|cue-after|cue-before|cue|cursor|direction|display|elevation|empty-cells|float|font-family|font-size-adjust|font-size|font-stretch|font-style|font-variant|font-weight|font|height|image-rendering|left|letter-spacing|line-height|list-style-image|list-style-position|list-style-type|list-style|margin-bottom|margin-left|margin-right|margin-top|marker-offset|margin|marks|max-height|max-width|min-height|min-width|opacity|orphans|outline-color|outline-style|outline-width|outline|overflow(-[xy])?|padding-bottom|padding-left|padding-right|padding-top|padding|page-break-after|page-break-before|page-break-inside|page|pause-after|pause-before|pause|pitch-range|pitch|play-during|pointer-events|position|quotes|resize|richness|right|size|speak-header|speak-numeral|speak-punctuation|speech-rate|speak|src|stress|table-layout|text-(align|decoration|indent|rendering|shadow|transform)|top|unicode-bidi|vertical-align|visibility|voice-family|volume|white-space|widows|width|word-(spacing|wrap)|zoom|z-index|text-justify)\b</string>
+							<string>\b(azimuth|
+|appearance|
+|align-items|
+|align-content|
+|align-self|
+|animation(-delay|-direction|-duration|-fill-mode|-iteration-count|-name|-play-state|-timing-function)?|
+|backface-visibility|
+|background(-clip|-origin|-size)|
+|behavior|
+|border-(bottom-|top-)?(right-|left-)?radius(-bottomleft|-bottomright|-topleft|-topright)?|
+|box-sizing|
+|border-image(-outset|-repeat|-slice|-source|-width)?|
+|column(-count|-fill|-gap|-rule|-rule-color|-rule-style|-rule-width|-span|-width)|
+|columns|
+|font-smoothing|
+|flex(-basis|-direction|-flow|-grow|-shrink|-wrap)?|
+|filter|
+|hyphens|
+|interpolation-mode|
+|mask-(image|size|position)|
+|overflow-scrolling|
+|perspective|
+|perspective-origin|
+|text-size-adjust|
+|text-overflow|
+|transform|
+|transform-origin|
+|transform-style|
+|transition|
+|transition-delay|
+|transition-duration|
+|transition-property|
+|transition-timing-function|
+|user-select|
+|clip-path|
+|mask|
+							|background-attachment|background-color|background-image|background-position|background-repeat|background|box-shadow|border-radius|border-bottom-color|border-bottom-style|border-bottom-width|border-bottom|border-collapse|border-color|border-left-color|border-left-style|border-left-width|border-left|border-right-color|border-right-style|border-right-width|border-right|border-spacing|border-style|border-top-color|border-top-style|border-top-width|border-top|border-width|border|bottom|caption-side|clear|clip|color|content|counter-increment|counter-reset|cue-after|cue-before|cue|cursor|direction|display|elevation|empty-cells|float|font-family|font-size-adjust|font-size|font-stretch|font-style|font-variant|font-weight|font|height|image-rendering|left|letter-spacing|line-height|list-style-image|list-style-position|list-style-type|list-style|margin-bottom|margin-left|margin-right|margin-top|marker-offset|margin|marks|max-height|max-width|min-height|min-width|opacity|orphans|outline-color|outline-style|outline-width|outline|overflow(-[xy])?|padding-bottom|padding-left|padding-right|padding-top|padding|page-break-after|page-break-before|page-break-inside|page|pause-after|pause-before|pause|pitch-range|pitch|play-during|pointer-events|position|quotes|resize|richness|right|size|speak-header|speak-numeral|speak-punctuation|speech-rate|speak|src|stress|table-layout|text-(align|decoration|indent|rendering|shadow|transform)|top|unicode-bidi|vertical-align|visibility|voice-family|volume|white-space|widows|width|word-(spacing|wrap)|zoom|z-index|text-justify)\b</string>
 							<key>name</key>
 							<string>support.type.property-name.css</string>
 						</dict>
@@ -816,7 +843,7 @@
 					<key>match</key>
 					<string>(:+)(after|before|first-letter|first-line|
 |(-moz-)?selection|
-|-moz|((-webkit|-ms)-input-)?placeholder|
+|(-moz-|((-webkit|-ms)-input-))?placeholder|
 |-webkit-search-(cancel-button|decoration)|
 |-moz-focus-inner)\b</string>
 					<key>name</key>
