@@ -6,7 +6,7 @@ Enchances Sublime Text 2 CSS3, CSS2.1 highlighting:
 <tr>
 <td>
 Before:
-<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS3master/before.png">
+<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS3/master/before.png">
 </td>
 <td>
 After:
