@@ -6,11 +6,11 @@ Enchances Sublime Text 2 CSS3, CSS2.1 highlighting:
 <tr>
 <td>
 Before:
-<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS/master/before.png">
+<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS3master/before.png">
 </td>
 <td>
 After:
-<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS/master/after.png">
+<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS3/master/after.png">
 </td>
 </tr>
 </table>
@@ -130,13 +130,13 @@ progid:DXImageTransform.Microsoft.Alpha, alpha
 progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 ```
 
-### Pseudo elements: 
+### Pseudo elements:
 ```
--webkit-input-placeholder, -moz-placeholder, placeholder
-selection, -moz-selection
--webkit-search-cancel-button
--webkit-search-decoration
--moz-focus-inner
+::-webkit-input-placeholder, ::-moz-placeholder, ::placeholder
+::selection, ::-moz-selection
+::-webkit-search-cancel-button
+::-webkit-search-decoration
+::-moz-focus-inner
 ```
 
 ### Tags: svg
