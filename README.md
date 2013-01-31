@@ -1,6 +1,6 @@
-# Sublime Text 2 better CSS, CSS3 syntax highlighting
+# Sublime Text 2/3 better CSS3 syntax highlighting
 
-Enchances Sublime Text 2 CSS3, CSS2.1 highlighting:
+Enchances Sublime Text CSS3 highlighting:
 
 <table>
 <tr>
@@ -15,8 +15,6 @@ After:
 </tr>
 </table>
 
-
-# Sublime Text 2 better CSS syntax detection
 
 Adds several missing (mostly CSS3) features into sublime text 2 css parsing:
 
