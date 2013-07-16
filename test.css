@@ -76,3 +76,20 @@ input:placeholder {
 .participants__title {
     text-overflow: ellipsis;
 }
+
+@-webkit-keyframes name-animation, name-animation2 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes name-animation, name-animation2 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes name-animation, name-animation2 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes name-animation, name-animation2 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}

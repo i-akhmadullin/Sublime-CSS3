@@ -139,11 +139,14 @@ progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 ::-moz-focus-inner
 ```
 
-### Tags: svg
+### At-rules: @keyframes (without keyframe selectors atm)
 
+### Tags: svg
 
 ## Installation (with Package Control):
 
 1. Ctrl+Shift+P → Package Control: Add Repository → https://github.com/i-akhmadullin/Sublime-CSS3
 
-2. (in .css file) View → Syntax → Open all with current extension as... → CSS3
+2. Ctrl+Shift+P → Package Control: Install Package → Sublime-CSS3
+
+3. (in .css file) View → Syntax → Open all with current extension as... → CSS3
