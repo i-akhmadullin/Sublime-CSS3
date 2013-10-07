@@ -16,7 +16,7 @@ After:
 </table>
 
 
-Adds several missing (mostly CSS3) features into sublime text 2 css parsing:
+Adds several missing (mostly CSS3) features into sublime text css parsing:
 
 ### Property names (prefixes omitted):
 ```
