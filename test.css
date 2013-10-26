@@ -38,7 +38,11 @@
     -moz-border-radius-bottomleft: 5px;
     border-bottom-left-radius: 5px;
 }
-input:placeholder {
+input:placeholder, input::-webkit-input-placeholder, input::-moz-placeholder, input::placeholder,
+input::selection, input::-moz-selection,
+input::-webkit-search-cancel-button,
+input::-webkit-search-decoration,
+input::-moz-focus-inner {
     position: absolute;
     text-overflow: ellipsis;
 }
