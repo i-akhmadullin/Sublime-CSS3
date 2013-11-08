@@ -626,7 +626,7 @@
 					<key>match</key>
 					<string>(?x)
 					    (?:-|\+)?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+))
-					    ((?:px|pt|ch|cm|mm|in|r?em|ex|pc|deg|g?rad|dpi|dpcm|s)\b|%)?
+					    ((?:px|pt|ch|cm|mm|in|r?em|ex|pc|deg|g?rad|dpi|dpcm|s|x)\b|%)?
 					</string>
 					<key>name</key>
 					<string>constant.numeric.css</string>
@@ -649,6 +649,7 @@
 |(webkit-|moz-|ms-|o-)?linear-gradient|
 |(webkit-|moz-|ms-|o-)?repeating-linear-gradient|
 |(webkit-|moz-|ms-|o-)?transform|
+|webkit-image-set|
 |linear|
 |color-stop|
 |translate(X|Y|Z|3d)?|

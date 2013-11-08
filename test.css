@@ -65,6 +65,9 @@ input::-moz-focus-inner {
     perspective: 500px;
     perspective-origin: 50% 50%;
 }
+.image-set {
+    background-image: -webkit-image-set( url('logo.png') 1x, url('logo@2x.png') 2x);
+}
 
 @-webkit-keyframes name-animation, name-animation2 {
   0%   { opacity: 0; }
