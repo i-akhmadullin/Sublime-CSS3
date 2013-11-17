@@ -639,17 +639,27 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(absolute|all(-scroll)?|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|inline-block|inline|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|pointer|pre(-(wrap|line))?|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|fill|stroke|
+					<string>(-webkit-|-moz-|-ms-|-o-)</string>
+					<key>name</key>
+					<string>support.type.property-value-vendor.css</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(absolute|all(-scroll)?|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|
+|inline-block|inline-flex|inline-flexbox|inline-table|inline|
+|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|pointer|pre(-(wrap|line))?|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|
+|table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
+|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|fill|stroke|
 |bicubic|
 |border-box|padding-box|border-box|content-box|
 |padding|border|content|infinite|ellipse|
-|webkit-gradient|
-|(webkit-|moz-|ms-|o-)?radial-gradient|
-|(webkit-|moz-|ms-|o-)?repeating-radial-gradient|
-|(webkit-|moz-|ms-|o-)?linear-gradient|
-|(webkit-|moz-|ms-|o-)?repeating-linear-gradient|
-|(webkit-|moz-|ms-|o-)?transform|
-|webkit-image-set|
+|radial-gradient|
+|repeating-radial-gradient|
+|linear-gradient|
+|repeating-linear-gradient|
+|gradient|
+|transform|
+|image-set|
 |linear|
 |color-stop|
 |translate(X|Y|Z|3d)?|
@@ -668,7 +678,9 @@
 |progid:DXImageTransform.Microsoft.gradient|
 |progid:DXImageTransform.Microsoft.Alpha|
 |alpha|
-|flex-start|flex-end|space-between|space-around|stretch|
+|box|
+|flexbox|
+|flex(-start|-end)?|space-between|space-around|stretch|(column|row|wrap)(-reverse)?|start|
 |startColorStr|EndColorStr)\b</string>
 					<key>name</key>
 					<string>support.constant.property-value.css</string>
@@ -834,7 +846,11 @@
 |column(-count|-fill|-gap|-rule|-rule-color|-rule-style|-rule-width|-span|-width)|
 |columns|
 |font-smoothing|
-|flex(-basis|-direction|-flow|-grow|-shrink|-wrap)?|
+|justify-content|
+|inline-flex|
+|box-align|box-pack|box-orient|box-direction|box-flex|(box-ordinal-)?group|
+|flex(-align|-basis|-direction|-flow|-grow|-item-align|-order|-shrink|-wrap|-pack|-line-pack)?|
+|order|
 |filter|
 |hyphens|
 |interpolation-mode|
