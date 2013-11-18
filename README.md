@@ -153,7 +153,20 @@ progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 ::selection, ::-moz-selection
 ::-webkit-search-cancel-button
 ::-webkit-search-decoration
+::-ms-browse
+::-ms-check
 ::-ms-clear
+::-ms-expand
+::-ms-fill-lower
+::-ms-fill-upper
+::-ms-fill
+::-ms-reveal
+::-ms-thumb
+::-ms-ticks-after
+::-ms-ticks-before
+::-ms-tooltip
+::-ms-track
+::-ms-value
 ::-moz-focus-inner
 ```
 

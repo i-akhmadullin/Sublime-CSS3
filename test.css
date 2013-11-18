@@ -43,8 +43,21 @@ input:placeholder, input::-webkit-input-placeholder, input::-moz-placeholder, in
 input::selection, input::-moz-selection,
 input::-webkit-search-cancel-button,
 input::-webkit-search-decoration,
+input::-moz-focus-inner,
+input::-ms-browse,
+input::-ms-check,
 input::-ms-clear,
-input::-moz-focus-inner {
+input::-ms-expand,
+input::-ms-fill,
+input::-ms-fill-lower,
+input::-ms-fill-upper,
+input::-ms-reveal,
+input::-ms-thumb,
+input::-ms-ticks-after,
+input::-ms-ticks-before,
+input::-ms-tooltip,
+input::-ms-track,
+input::-ms-value {
     position: absolute;
 
     text-overflow: ellipsis;
