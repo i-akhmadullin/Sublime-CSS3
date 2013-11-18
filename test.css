@@ -43,6 +43,7 @@ input:placeholder, input::-webkit-input-placeholder, input::-moz-placeholder, in
 input::selection, input::-moz-selection,
 input::-webkit-search-cancel-button,
 input::-webkit-search-decoration,
+input::-ms-clear,
 input::-moz-focus-inner {
     position: absolute;
 

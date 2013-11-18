@@ -134,6 +134,7 @@ progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 ::selection, ::-moz-selection
 ::-webkit-search-cancel-button
 ::-webkit-search-decoration
+::-ms-clear
 ::-moz-focus-inner
 ```
 

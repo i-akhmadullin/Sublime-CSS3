@@ -965,6 +965,7 @@
 |(-moz-)?selection|
 |(-moz-|((-webkit|-ms)-input-))?placeholder|
 |-webkit-search-(cancel-button|decoration)|
+|-ms-clear|
 |-moz-focus-inner)\b</string>
 					<key>name</key>
 					<string>entity.other.attribute-name.pseudo-element.css</string>
