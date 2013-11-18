@@ -1,4 +1,4 @@
-# Sublime Text 2/3 better CSS3 syntax highlighting
+# Sublime Text CSS3 syntax
 
 Enchances Sublime Text CSS3 highlighting:
 
@@ -62,12 +62,27 @@ column-span
 column-width
 
 flex
+flex-align
 flex-basis
 flex-direction
+flex-item-align
 flex-flow
 flex-grow
+flex-line-pack
+flex-order
+flex-pack
 flex-shrink
 flex-wrap
+box-align
+box-direction
+box-flex
+box-orient
+box-ordinal-group
+box-pack
+justify-content
+inline-flex
+order
+group
 
 backface-visibility
 perspective
@@ -93,6 +108,7 @@ filter
 user-select
 webkit-mask-image, webkit-mask-size, webkit-mask-position
 font-smoothing, webkit-font-smoothing
+-moz-osx-font-smoothing
 behavior
 interpolation-mode
 ```
@@ -113,16 +129,19 @@ linear-gradient
 repeating-linear-gradient
 
 flex-start, flex-end, space-between, space-around, stretch
+box, flexbox, flex, column, column-reverse, row, row-reverse,
+wrap, wrap-reverse, start, inline-flex, inline-flexbox
 
 transform, translate, rotate, scale, matrix, skew,
 farthest-side, color-stop, preserve-3d, ellipse
 ease-in-out, ease-in, ease-out, from, to
 
 content
-antialiased
+antialiased, grayscale
 blink
 textfield
 touch
+image-set
 
 progid:DXImageTransform.Microsoft.Alpha, alpha
 progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr

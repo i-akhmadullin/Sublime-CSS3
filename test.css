@@ -71,6 +71,10 @@ input::-moz-focus-inner {
 .image-set {
     background-image: -webkit-image-set( url('logo.png') 1x, url('logo@2x.png') 2x);
 }
+.smoothing-test {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
 
 .flex-test {
     display: -webkit-flex;
