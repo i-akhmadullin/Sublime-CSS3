@@ -95,18 +95,14 @@ input::-ms-value {
 }
 
 .flex-test {
-    display: -webkit-flex;
-    display: -webkit-box;
-    display: flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: -ms-inline-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: -webkit-inline-flex;
     display: inline-flex;
-    -webkit-flex-direction: column;
-    -webkit-flex-direction: column-reverse;
-    -webkit-flex-direction: row;
-    -webkit-flex-direction: row-reverse;
+    display: flex;
     flex-direction: column;
     flex-direction: row;
 
@@ -114,17 +110,6 @@ input::-ms-value {
     flex-wrap: wrap-reverse;
     flex-flow: row wrap;
     flex: 2 0 0;
-    -webkit-align-items: flex-end;
-    -webkit-align-content: stretch;
-    -webkit-align-self: flex-start;
-    -webkit-flex: 2 0 0;
-    -webkit-flex-wrap: wrap;
-    -webkit-flex-flow: row wrap;
-    -webkit-justify-content: flex-start;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: horizontal;
-    -webkit-box-pack: start;
-    -webkit-box-align: start;
     -moz-box-direction: normal;
     -moz-box-pack: start;
     -moz-box-orient: horizontal;
@@ -132,6 +117,21 @@ input::-ms-value {
     -ms-flex-pack: start;
     -ms-flex-line-pack: stretch;
     -ms-flex-align: start;
+    -webkit-align-items: flex-end;
+    -webkit-align-content: stretch;
+    -webkit-align-self: flex-start;
+    -webkit-flex: 2 0 0;
+    -webkit-flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    -webkit-flex-direction: column;
+    -webkit-flex-direction: column-reverse;
+    -webkit-flex-direction: row;
+    -webkit-flex-direction: row-reverse;
+    -webkit-justify-content: flex-start;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: start;
+    -webkit-box-align: start;
     align-content: stretch;
     align-self: flex-start;
     align-items: flex-end;
