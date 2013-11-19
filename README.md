@@ -20,6 +20,8 @@ Adds several missing (mostly CSS3) features into sublime text css parsing:
 
 ### Property names (prefixes omitted):
 ```
+all
+
 appearance
 
 align-items
@@ -142,6 +144,8 @@ blink
 textfield
 touch
 image-set
+
+initial, unset
 
 progid:DXImageTransform.Microsoft.Alpha, alpha
 progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr

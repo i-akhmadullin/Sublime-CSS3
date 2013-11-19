@@ -88,6 +88,11 @@ input::-ms-value {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+.unset-test {
+    all: unset;
+    all: initial;
+    all: inherit;
+}
 
 .flex-test {
     display: -webkit-flex;

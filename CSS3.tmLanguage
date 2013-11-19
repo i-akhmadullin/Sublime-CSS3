@@ -645,7 +645,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(absolute|all(-scroll)?|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|
+					<string>\b(absolute|all(-scroll)?|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|unset|
 |inline-block|inline-flex|inline-flexbox|inline-table|inline|
 |inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|pointer|pre(-(wrap|line))?|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|
 |table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
@@ -678,9 +678,7 @@
 |progid:DXImageTransform.Microsoft.gradient|
 |progid:DXImageTransform.Microsoft.Alpha|
 |alpha|
-|box|
-|flexbox|
-|flex(-start|-end)?|space-between|space-around|stretch|(column|row|wrap)(-reverse)?|start|
+|box|flexbox|flex(-start|-end)?|space-between|space-around|stretch|(column|row|wrap)(-reverse)?|start|
 |startColorStr|EndColorStr)\b</string>
 					<key>name</key>
 					<string>support.constant.property-value.css</string>
@@ -833,6 +831,7 @@
 						<dict>
 							<key>match</key>
 							<string>\b(azimuth|
+|all|
 |appearance|
 |align(-items|-content|-self)?|
 |animation(-delay|-direction|-duration|-fill-mode|-iteration-count|-name|-play-state|-timing-function)?|
