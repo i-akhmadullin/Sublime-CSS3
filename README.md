@@ -1,6 +1,6 @@
 # Sublime Text CSS3 syntax
 
-Enchances Sublime Text CSS3 highlighting:
+Enchances Sublime Text CSS highlighting:
 
 <table>
 <tr>
@@ -18,7 +18,7 @@ After:
 
 Adds several missing (mostly CSS3) features into sublime text css parsing:
 
-### Property names (prefixes omitted):
+### Property names (prefixes omitted)
 ```
 all
 
@@ -116,7 +116,7 @@ interpolation-mode
 ```
 
 
-### Property values (prefixes omitted):
+### Property values (prefixes omitted)
 ```
 bicubic
 border-box, padding-box, border-box, content-box
@@ -151,7 +151,7 @@ progid:DXImageTransform.Microsoft.Alpha, alpha
 progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 ```
 
-### Pseudo elements:
+### Pseudo elements
 ```
 ::-webkit-input-placeholder, ::-moz-placeholder, ::placeholder
 ::selection, ::-moz-selection
@@ -176,9 +176,17 @@ progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 
 ### At-rules: @keyframes (without keyframe selectors atm)
 
-### Tags: svg
+### Tags
+keygen
+main
+math
+menuitem
+picture
+source
+svg
+track
 
-## Installation (with Package Control):
+## Installation (with Package Control)
 
 1. Ctrl+Shift+P → Package Control: Add Repository → https://github.com/i-akhmadullin/Sublime-CSS3
 
