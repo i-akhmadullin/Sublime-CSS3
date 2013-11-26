@@ -174,9 +174,13 @@ progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 ::-moz-focus-inner
 ```
 
-### At-rules: @keyframes (without keyframe selectors atm)
+### At-rules
+```
+@keyframes (without keyframe selectors atm)
+```
 
 ### Tags
+```
 keygen
 main
 math
@@ -185,6 +189,7 @@ picture
 source
 svg
 track
+```
 
 ## Installation (with Package Control)
 
