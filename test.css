@@ -148,6 +148,17 @@ input::-ms-value {
 keygen,main,math,menuitem,picture,source,svg,track {
     /**/
 }
+.css3-units {
+    width: 1.0vw;
+    width: 2.7vh;
+    width: 3vmin;
+    width: 4vmax;
+    transform: rotate(0.25turn);
+    transition: 0.2ms all;
+    width: calc(100%/3);
+}
+@media (min-resolution: 50dppx) {}
+
 
 @-webkit-keyframes name-animation, name-animation2 {
     0% {

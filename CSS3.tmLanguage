@@ -626,7 +626,7 @@
 					<key>match</key>
 					<string>(?x)
 					    (?:-|\+)?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+))
-					    ((?:px|pt|ch|cm|mm|in|r?em|ex|pc|deg|g?rad|dpi|dpcm|s|x)\b|%)?
+					    ((?:px|pt|ch|cm|mm|in|r?em|ex|pc|deg|g?rad|turn|dpi|dpcm|dppx|s|ms|x|vh|vw|vmin|vmax)\b|%)?
 					</string>
 					<key>name</key>
 					<string>constant.numeric.css</string>
@@ -741,7 +741,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(format|local|url|attr|counter|counters)\s*(\()</string>
+					<string>(format|local|url|attr|counter|counters|calc)\s*(\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>

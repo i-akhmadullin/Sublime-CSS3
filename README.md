@@ -191,6 +191,16 @@ svg
 track
 ```
 
+### Units
+```
+vw,vh,vmin,vmax,turn,ms,dppx
+```
+
+### Functional Notation
+```
+calc
+```
+
 ## Installation (with Package Control)
 
 1. Ctrl+Shift+P → Package Control: Add Repository → https://github.com/i-akhmadullin/Sublime-CSS3
