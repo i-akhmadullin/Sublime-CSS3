@@ -197,6 +197,7 @@ menuitem
 picture
 source
 svg
+template
 track
 ```
 
