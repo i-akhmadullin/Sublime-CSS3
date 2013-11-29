@@ -63,6 +63,10 @@ column-rule-width
 column-span
 column-width
 
+font-effect
+font-emphasize
+font-emphasize-position
+font-emphasize-style
 flex
 flex-align
 flex-basis
@@ -84,6 +88,7 @@ box-pack
 justify-content
 inline-flex
 order
+outline-offset
 group
 
 backface-visibility
@@ -101,18 +106,21 @@ transition-timing-function
 
 hyphens
 overflow-scrolling
-text-size-adjust
+tab-size
+text-align-last
+text-emphasis
 text-overflow
+text-size-adjust
+word-break
 
 clip-path
-mask
 filter
 user-select
-webkit-mask-image, webkit-mask-size, webkit-mask-position
-font-smoothing, webkit-font-smoothing
--moz-osx-font-smoothing
+mask, mask-image, mask-size, mask-position
+font-smoothing, webkit-font-smoothing, -moz-osx-font-smoothing
 behavior
 interpolation-mode
+-ms-writing-mode
 ```
 
 

@@ -148,6 +148,29 @@ input::-ms-value {
 keygen,main,math,menuitem,picture,source,svg,track {
     /**/
 }
+
+.weird-or-rare {
+    font-effect: 1;
+    font-emphasize: 1;
+    font-emphasize-position: 1;
+    font-emphasize-style: 1;
+    outline-offset: 1;
+    text-emphasis: 1;
+    text-emphasis-color: 1;
+    text-emphasis-style: 1;
+    text-emphasis-position: 1;
+    -webkit-text-align-last: 1;
+    -moz-text-align-last: 1;
+    -ms-text-align-last: 1;
+    text-align-last: 1;
+    -moz-tab-size: 1;
+    -o-tab-size: 1;
+    tab-size: 1;
+    -ms-writing-mode: rtl;
+    -ms-word-break: 1;
+    word-break: 1;
+}
+
 .css3-units {
     width: 1.0vw;
     width: 2.7vh;
