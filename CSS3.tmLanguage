@@ -668,7 +668,10 @@
 |scale(X|Y|Z|3d)?|
 |skew(X|Y)?|
 |preserve-3d|
+|closest-side|
+|closest-corner|
 |farthest-side|
+|farthest-corner|
 |textfield|
 |antialiased|grayscale|
 |blink|

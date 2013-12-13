@@ -135,7 +135,8 @@ box, flexbox, flex, column, column-reverse, row, row-reverse,
 wrap, wrap-reverse, start, inline-flex, inline-flexbox
 
 transform, translate, rotate, scale, matrix, skew,
-farthest-side, color-stop, preserve-3d, ellipse
+closest-side, closest-corner, farthest-side,
+farthest-corner, color-stop, preserve-3d, ellipse
 ease-in-out, ease-in, ease-out, from, to
 
 content
