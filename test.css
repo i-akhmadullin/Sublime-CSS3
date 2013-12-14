@@ -215,3 +215,20 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
         opacity: 1;
     }
 }
+
+:root {
+    var-c: #06c;
+    var-main-color: #06c;
+    var-MAIN-COLOR: red;
+    var-accent-background: linear-gradient(to top, var(main-color), white);
+}
+#foo h1 {
+    var-gap: 20;
+    margin-top: calc(var(gap) * 1px);
+    color: var(theme-colour-1);
+    margin: var(spacing) calc(var(spacing) * 2);
+    padding: calc(var(spacing) / 2) 0;
+    border-bottom: 1px dotted var(theme-colour-3);
+}
+}
+

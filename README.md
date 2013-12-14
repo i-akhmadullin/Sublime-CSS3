@@ -206,10 +206,18 @@ track
 vw,vh,vmin,vmax,turn,ms,dppx
 ```
 
+### Custom Properties for Cascading Variables
+```
+var-my-variable: 20px;
+```
+
 ### Functional Notation
 ```
+var(my-variable)
 calc
 ```
+
+
 
 ## Installation (with Package Control)
 

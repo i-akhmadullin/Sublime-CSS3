@@ -582,6 +582,41 @@
 				</dict>
 			</dict>
 		</dict>
+		<key>cascading-variable</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.var.css</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.function.css</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>support.type.variable-name.css</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.function.css</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>\b(var)\s*(\()([_a-zA-Z]+[_a-zA-Z0-9-]*)(\))</string>
+					<key>name</key>
+					<string>support.type.cascading-variable.css</string>
+				</dict>
+			</array>
+		</dict>
 		<key>keyframe-name-list</key>
 		<dict>
 			<key>begin</key>
@@ -743,6 +778,10 @@
 					</array>
 				</dict>
 				<dict>
+					<key>include</key>
+					<string>#cascading-variable</string>
+				</dict>
+				<dict>
 					<key>begin</key>
 					<string>(format|local|url|attr|counter|counters|calc)\s*(\()</string>
 					<key>beginCaptures</key>
@@ -830,6 +869,27 @@
 							<string>(-webkit-|-moz-|-ms-|-o-)</string>
 							<key>name</key>
 							<string>support.type.property-vendor.css</string>
+						</dict>
+						<dict>
+							<key>begin</key>
+							<string>\b(var-)([_a-zA-Z]+[_a-zA-Z0-9-]*)</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>keyword.other.custom-property.prefix.css</string>
+								</dict>
+								<key>2</key>
+								<dict>
+									<key>name</key>
+									<string>support.type.custom-property.name.css</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>\b</string>
+							<key>name</key>
+							<string>support.type.custom-property.css</string>
 						</dict>
 						<dict>
 							<key>match</key>
