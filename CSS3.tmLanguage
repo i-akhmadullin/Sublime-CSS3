@@ -782,8 +782,48 @@
 					<string>#cascading-variable</string>
 				</dict>
 				<dict>
+					<key>name</key>
+					<string>support.type.expression.calc.css</string>
 					<key>begin</key>
-					<string>(format|local|url|attr|counter|counters|calc)\s*(\()</string>
+					<string>(calc)\s*(\()</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.calc.css</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.function.css</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(\))</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.function.css</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#cascading-variable</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#numeric-values</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(format|local|url|attr|counter|counters)\s*(\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>

@@ -171,6 +171,7 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     word-break: 1;
 }
 
+/* http://www.w3.org/TR/css3-values/ */
 .css3-units {
     width: 1.0vw;
     width: 2.7vh;
@@ -178,7 +179,9 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     width: 4vmax;
     transform: rotate(0.25turn);
     transition: 0.2ms all;
+    width: calc(100px);
     width: calc(100%/3);
+    width: calc(100%/3 - 2*1em - 2*1px);
 }
 @media (min-resolution: 50dppx) {}
 
