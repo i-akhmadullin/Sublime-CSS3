@@ -584,38 +584,52 @@
 		</dict>
 		<key>cascading-variable</key>
 		<dict>
+			<key>begin</key>
+			<string>(var)\s*(\()</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.var.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>support.function.var.css</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.section.function.css</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>support.type.variable-name.css</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.section.function.css</string>
-						</dict>
-					</dict>
 					<key>match</key>
-					<string>\b(var)\s*(\()([_a-zA-Z]+[_a-zA-Z0-9-]*)(\))</string>
+					<string>([_a-zA-Z]+[_a-zA-Z0-9-]*)</string>
 					<key>name</key>
-					<string>support.type.cascading-variable.css</string>
+					<string>support.type.variable-name.css</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(,)</string>
+					<key>name</key>
+					<string>punctuation.definition.arbitrary-repitition.css</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#numeric-values</string>
 				</dict>
 			</array>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>support.type.cascading-variable.css</string>
 		</dict>
 		<key>keyframe-name-list</key>
 		<dict>
