@@ -127,6 +127,7 @@ interpolation-mode
 ### Property values (prefixes omitted)
 ```
 bicubic
+contain, cover, local
 border-box, padding-box, border-box, content-box
 table-cell, table-caption, table-column-group, table-column, table-row-group, table-row
 

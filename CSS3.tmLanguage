@@ -730,6 +730,7 @@
 |progid:DXImageTransform.Microsoft.gradient|
 |progid:DXImageTransform.Microsoft.Alpha|
 |alpha|
+|cover|contain|local|
 |box|flexbox|flex(-start|-end)?|space-between|space-around|stretch|(column|row|wrap)(-reverse)?|start|
 |startColorStr|EndColorStr)\b</string>
 					<key>name</key>
