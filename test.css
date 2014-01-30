@@ -290,3 +290,10 @@ ul! li:hover,
 col.selected || td,
 :placeholder-shown,
 :user-error {}
+
+/* http://tabatkins.github.io/specs/css-will-change/ */
+.will-change {
+	will-change: scroll-position;
+	will-change: contents;
+	will-change: opacity;
+}
