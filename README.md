@@ -184,6 +184,41 @@ progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 ::-moz-focus-inner
 ```
 
+### Pseudo classes
+```
+:not, :matches
+
+:dir, :lang
+
+:any-link, :local-link, :scope
+
+:current, :past, :future
+
+:indeterminate
+:default
+:in-range, :out-of-range
+:required, :optional
+:read-only, :read-write
+
+:empty
+:only-child
+:first-of-type
+:nth-of-type
+:last-of-type
+:nth-last-of-type
+:only-of-type
+
+:nth-match, :nth-last-match
+
+:column, :nth-column, :nth-last-column
+
+:valid-drop-target
+:active-drop-target
+
+:placeholder-shown
+:user-error
+```
+
 ### At-rules
 ```
 @keyframes (without keyframe selectors atm)

@@ -241,5 +241,52 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     margin: 0 0 calc(var(flow-space, 0) * 1rem) 0;
     padding: 0 calc(var(foo, red, blue) * .5rem);
 }
-}
 
+/* http://www.w3.org/TR/selectors4/#overview */
+:not(.active, .visible),
+:matches(.active, .visible),
+
+:dir(ltr),
+:lang(zh, *-hant),
+
+:any-link,
+:local-link,
+:local-link(1),
+:scope,
+
+:current(p, li, dt, dd),
+:past,
+:future,
+
+:indeterminate,
+:default,
+:in-range, :out-of-range,
+:required, :optional,
+:read-only, :read-write,
+
+/* missing from level 3 */
+:empty
+:only-child
+:first-of-type,
+:nth-of-type,
+:last-of-type,
+:nth-last-of-type(2),
+:only-of-type,
+
+:nth-match(.active),
+:nth-last-match(.active),
+
+:column(),
+:nth-column(1),
+:nth-last-column(2),
+
+:valid-drop-target,
+:active-drop-target,
+/* association by 'for' attribute */
+label:matches(:hover, :focus) /for/ input,
+/* association by containment */
+label:matches(:hover, :focus):not([for]) input,
+ul! li:hover,
+col.selected || td,
+:placeholder-shown,
+:user-error {}

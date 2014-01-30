@@ -1084,12 +1084,56 @@
 						</dict>
 					</dict>
 					<key>match</key>
+					<string>(:)((active|valid)-drop-target)\b</string>
+					<key>name</key>
+					<string>entity.other.attribute-name.pseudo-class.drag-and-drop.css</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.entity.css</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(:)(checked|enabled|default|disabled|indeterminate|invalid|in-range|optional|out-of-range|placeholder-shown|required|read-only|read-write|user-error|valid)\b</string>
+					<key>name</key>
+					<string>entity.other.attribute-name.pseudo-class.ui-state.css</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.entity.css</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(:)((nth-(last-)?)?column)\b</string>
+					<key>name</key>
+					<string>entity.other.attribute-name.pseudo-class.grid-structural.css</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.entity.css</string>
+						</dict>
+					</dict>
+					<key>match</key>
 					<string>(:+)(after|before|first-letter|first-line|
-|(-moz-)?selection|
-|(-moz-|((-webkit|-ms)-input-))?placeholder|
-|-webkit-search-(cancel-button|decoration)|
-|-ms-browse|-ms-check|-ms-clear|-ms-expand|-ms-fill-lower|-ms-fill-upper|-ms-fill|-ms-reveal|-ms-thumb|-ms-ticks-after|-ms-ticks-before|-ms-tooltip|-ms-track|-ms-value|
-|-moz-focus-inner)\b</string>
+						|(-moz-)?selection|
+						|(-moz-|((-webkit|-ms)-input-))?placeholder|
+						|-webkit-search-(cancel-button|decoration)|
+						|-ms-browse|-ms-check|-ms-clear|-ms-expand|-ms-fill-lower|
+						|-ms-fill-upper|-ms-fill|-ms-reveal|-ms-thumb|-ms-ticks-after|
+						|-ms-ticks-before|-ms-tooltip|-ms-track|-ms-value|
+						|-moz-focus-inner)\b</string>
 					<key>name</key>
 					<string>entity.other.attribute-name.pseudo-element.css</string>
 				</dict>
@@ -1103,27 +1147,13 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(:)((first|last)-child|(first|last|only)-of-type|empty|root|target|first|left|right)\b</string>
+					<string>(:)(current|(first|last)-child|(first|last|nth|only)-of-type|empty|future|only-child|past|root|scope|target|first|left|right)\b</string>
 					<key>name</key>
 					<string>entity.other.attribute-name.pseudo-class.css</string>
 				</dict>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.entity.css</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(:)(checked|enabled|default|disabled|indeterminate|invalid|optional|required|valid)\b</string>
-					<key>name</key>
-					<string>entity.other.attribute-name.pseudo-class.ui-state.css</string>
-				</dict>
-				<dict>
 					<key>begin</key>
-					<string>((:)not)(\()</string>
+					<string>((:)dir|lang|matches|not|nth-(?:last-)?match)(\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -1202,7 +1232,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(:)(active|hover|link|visited|focus)\b</string>
+					<string>(:)(active|any-link|hover|local-link|link|visited|focus)\b</string>
 					<key>name</key>
 					<string>entity.other.attribute-name.pseudo-class.css</string>
 				</dict>
