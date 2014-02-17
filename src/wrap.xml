@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>comment</key>
+	<string></string>
+	<key>fileTypes</key>
+	<array>
+		<string>css</string>
+		<string>css.erb</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>/\*\*(?!\*)|\{\s*($|/\*(?!.*?\*/.*\S))</string>
+	<key>foldingStopMarker</key>
+	<string>(?&lt;!\*)\*\*/|^\s*\}</string>
+	<key>keyEquivalent</key>
+	<string>^~C</string>
+	<key>name</key>
+	<string>CSS3</string>
+	<key>patterns</key>
+%patterns-placeholder%
+	<key>repository</key>
+	<dict>
+%repository-placeholder%
+	</dict>
+	<key>scopeName</key>
+	<string>source.css</string>
+	<key>uuid</key>
+	<string>69AA0917-B7BB-11D9-A7E2-000D93C8BE28</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<key>media-query-list</key>
+<dict>
+	<key>begin</key>
+	<string>\s*(?=[^{;])</string>
+	<key>end</key>
+	<string>\s*(?=[{;])</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#media-query</string>
+		</dict>
+	</array>
+</dict>

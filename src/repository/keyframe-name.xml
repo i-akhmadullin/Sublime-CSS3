@@ -1,0 +1,23 @@
+<key>keyframe-name</key>
+<dict>
+	<key>begin</key>
+	<string>(?i)\s*[-]?([_\w\-]*)?</string>
+	<key>beginCaptures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>entity.other.animation-name.css</string>
+		</dict>
+	</dict>
+	<key>end</key>
+	<string>\s*(?:(,)|(?=[{;]))</string>
+	<key>endCaptures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.definition.arbitrary-repitition.css</string>
+		</dict>
+	</dict>
+</dict>

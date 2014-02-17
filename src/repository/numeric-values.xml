@@ -1,0 +1,37 @@
+<key>numeric-values</key>
+<dict>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.constant.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(#)([0-9a-fA-F]{3}|[0-9a-fA-F]{6})\b</string>
+			<key>name</key>
+			<string>constant.other.color.rgb-value.css</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.unit.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?x)
+			    (?:-|\+)?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+))
+			    ((?:px|pt|ch|cm|mm|in|r?em|ex|pc|deg|g?rad|turn|dpi|dpcm|dppx|s|ms|x|vh|vw|vmin|vmax)\b|%)?
+			</string>
+			<key>name</key>
+			<string>constant.numeric.css</string>
+		</dict>
+	</array>
+</dict>

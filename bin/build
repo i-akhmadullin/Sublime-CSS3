@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+/*jshint shelljs:true*/
+
+"use strict";
+require("shelljs/make");
+
+cp('-f', './src/wrap.xml', './CSS3.xml');
+sed('-i', /%patterns-placeholder%/,   cat("./src/patterns/*.xml"),   './CSS3.xml');
+sed('-i', /%repository-placeholder%/, cat("./src/repository/*.xml"), './CSS3.xml');
+mv('-f', './CSS3.xml', './CSS3.tmLanguage');
