@@ -1,4 +1,5 @@
 # Sublime Text CSS3 syntax
+[![Build Status](https://travis-ci.org/i-akhmadullin/Sublime-CSS3.png?branch=master)](https://travis-ci.org/i-akhmadullin/Sublime-CSS3)
 
 Enchances Sublime Text CSS highlighting:
 
