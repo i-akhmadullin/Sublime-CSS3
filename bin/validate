@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+var x = require('libxmljs'),
+	fs = require('fs');
+
+fs.readFile(__dirname + '/PropertyList-1.0.xsd', 'utf8', function(err, data) {
+	if (err) throw err;
+	var xsd = x.parseXmlString(data);
+
+	fs.readFile(__dirname + '/../CSS3.tmLanguage', 'utf8', function(err, data) {
+		if (err) throw err;
+		var xml = x.parseXmlString(data);
+
+		validateXml(xml, xsd);
+	});
+});
+
+function validateXml(xml, xsd){
+	if(!xml.validate(xsd)){
+		console.log('Not valid syntax file!');
+		process.exit(1);
+	} else {
+		console.log('Syntax file is valid');
+		process.exit(0);
+	}
+};

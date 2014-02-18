@@ -5,10 +5,12 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
-    "shelljs": "0.2.6"
+    "shelljs": "0.2.6",
+    "libxmljs": "0.8.1"
   },
   "scripts": {
-    "build": "node bin/build"
+    "build": "node bin/build",
+    "test": "node bin/validate"
   },
   "repository": {
     "type": "git",

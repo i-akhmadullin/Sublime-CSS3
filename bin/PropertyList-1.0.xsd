@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="plistObject" abstract="true"/>
+  <xs:element name="plist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="plistObject"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.plist"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.plist">
+    <xs:attribute name="version" default="1.0"/>
+  </xs:attributeGroup>
+  <!-- Collections -->
+  <xs:element name="array" substitutionGroup="plistObject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="plistObject"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dict" substitutionGroup="plistObject">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="key"/>
+        <xs:element ref="plistObject"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="key" type="xs:string"/>
+  <!-- - Primitive types -->
+  <xs:element name="string" substitutionGroup="plistObject" type="xs:string"/>
+  <xs:element name="data" substitutionGroup="plistObject" type="xs:string"/>
+  <!-- Contents interpreted as Base-64 encoded -->
+  <xs:element name="date" substitutionGroup="plistObject" type="xs:string"/>
+  <!-- Contents should conform to a subset of ISO 8601 (in particular, YYYY '-' MM '-' DD 'T' HH ':' MM ':' SS 'Z'.  Smaller units may be omitted with a loss of precision) -->
+  <!-- Numerical primitives -->
+  <xs:element name="true" substitutionGroup="plistObject">
+    <xs:complexType/>
+  </xs:element>
+  <!-- Boolean constant true -->
+  <xs:element name="false" substitutionGroup="plistObject">
+    <xs:complexType/>
+  </xs:element>
+  <!-- Boolean constant false -->
+  <xs:element name="real" substitutionGroup="plistObject" type="xs:string"/>
+  <!-- Contents should represent a floating point number matching ("+" | "-")? d+ ("."d*)? ("E" ("+" | "-") d+)? where d is a digit 0-9. -->
+  <xs:element name="integer" substitutionGroup="plistObject" type="xs:string"/>
+</xs:schema>
+<!-- Contents should represent a (possibly signed) integer number in base 10 -->
