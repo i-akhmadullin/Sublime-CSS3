@@ -1,4 +1,10 @@
 
+1.0.1 / 2014-02-19
+==================
+
+ * Add travis badge
+ * Add simple xml validation on travis-ci
+
 1.0.0 / 2014-02-18
 ==================
 
@@ -14,42 +20,22 @@
  * Add syntax for css3 cascading variables
  * Add template tag
  * Add rare and old properties
- * Merge pull request #8 from SourabhV/master
  * Add CSS radial gradient extent-keywords
  * Add new units, calc function
- * Fix readme
  * Add new html tags
- * order flexbox test
- * add all property; unset & initial values
+ * Reorder flexbox test
+ * Add all property; unset & initial values
  * Add IE pseudo-elements
- * Update README, add moz-osx-font-smoothing
- * add ie10 reset btn selector
+ * Add moz-osx-font-smoothing
+ * Add ie10 reset btn selector
  * Flexbox legacy craziness, proper property-value-vendors, test file cleanup
- * install package as simple folder
- * add -webkit-image-set
- * more test code
- * fix transform, transition, perspective regexps
- * clean test css, add transform, perspective, transition tests
- * Merge branch 'master' of github.com:i-akhmadullin/Sublime-CSS3
- * add keyframes base support, fix installation note
- * Update README.md
- * Update README.md
- * fix img links, update readme
- * major cleanup, corrected prefixes scope, rename syntax file into css3, easier installation
- * multiline pattern, new props
- * splited pattern on multiple lines, added new properties
- * Update README.md
- * Update README.md
- * Update README.md
- * Update README.md
- * after, before imgs
- * table property, something else
- * Merge remote-tracking branch 'origin/master'
- * uhhhh
- * Update README.md
- * Update README.md
- * moar css3
- * add some
- * Merge branch 'master' of github.com:i-akhmadullin/Sublime-CSS
+ * Add -webkit-image-set
+ * More test code
+ * Fix transform, transition, perspective regexps
+ * Clean test css, add transform, perspective, transition tests
+ * Add keyframes base support, fix installation note
+ * Major cleanup, corrected prefixes scope, rename syntax file into css3, easier installation
+ * Multiline pattern, new props
+ * Split pattern into multiple lines, add new properties
+ * Add after/before imgs
  * initial commit
- * init, test on box-sizing
