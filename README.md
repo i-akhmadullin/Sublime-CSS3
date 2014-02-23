@@ -1,7 +1,4 @@
-# Sublime Text CSS3 syntax
-[![Build Status](https://travis-ci.org/i-akhmadullin/Sublime-CSS3.png?branch=master)](https://travis-ci.org/i-akhmadullin/Sublime-CSS3)
-
-Enchances Sublime Text CSS highlighting:
+# Sublime Text CSS3 syntax highlight [![Build Status](https://travis-ci.org/i-akhmadullin/Sublime-CSS3.png?branch=master)](https://travis-ci.org/i-akhmadullin/Sublime-CSS3)
 
 <table>
 <tr>
@@ -17,9 +14,18 @@ After:
 </table>
 
 
-Adds several missing (mostly CSS3) features into sublime text css parsing:
+## How to install
 
-### Property names (prefixes omitted)
+1. Ctrl+Shift+P → Package Control: Add Repository → https://github.com/i-akhmadullin/Sublime-CSS3
+
+2. Ctrl+Shift+P → Package Control: Install Package → Sublime-CSS3
+
+3. (in .css file) View → Syntax → Open all with current extension as... → CSS3
+
+
+## What has been added
+
+#### Property names (prefixes omitted)
 ```
 all
 
@@ -125,7 +131,7 @@ interpolation-mode
 ```
 
 
-### Property values (prefixes omitted)
+#### Property values (prefixes omitted)
 ```
 bicubic
 contain, cover, local
@@ -162,7 +168,7 @@ progid:DXImageTransform.Microsoft.Alpha, alpha
 progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 ```
 
-### Pseudo elements
+#### Pseudo elements
 ```
 ::-webkit-input-placeholder, ::-moz-placeholder, ::placeholder
 ::selection, ::-moz-selection
@@ -185,7 +191,7 @@ progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 ::-moz-focus-inner
 ```
 
-### Pseudo classes
+#### Pseudo classes
 ```
 :not, :matches
 
@@ -220,12 +226,12 @@ progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
 :user-error
 ```
 
-### At-rules
+#### At-rules
 ```
 @keyframes (without keyframe selectors atm)
 ```
 
-### Tags
+#### Tags
 ```
 keygen
 main
@@ -238,28 +244,18 @@ template
 track
 ```
 
-### Units
+#### Units
 ```
 vw,vh,vmin,vmax,turn,ms,dppx
 ```
 
-### Custom Properties for Cascading Variables
+#### Custom Properties for Cascading Variables
 ```
 var-my-variable: 20px;
 ```
 
-### Functional Notation
+#### Functional Notation
 ```
 var(my-variable)
 calc
 ```
-
-
-
-## Installation (with Package Control)
-
-1. Ctrl+Shift+P → Package Control: Add Repository → https://github.com/i-akhmadullin/Sublime-CSS3
-
-2. Ctrl+Shift+P → Package Control: Install Package → Sublime-CSS3
-
-3. (in .css file) View → Syntax → Open all with current extension as... → CSS3
