@@ -153,7 +153,7 @@ wrap, wrap-reverse, start, inline-flex, inline-flexbox
 transform, translate, rotate, scale, matrix, skew,
 closest-side, closest-corner, farthest-side,
 farthest-corner, color-stop, preserve-3d, ellipse
-ease-in-out, ease-in, ease-out, from, to
+ease, ease-in-out, ease-in, ease-out, from, to
 
 content
 antialiased, grayscale
@@ -165,7 +165,10 @@ image-set
 initial, unset
 
 progid:DXImageTransform.Microsoft.Alpha, alpha
+progid:DXImageTransform.Microsoft.Blur
+progid:DXImageTransform.Microsoft.dropshadow
 progid:DXImageTransform.Microsoft.gradient, startColorStr, EndColorStr
+progid:DXImageTransform.Microsoft.Shadow
 ```
 
 #### Pseudo elements

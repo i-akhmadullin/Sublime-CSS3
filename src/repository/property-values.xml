@@ -41,10 +41,9 @@
 				|antialiased|grayscale|
 				|blink|
 				|touch|
-				|ease-in-out|ease-out|ease-in|
+				|ease|ease-in-out|ease-out|ease-in|
 				|from|to|
-				|progid:DXImageTransform.Microsoft.gradient|
-				|progid:DXImageTransform.Microsoft.Alpha|
+				|progid:DXImageTransform.Microsoft.(Alpha|Blur|dropshadow|gradient|Shadow)|
 				|alpha|
 				|cover|contain|local|
 				|contents|
