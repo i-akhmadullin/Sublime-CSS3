@@ -293,7 +293,11 @@ col.selected || td,
 
 /* http://tabatkins.github.io/specs/css-will-change/ */
 .will-change {
-	will-change: scroll-position;
-	will-change: contents;
-	will-change: opacity;
+    will-change: scroll-position;
+    will-change: contents;
+    will-change: opacity;
+}
+
+.easing {
+    animation: ease, ease-in-out, ease-in, ease-out;
 }
