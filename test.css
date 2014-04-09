@@ -301,3 +301,8 @@ col.selected || td,
 .easing {
     animation: ease, ease-in-out, ease-in, ease-out;
 }
+
+.new-ellipsis {
+    -webkit-line-clamp: 3;
+    overflow-wrap: break-word;
+}

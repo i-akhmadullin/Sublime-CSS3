@@ -113,6 +113,7 @@ transition-timing-function
 
 hyphens
 overflow-scrolling
+overflow-wrap
 tab-size
 text-align-last
 text-emphasis
@@ -123,6 +124,7 @@ word-break
 clip-path
 filter
 user-select
+line-clamp
 mask, mask-image, mask-size, mask-position
 font-smoothing, webkit-font-smoothing, -moz-osx-font-smoothing
 behavior

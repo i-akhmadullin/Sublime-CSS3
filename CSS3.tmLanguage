@@ -971,10 +971,12 @@
 						|font-smoothing|osx-font-smoothing|
 						|hyphens|
 						|justify-content|
+						|line-clamp|
 						|mask(-image|-size|-position)?|
 						|order|
-						|overflow-scrolling|
 						|outline-offset|
+						|overflow-scrolling|
+						|overflow-wrap|
 						|perspective(-origin)?|
 						|tab-size|
 						|text-align-last|
