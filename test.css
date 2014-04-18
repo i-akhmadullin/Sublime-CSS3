@@ -298,8 +298,14 @@ col.selected || td,
     will-change: opacity;
 }
 
-.easing {
+.animation-and-easing {
     animation: ease, ease-in-out, ease-in, ease-out;
+    animation-fill-mode: forwards, both, backwards, none;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, alternate-reverse, reverse;
+    animation-play-state: paused, running;
+    animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1),
+        step-start, step-end, steps(start, end);
 }
 
 .new-ellipsis {

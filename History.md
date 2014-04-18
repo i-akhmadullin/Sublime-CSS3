@@ -1,4 +1,12 @@
 
+1.0.2 / 2014-04-09
+==================
+
+ * Add overflow-wrap, -webkit-line-clamp
+ * fix easing props, editorconfig for css test file
+ * Add ease property, old IE filters: Blur,dropshadow,Shadow
+ * Update README.md
+
 1.0.1 / 2014-02-19
 ==================
 

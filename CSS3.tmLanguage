@@ -730,6 +730,7 @@
 				|progid:DXImageTransform.Microsoft.(Alpha|Blur|dropshadow|gradient|Shadow)|
 				|alpha|
 				|cover|contain|local|
+				|alternate-reverse|alternate|backwards|forwards|end|paused|reverse|running|step-end|step-start|
 				|contents|
 				|box|flexbox|flex(-start|-end)?|space-between|space-around|stretch|(column|row|wrap)(-reverse)?|start|
 				|startColorStr|EndColorStr)\b</string>
@@ -795,6 +796,54 @@
 		<dict>
 			<key>include</key>
 			<string>#cascading-variable</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>support.type.function.easing.css</string>
+			<key>begin</key>
+			<string>(cubic-bezier|steps)\s*(\()</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.timing-function.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(,)+</string>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#numeric-values</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(end|start)+</string>
+					<key>name</key>
+					<string>support.keyword.timing-direction.css</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>name</key>
