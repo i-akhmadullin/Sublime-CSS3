@@ -1,4 +1,10 @@
 
+1.0.4 / 2014-04-23
+==================
+
+ * add animatable properties
+ * add transform-origin-x/-y
+
 1.0.3 / 2014-04-18
 ==================
 
