@@ -693,6 +693,8 @@
 			<string>support.type.property-vendor.css</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>animatable properties</string>
 			<key>match</key>
 			<string>\b(all|
 				|background(-color|-image|-position|-size)?|
@@ -747,7 +749,7 @@
 				|stroke(-dasharray|-dashoffset|-miterlimit|-opacity|-width)?|
 				|viewport-fill(-opacity)?)\b</string>
 			<key>name</key>
-			<string>support.constant.animatable-property.css</string>
+			<string>support.constant.property-value.css</string>
 		</dict>
 		<dict>
 			<key>match</key>
