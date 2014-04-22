@@ -82,6 +82,8 @@ input::-ms-value {
 .transform-test {
     transform: rotate(30deg);
     transform-origin: 100% 100%;
+    transform-origin-y: 1;
+    transform-origin-x: 1;
 }
 .perspective-test {
     perspective: 500px;

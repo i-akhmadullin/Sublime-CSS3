@@ -1032,7 +1032,7 @@
 						|text-emphasis(-color|-position|-style)?|
 						|text-overflow|
 						|text-size-adjust|
-						|transform(-origin|-style)?|
+						|transform(-origin(-x|-y)?|-style)?|
 						|transition(-delay|-duration|-property|-timing-function)?|
 						|user-select|
 						|will-change|word-break|writing-mode|
