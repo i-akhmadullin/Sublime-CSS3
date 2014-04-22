@@ -25,7 +25,7 @@ After:
 
 ## What has been added
 
-#### Property names (prefixes omitted)
+#### Property names
 ```
 all
 
@@ -133,7 +133,8 @@ interpolation-mode
 ```
 
 
-#### Property values (prefixes omitted)
+#### Property values
+All animatable properties plus
 ```
 bicubic
 contain, cover, local
