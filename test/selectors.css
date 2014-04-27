@@ -1,0 +1,24 @@
+/*http://ref.openweb.io/CSS/*/
+
+/*Simple selectors*/
+.Class{}                       /*[Selectors L3]*/
+#ID{}                          /*[Selectors L3]*/
+Type{}                         /*[Selectors L3]*/
+*{}                            /*[Selectors L3]*/
+
+/*Attribute selectors*/
+[att]{}                        /*[Selectors L3]*/
+[att=val]{}                    /*[Selectors L3]*/
+[att=val i]{}                  /*[Selectors L4]*/
+[att~=val]{}                   /*[Selectors L3]*/
+[att|=val]{}                   /*[Selectors L3]*/
+
+/*Combinators*/
+E F{}                          /*[Selectors L3]*/
+E > F{}                        /*[Selectors L3]*/
+E + F{}                        /*[Selectors L3]*/
+E ~ F{}                        /*[Selectors L3]*/
+!E > F{}                       /*[Selectors L4]*/
+F || E{}                       /*[Selectors L4]*/
+E /foo/ F{}                    /*[Selectors L4]*/
+x-E /deep/ F{}                 /*[CSS Scoping]*/

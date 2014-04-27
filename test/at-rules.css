@@ -1,0 +1,36 @@
+/*http://ref.openweb.io/CSS/*/
+
+@bottom-center{}       /*[CSS Page L3]*/
+@bottom-left{}         /*[CSS Page L3]*/
+@bottom-left-corner{}  /*[CSS Page L3]*/
+@bottom-right{}        /*[CSS Page L3]*/
+@bottom-right-corner{} /*[CSS Page L3]*/
+@charset{}             /*[CSS 2.1]*/
+@counter-style{}       /*[CSS Counter Styles]*/
+@custom-media{}        /*[Media Queries L4]*/
+@custom-selector{}     /*[CSS Extensions]*/
+@filters{}             /*[Filters]*/
+@font-face{}           /*[CSS Fonts L3]*/
+@font-feature-values{} /*[CSS Fonts L3]*/
+@footnote{}            /*[CSS GCPM]*/
+@import{}              /*[CSS Cascade]*/
+@keyframes{}           /*[CSS Animations]*/
+@left-bottom{}         /*[CSS Page L3]*/
+@left-middle{}         /*[CSS Page L3]*/
+@left-top{}            /*[CSS Page L3]*/
+@media{}               /*[Media Queries L3 [CSS Conditional]*/
+@namespace{}           /*[CSS Namespaces L3]*/
+@page{}                /*[CSS Page L3]*/
+@right-bottom{}        /*[CSS Page L3]*/
+@right-middle{}        /*[CSS Page L3]*/
+@right-top{}           /*[CSS Page L3]*/
+@scope{}               /*[CSS Scoping]*/
+@slot{}                /*[CSS Page Template L3]*/
+@supports{}            /*[CSS Conditional]*/
+@template{}            /*[CSS Page Template L3]*/
+@top-center{}          /*[CSS Page L3]*/
+@top-left{}            /*[CSS Page L3]*/
+@top-left-corner{}     /*[CSS Page L3]*/
+@top-right{}           /*[CSS Page L3]*/
+@top-right-corner{}    /*[CSS Page L3]*/
+@viewport{}            /*[CSS Device Adapt]*/

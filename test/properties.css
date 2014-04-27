@@ -1,0 +1,443 @@
+/*http://ref.openweb.io/CSS/*/
+.allproperties {
+
+/*A*/
+align-content                   /*[CSS Align L3]*/ /*[CSS Flexbox]*/
+align-items                     /*[CSS Align L3]*/ /*[CSS Flexbox]*/
+align-self                      /*[CSS Align L3]*/ /*[CSS Flexbox]*/
+alignment-baseline              /*[CSS Align L3]*/
+all                             /*[CSS Cascade L3]*/
+animation                       /*[CSS Animations]*/
+animation-delay                 /*[CSS Animations]*/
+animation-direction             /*[CSS Animations]*/
+animation-duration              /*[CSS Animations]*/
+animation-fill-mode             /*[CSS Animations]*/
+animation-iteration-count       /*[CSS Animations]*/
+animation-name                  /*[CSS Animations]*/
+animation-play-state            /*[CSS Animations]*/
+animation-timing-function       /*[CSS Animations]*/
+azimuth                         /*[CSS 2.1]*/
+
+/*B*/
+backface-visibility             /*[CSS Transforms]*/
+background                      /*[CSS Backgrounds L3]*/
+background-attachment           /*[CSS Backgrounds L3]*/
+background-clip                 /*[CSS Backgrounds L3]*/
+background-color                /*[CSS Backgrounds L3]*/
+background-image                /*[CSS Backgrounds L3]*/
+background-origin               /*[CSS Backgrounds L3]*/
+background-position             /*[CSS Backgrounds L3]*/
+background-repeat               /*[CSS Backgrounds L3]*/
+background-size                 /*[CSS Backgrounds L3]*/
+background-blend-mode           /*[Compositing]*/
+baseline-shift                  /*[SVG 1.1]*/
+bleed                           /*[CSS Page L3]*/
+bookmark-label                  /*[CSS GCPM]*/
+bookmark-level                  /*[CSS GCPM]*/
+bookmark-state                  /*[CSS GCPM]*/
+border                          /*[CSS Backgrounds L3]*/
+border-color                    /*[CSS Backgrounds L3]*/
+border-style                    /*[CSS Backgrounds L3]*/
+border-width                    /*[CSS Backgrounds L3]*/
+border-bottom                   /*[CSS Backgrounds L3]*/
+border-bottom-color             /*[CSS Backgrounds L3]*/
+border-bottom-style             /*[CSS Backgrounds L3]*/
+border-bottom-width             /*[CSS Backgrounds L3]*/
+border-left                     /*[CSS Backgrounds L3]*/
+border-left-color               /*[CSS Backgrounds L3]*/
+border-left-style               /*[CSS Backgrounds L3]*/
+border-left-width               /*[CSS Backgrounds L3]*/
+border-right                    /*[CSS Backgrounds L3]*/
+border-right-color              /*[CSS Backgrounds L3]*/
+border-right-style              /*[CSS Backgrounds L3]*/
+border-right-width              /*[CSS Backgrounds L3]*/
+border-top                      /*[CSS Backgrounds L3]*/
+border-top-color                /*[CSS Backgrounds L3]*/
+border-top-style                /*[CSS Backgrounds L3]*/
+border-top-width                /*[CSS Backgrounds L3]*/
+border-collapse                 /*[CSS 2.1]*/
+border-image                    /*[CSS Backgrounds L3]*/
+border-image-outset             /*[CSS Backgrounds L3]*/
+border-image-repeat             /*[CSS Backgrounds L3]*/
+border-image-slice              /*[CSS Backgrounds L3]*/
+border-image-source             /*[CSS Backgrounds L3]*/
+border-image-width              /*[CSS Backgrounds L3]*/
+border-radius                   /*[CSS Backgrounds L3]*/
+border-bottom-left-radius       /*[CSS Backgrounds L3]*/
+border-bottom-right-radius      /*[CSS Backgrounds L3]*/
+border-top-left-radius          /*[CSS Backgrounds L3]*/
+border-top-right-radius         /*[CSS Backgrounds L3]*/
+border-spacing                  /*[CSS 2.1]*/
+bottom                          /*[CSS Position L3]*/
+box-decoration-break            /*[CSS Break L3]*/
+box-shadow                      /*[CSS Backgrounds L3]*/
+box-sizing                      /*[CSS UI L3]*/
+box-snap                        /*[CSS Line Grid]*/
+break-after                     /*[CSS Break L3]*/ /*[CSS Multicol]*/ /*[CSS Regions]*/
+break-before                    /*[CSS Break L3]*/ /*[CSS Multicol]*/ /*[CSS Regions]*/
+break-inside                    /*[CSS Break L3]*/ /*[CSS Regions]*/
+buffered-rendering              /*[SVG 2]*/
+
+/*C*/
+caption-side                    /*[CSS 2.1]*/
+clear                           /*[CSS 2.1]*/
+clear-side                      /*[CSS Page Floats]*/
+clip                            /*[CSS Masking]*/ /*[Deprecated. Use clip-path]*/
+clip-path                       /*[CSS Masking]*/
+clip-rule                       /*[CSS Masking]*/
+color                           /*[CSS Color L3]*/
+color-correction                /*[CSS Color L4]*/
+color-interpolation             /*[SVG 1.1]*/
+color-interpolation-filters     /*[Filters]*/
+color-profile                   /*[SVG 1.1]*/
+color-rendering                 /*[SVG 1.1]*/
+column-fill                     /*[CSS Multicol]*/
+column-gap                      /*[CSS Multicol]*/
+column-rule                     /*[CSS Multicol]*/
+column-rule-color               /*[CSS Multicol]*/
+column-rule-style               /*[CSS Multicol]*/
+column-rule-width               /*[CSS Multicol]*/
+column-span                     /*[CSS Multicol]*/
+columns                         /*[CSS Multicol]*/
+column-count                    /*[CSS Multicol]*/
+column-width                    /*[CSS Multicol]*/
+contain                         /*[CSS Containment L3]*/
+content                         /*[CSS UI L3]*/
+counter-increment               /*[CSS Lists L3]*/
+counter-reset                   /*[CSS Lists L3]*/
+counter-set                     /*[CSS Lists L3]*/
+cue                             /*[CSS Speech]*/
+cue-after                       /*[CSS Speech]*/
+cue-before                      /*[CSS Speech]*/
+cursor                          /*[CSS UI L3]*/
+
+/*D*/
+direction                       /*[CSS Writing Modes L3]*/
+display                         /*[CSS Display L3]*/
+display-inside                  /*[CSS Display L3]*/
+display-outside                 /*[CSS Display L3]*/
+display-extras                  /*[CSS Display L3]*/
+display-box                     /*[CSS Display L3]*/
+dominant-baseline               /*[SVG 1.1]*/
+
+/*E*/
+elevation                       /*[CSS 2.1]*/
+empty-cells                     /*[CSS 2.1]*/
+enable-background               /*[SVG 1.1]*/ /*[Deprecated. Use isolation]*/
+
+/*F*/
+fill                            /*[SVG 1.1]*/
+fill-opacity                    /*[SVG 1.1]*/
+fill-rule                       /*[SVG 1.1]*/
+filter                          /*[Filters]*/
+float                           /*[CSS 2.1]*/
+float-defer-column              /*[CSS Page Floats]*/
+float-defer-page                /*[CSS Page Floats]*/
+float-offset                    /*[CSS Page Floats]*/
+float-wrap                      /*[CSS Page Floats]*/
+flow-into                       /*[CSS Regions]*/
+flow-from                       /*[CSS Regions]*/
+flex                            /*[CSS Flexbox]*/
+flex-basis                      /*[CSS Flexbox]*/
+flex-grow                       /*[CSS Flexbox]*/
+flex-shrink                     /*[CSS Flexbox]*/
+flex-flow                       /*[CSS Flexbox]*/
+flex-direction                  /*[CSS Flexbox]*/
+flex-wrap                       /*[CSS Flexbox]*/
+flood-color                     /*[Filters]*/
+flood-opacity                   /*[Filters]*/
+font                            /*[CSS Fonts L3]*/
+font-family                     /*[CSS Fonts L3]*/
+font-size                       /*[CSS Fonts L3]*/
+font-stretch                    /*[CSS Fonts L3]*/
+font-style                      /*[CSS Fonts L3]*/
+font-weight                     /*[CSS Fonts L3]*/
+font-feature-settings           /*[CSS Fonts L3]*/
+font-kerning                    /*[CSS Fonts L3]*/
+font-language-override          /*[CSS Fonts L3]*/ /*[At risk]*/
+font-size-adjust                /*[CSS Fonts L3]*/
+font-synthesis                  /*[CSS Fonts L3]*/
+font-variant                    /*[CSS Fonts L3]*/
+font-variant-alternates         /*[CSS Fonts L3]*/
+font-variant-caps               /*[CSS Fonts L3]*/
+font-variant-east-asian         /*[CSS Fonts L3]*/
+font-variant-ligatures          /*[CSS Fonts L3]*/
+font-variant-numeric            /*[CSS Fonts L3]*/
+font-variant-position           /*[CSS Fonts L3]*/
+footnote-policy                 /*[CSS GCPM]*/
+
+/*G*/
+glyph-orientation-horizontal    /*[SVG 1.1]*/
+glyph-orientation-vertical      /*[SVG 1.1]*/
+grid                            /*[CSS Grid]*/
+grid-auto-flow                  /*[CSS Grid]*/
+grid-auto-columns               /*[CSS Grid]*/
+grid-auto-rows                  /*[CSS Grid]*/
+grid-template                   /*[CSS Grid]*/
+grid-template-areas             /*[CSS Grid]*/
+grid-template-columns           /*[CSS Grid]*/
+grid-template-rows              /*[CSS Grid]*/
+grid-area                       /*[CSS Grid]*/
+grid-column                     /*[CSS Grid]*/
+grid-column-start               /*[CSS Grid]*/
+grid-column-end                 /*[CSS Grid]*/
+grid-row                        /*[CSS Grid]*/
+grid-row-start                  /*[CSS Grid]*/
+grid-row-end                    /*[CSS Grid]*/
+
+/*H*/
+hanging-punctuation             /*[CSS Text L3]*/ /*[At risk]*/
+height                          /*[CSS 2.1]*/
+hyphenate-character             /*[CSS Text L4]*/
+hyphenate-limit-chars           /*[CSS Text L4]*/ /*[At risk]*/
+hyphenate-limit-last            /*[CSS Text L4]*/ /*[At risk]*/
+hyphenate-limit-lines           /*[CSS Text L4]*/ /*[At risk]*/
+hyphenate-limit-zone            /*[CSS Text L4]*/ /*[At risk]*/
+hyphens                         /*[CSS Text L3]*/
+
+/*I*/
+icon                            /*[CSS UI L3]*/ /*[At risk]*/
+image-orientation               /*[CSS Images L3]*/
+image-resolution                /*[CSS Images L3]*/
+image-rendering                 /*[CSS Images L4]*/
+ime                             /*[IME API]*/
+ime-align                       /*[IME API]*/
+ime-mode                        /*[IME API]*/ /*[CSS UI L3]*/ /*[At risk]*/
+ime-offset                      /*[IME API]*/
+ime-width                       /*[IME API]*/
+isolation                       /*[Compositing]*/
+
+/*J*/
+justify-content                 /*[CSS Align L3]*/ /*[CSS Flexbox]*/
+justify-items                   /*[CSS Align L3]*/
+justify-self                    /*[CSS Align L3]*/
+
+/*K*/
+kerning                         /*[SVG 1.1]*/
+
+/*L*/
+left                            /*[CSS Position L3]*/
+letter-spacing                  /*[CSS Text L3]*/
+lighting-color                  /*[Filters]*/
+line-break                      /*[CSS Text L3]*/
+line-grid                       /*[CSS Line Grid]*/
+line-height                     /*[CSS 2.1]*/
+line-slack                      /*[CSS Line Grid]*/
+line-snap                       /*[CSS Line Grid]*/
+list-style                      /*[CSS Lists L3]*/
+list-style-image                /*[CSS Lists L3]*/
+list-style-position             /*[CSS Lists L3]*/
+list-style-type                 /*[CSS Lists L3]*/
+
+/*M*/
+margin                          /*[CSS 2.1]*/
+margin-bottom                   /*[CSS 2.1]*/
+margin-left                     /*[CSS 2.1]*/
+margin-right                    /*[CSS 2.1]*/
+margin-top                      /*[CSS 2.1]*/
+marker                          /*[SVG 1.1]*/
+marker-end                      /*[SVG 1.1]*/
+marker-mid                      /*[SVG 1.1]*/
+marker-pattern                  /*[SVG 2]*/
+marker-segment                  /*[SVG 2]*/
+marker-start                    /*[SVG 1.1]*/
+marker-knockout-left            /*[SVG 2]*/
+marker-knockout-right           /*[SVG 2]*/
+marker-side                     /*[CSS Lists L3]*/
+marks                           /*[CSS Page L3]*/
+marquee-direction               /*[CSS Marquee L3]*/
+marquee-play-count              /*[CSS Marquee L3]*/
+marquee-speed                   /*[CSS Marquee L3]*/
+marquee-style                   /*[CSS Marquee L3]*/
+mask                            /*[CSS Masking]*/
+mask-image                      /*[CSS Masking]*/
+mask-type                       /*[CSS Masking]*/
+mask-repeat                     /*[CSS Masking]*/
+mask-position                   /*[CSS Masking]*/
+mask-clip                       /*[CSS Masking]*/
+mask-origin                     /*[CSS Masking]*/
+mask-size                       /*[CSS Masking]*/
+mask-box                        /*[CSS Masking]*/
+mask-box-outset                 /*[CSS Masking]*/
+mask-box-repeat                 /*[CSS Masking]*/
+mask-box-slice                  /*[CSS Masking]*/
+mask-box-source                 /*[CSS Masking]*/
+mask-box-width                  /*[CSS Masking]*/
+mask-source-type                /*[CSS Masking]*/
+max-height                      /*[CSS 2.1]*/
+max-lines                       /*[CSS Overflow L3]*/
+max-width                       /*[CSS 2.1]*/
+min-height                      /*[CSS 2.1]*/
+min-width                       /*[CSS 2.1]*/
+mix-blend-mode                  /*[Compositing]*/
+
+/*N*/
+nav-down                        /*[CSS UI L3]*/
+nav-index                       /*[CSS UI L3]*/ /*[At risk]*/
+nav-left                        /*[CSS UI L3]*/
+nav-right                       /*[CSS UI L3]*/
+nav-up                          /*[CSS UI L3]*/
+
+/*O*/
+object-fit                      /*[CSS Images L3]*/
+object-position                 /*[CSS Images L3]*/
+offset-after                    /*[CSS Position L3]*/
+offset-before                   /*[CSS Position L3]*/
+offset-end                      /*[CSS Position L3]*/
+offset-start                    /*[CSS Position L3]*/
+opacity                         /*[CSS Color L3]*/
+order                           /*[CSS Flexbox]*/
+orphans                         /*[CSS Break L3]*/
+outline                         /*[CSS UI L3]*/
+outline-color                   /*[CSS UI L3]*/
+outline-style                   /*[CSS UI L3]*/
+outline-width                   /*[CSS UI L3]*/
+outline-offset                  /*[CSS UI L3]*/
+overflow                        /*[CSS Overflow L3]*/
+overflow-x                      /*[CSS Overflow L3]*/
+overflow-y                      /*[CSS Overflow L3]*/
+overflow-style                  /*[CSS Marquee L3]*/
+overflow-wrap                   /*[CSS Text L3]*/
+
+/*P*/
+padding                         /*[CSS 2.1]*/
+padding-bottom                  /*[CSS 2.1]*/
+padding-left                    /*[CSS 2.1]*/
+padding-right                   /*[CSS 2.1]*/
+padding-top                     /*[CSS 2.1]*/
+page                            /*[CSS Page L3]*/
+page-break-after                /*[CSS 2.1]*/
+page-break-before               /*[CSS 2.1]*/
+page-break-inside               /*[CSS 2.1]*/
+paint-order                     /*[SVG 2]*/
+pause                           /*[CSS Speech]*/
+pause-after                     /*[CSS Speech]*/
+pause-before                    /*[CSS Speech]*/
+perspective                     /*[CSS Transforms]*/
+perspective-origin              /*[CSS Transforms]*/
+pitch                           /*[CSS 2.1]*/
+pitch-range                     /*[CSS 2.1]*/
+play-during                     /*[CSS 2.1]*/
+pointer-events                  /*[SVG 1.1]*/
+position                        /*[CSS Position L3]*/
+
+/*Q*/
+quotes                          /*[CSS 2.1]*/
+
+/*R*/
+region-fragment                 /*[CSS Regions]*/
+resize                          /*[CSS UI L3]*/
+rest                            /*[CSS Speech]*/
+rest-after                      /*[CSS Speech]*/
+rest-before                     /*[CSS Speech]*/
+richness                        /*[CSS 2.1]*/
+right                           /*[CSS Position L3]*/
+ruby-align                      /*[CSS Ruby]*/
+ruby-merge                      /*[CSS Ruby]*/
+ruby-position                   /*[CSS Ruby]*/
+
+/*S*/
+scroll-behavior                 /*[CSSOM View]*/
+scroll-snap-coordinate          /*[CSS Snap Points]*/
+scroll-snap-destination         /*[CSS Snap Points]*/
+scroll-snap-points-x            /*[CSS Snap Points]*/
+scroll-snap-points-y            /*[CSS Snap Points]*/
+scroll-snap-type                /*[CSS Snap Points]*/
+shape-image-threshold           /*[CSS Shapes]*/
+shape-inside                    /*[CSS Shapes L2]*/
+shape-margin                    /*[CSS Shapes]*/
+shape-outside                   /*[CSS Shapes]*/
+shape-padding                   /*[CSS Shapes L2]*/
+shape-rendering                 /*[SVG 1.1]*/
+size                            /*[CSS Page L3]*/
+speak                           /*[CSS Speech]*/
+speak-as                        /*[CSS Speech]*/
+speak-header                    /*[CSS 2.1]*/
+speak-numeral                   /*[CSS 2.1]*/
+speak-punctuation               /*[CSS 2.1]*/
+speech-rate                     /*[CSS 2.1]*/
+stop-color                      /*[SVG 1.1]*/
+stop-opacity                    /*[SVG 1.1]*/
+stress                          /*[CSS 2.1]*/
+string-set                      /*[CSS GCPM]*/
+stroke                          /*[SVG 1.1]*/
+stroke-dasharray                /*[SVG 1.1]*/
+stroke-dashoffset               /*[SVG 1.1]*/
+stroke-linecap                  /*[SVG 1.1]*/
+stroke-linejoin                 /*[SVG 1.1]*/
+stroke-miterlimit               /*[SVG 1.1]*/
+stroke-opacity                  /*[SVG 1.1]*/
+stroke-width                    /*[SVG 1.1]*/
+
+/*T*/
+tab-size                        /*[CSS Text L3]*/
+table-layout                    /*[CSS 2.1]*/
+text-align                      /*[CSS Text L3]*/
+text-align-last                 /*[CSS Text L3]*/
+text-anchor                     /*[SVG 1.1]*/
+text-combine-upright            /*[CSS Writing Modes L3]*/
+text-decoration                 /*[CSS Text Decor L3] [CSS Text L4]*/
+text-decoration-color           /*[CSS Text Decor L3] [CSS Text L4]*/
+text-decoration-line            /*[CSS Text Decor L3] [CSS Text L4]*/
+text-decoration-style           /*[CSS Text Decor L3] [CSS Text L4]*/
+text-decoration-skip            /*[CSS Text Decor L3] [CSS Text L4]*/ /*[At risk]*/
+text-emphasis                   /*[CSS Text Decor L3] [CSS Text L4]*/
+text-emphasis-color             /*[CSS Text Decor L3] [CSS Text L4]*/
+text-emphasis-style             /*[CSS Text Decor L3] [CSS Text L4]*/
+text-emphasis-position          /*[CSS Text Decor L3] [CSS Text L4]*/
+text-emphasis-skip              /*[CSS Text L4]*/ /*[At risk]*/
+text-indent                     /*[CSS Text L3]*/
+text-justify                    /*[CSS Text L3]*/ /*[At risk]*/
+text-orientation                /*[CSS Writing Modes L3]*/
+text-overflow                   /*[CSS UI L3]*/
+text-rendering                  /*[SVG 1.1]*/
+text-shadow                     /*[CSS Text Decor L3] [CSS Text L4]*/
+text-size-adjust                /*[CSS Size Adjust]*/
+text-space-collapse             /*[CSS Text L4]*/
+text-spacing                    /*[CSS Text L4]*/ /*[At risk]*/
+text-transform                  /*[CSS Text L3]*/
+text-underline-position         /*[CSS Text Decor L3] [CSS Text L4]*/
+text-wrap                       /*[CSS Text L4]*/
+top                             /*[CSS Position L3]*/
+touch-action                    /*[Pointer Events]*/
+transform                       /*[CSS Transforms]*/
+transform-origin                /*[CSS Transforms]*/
+transform-style                 /*[CSS Transforms]*/
+transition                      /*[CSS Transitions]*/
+transition-delay                /*[CSS Transitions]*/
+transition-duration             /*[CSS Transitions]*/
+transition-property             /*[CSS Transitions]*/
+transition-timing-function      /*[CSS Transitions]*/
+
+/*U*/
+unicode-bidi                    /*[CSS Writing Modes L3]*/
+
+/*V*/
+vector-effect                   /*[SVG 2]*/
+vertical-align                  /*[CSS 2.1]*/
+visibility                      /*[CSS 2.1]*/
+voice-balance                   /*[CSS Speech]*/ /*[At risk]*/
+voice-duration                  /*[CSS Speech]*/ /*[At risk]*/
+voice-family                    /*[CSS Speech]*/
+voice-pitch                     /*[CSS Speech]*/ /*[At risk]*/
+voice-range                     /*[CSS Speech]*/ /*[At risk]*/
+voice-rate                      /*[CSS Speech]*/
+voice-stress                    /*[CSS Speech]*/ /*[At risk]*/
+voice-volumn                    /*[CSS Speech]*/
+volume                          /*[CSS 2.1]*/
+
+/*W*/
+white-space                     /*[CSS Text L3]*/
+widows                          /*[CSS Break L3]*/
+width                           /*[CSS 2.1]*/
+word-break                      /*[CSS Text L3]*/
+word-spacing                    /*[CSS Text L3]*/
+word-wrap                       /*[CSS Text L3]*/ /*[Deprecated. Use overflow-wrap]*/
+wrap-flow                       /*[CSS Exclusions]*/
+wrap-through                    /*[CSS Exclusions]*/
+writing-mode                    /*[CSS Writing Modes L3]*/
+
+/*Z*/
+z-index                         /*[CSS Position L3]*/
+
+}

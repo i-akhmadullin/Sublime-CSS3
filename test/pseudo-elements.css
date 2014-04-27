@@ -1,0 +1,22 @@
+/*http://ref.openweb.io/CSS/*/
+
+::after            /*[Selectors L3]*/
+::attr()           /*[Selectors Non Element]*/
+::backdrop         /*[Fullscreen]*/
+::before           /*[Selectors L3]*/
+::choices          /*[CSS UI L3]*/
+::content          /*[CSS Scoping]*/
+::cue              /*[WebVTT]*/
+::cue()            /*[WebVTT]*/
+::cue-region       /*[WebVTT]*/
+::first-letter     /*[Selectors L3]*/
+::first-line       /*[Selectors L3]*/
+::footnote-call    /*[CSS GCPM]*/
+::footnote-marker  /*[CSS GCPM]*/
+::marker           /*[CSS Lists L3]*/
+::nth-fragment()   /*[CSS Overflow L3]*/
+::read-only        /*[CSS UI L3]*/
+::region           /*[CSS Scoping]*/
+::repeat-index     /*[CSS UI L3]*/
+::repeat-item      /*[CSS UI L3]*/
+::value            /*[CSS UI L3]*/

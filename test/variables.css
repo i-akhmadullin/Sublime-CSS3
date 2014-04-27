@@ -1,0 +1,11 @@
+:root {
+  --main-color: #06c;
+  --accent-color: #006;
+}
+#foo h1 {
+  color: var(--main-color);
+}
+.foo {
+  --gap: 20;
+  margin-top: calc(var(--gap) * 1px);
+}

@@ -1,0 +1,64 @@
+/*http://ref.openweb.io/CSS/*/
+:active,             /*[Selectors L3]*/
+:active-drop,        /*[Selectors L4]*/
+:any-link,           /*[Selectors L4]*/
+:blank,              /*[CSS Page L3]*/
+:blank,              /*[Selectors L4]*/
+:checked,            /*[Selectors L3]*/
+:current,            /*[Selectors L4]*/
+:current(),          /*[Selectors L4]*/
+:dir(),              /*[Selectors L4]*/
+:default,            /*[CSS UI L3]*/
+:disabled,           /*[Selectors L3]*/
+:empty,              /*[Selectors L3]*/
+:enabled,            /*[Selectors L3]*/
+:first,              /*[CSS Page L3]*/
+:first-child,        /*[Selectors L3]*/
+:first-of-type,      /*[Selectors L3]*/
+:focus,              /*[Selectors L3]*/
+:fullscreen          /*[Fullscreen]*/
+:future,             /*[Selectors L4]*/
+:host,               /*[CSS Scoping]*/
+:host(),             /*[CSS Scoping]*/
+:host-context(),     /*[CSS Scoping]*/
+:hover,              /*[Selectors L3]*/
+:indeterminate,      /*[Selectors L3]*/
+:in-range,           /*[CSS UI L3]*/
+:invalid,            /*[CSS UI L3]*/
+:invalid-drop,       /*[Selectors L4]*/
+:lang,               /*[Selectors L3]*/
+:last-child,         /*[Selectors L3]*/
+:last-of-type,       /*[Selectors L3]*/
+:left,               /*[CSS Page L3]*/
+:link,               /*[Selectors L3]*/
+:local-link,         /*[Selectors L4]*/
+:local-link(),       /*[Selectors L4]*/
+:matches(),          /*[Selectors L4]*/
+:not,                /*[Selectors L3]*/
+:nth-child(),        /*[Selectors L3]*/
+:nth-column,         /*[Selectors L4]*/
+:nth-last-child(),   /*[Selectors L3]*/
+:nth-last-column,    /*[Selectors L4]*/
+:nth-last-match,     /*[Selectors L4]*/
+:nth-last-of-type(), /*[Selectors L3]*/
+:nth-match,          /*[Selectors L4]*/
+:nth-of-type(),      /*[Selectors L3]*/
+:only-child,         /*[Selectors L3]*/
+:only-of-type,       /*[Selectors L3]*/
+:optional,           /*[CSS UI L3]*/
+:out-of-range,       /*[CSS UI L3]*/
+:past,               /*[Selectors L4]*/
+:placeholder-shown,  /*[Selectors L4]*/
+:read-only,          /*[CSS UI L3]*/
+:read-write,         /*[CSS UI L3]*/
+:required,           /*[CSS UI L3]*/
+:right,              /*[CSS Page L3]*/
+:root,               /*[Selectors L3]*/
+:scope,              /*[Selectors L4]*/
+:scope-context(),    /*[CSS Scoping]*/
+:target,             /*[Selectors L3]*/
+:valid,              /*[CSS UI L3]*/
+:valid-drop,         /*[Selectors L4]*/
+:visited,            /*[Selectors L3]*/
+/*:--*               /*[CSS Extensions]*/
+{}
