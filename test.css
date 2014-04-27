@@ -192,40 +192,13 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     width: calc(100%/3 - 2*1em - 2*1px);
 }
 @media (min-resolution: 50dppx) {}
+/* next @-rules should be colored
+*/@media{}@font-face{}@keyframes t{}
 
-
-@-webkit-keyframes name-animation, name-animation2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-moz-keyframes name-animation, name-animation2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-o-keyframes name-animation, name-animation2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes name-animation, name-animation2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+@-webkit-keyframes name-animation, name-animation2 {}
+@-moz-keyframes name-animation, name-animation2 {}
+@-o-keyframes name-animation, name-animation2 {}
+@keyframes name-animation, name-animation2 {}
 
 :root {
     var-c: #06c;

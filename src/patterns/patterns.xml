@@ -121,7 +121,7 @@
 	</dict>
 	<dict>
 		<key>begin</key>
-		<string>^\s*((@)font-face)\s*(?=\{)</string>
+		<string>\s*((@)font-face)\s*(?=\{)</string>
 		<key>beginCaptures</key>
 		<dict>
 			<key>1</key>
@@ -157,7 +157,7 @@
 	</dict>
 	<dict>
 		<key>begin</key>
-		<string>(?=^\s*@media\s*.*?\{)</string>
+		<string>(?=\s*@media\s*.*?\{)</string>
 		<key>end</key>
 		<string>\s*(\})</string>
 		<key>endCaptures</key>
@@ -172,7 +172,7 @@
 		<array>
 			<dict>
 				<key>begin</key>
-				<string>^\s*((@)media)(?=.*?\{)</string>
+				<string>\s*((@)media)(?=.*?\{)</string>
 				<key>beginCaptures</key>
 				<dict>
 					<key>1</key>
@@ -228,7 +228,7 @@
 	</dict>
 	<dict>
 		<key>begin</key>
-		<string>(?=^\s*@(-webkit-|-moz-|-o-)?keyframes\s*.*?\{)</string>
+		<string>(?=\s*@(-webkit-|-moz-|-o-)?keyframes\s*.*?\{)</string>
 		<key>end</key>
 		<string>\s*(\})</string>
 		<key>endCaptures</key>
@@ -243,7 +243,7 @@
 		<array>
 			<dict>
 				<key>begin</key>
-				<string>^\s*((@)(-webkit-|-moz-|-o-)?keyframes)(?=.*?\{)</string>
+				<string>\s*((@)(-webkit-|-moz-|-o-)?keyframes)(?=.*?\{)</string>
 				<key>beginCaptures</key>
 				<dict>
 					<key>1</key>
