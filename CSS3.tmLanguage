@@ -942,6 +942,12 @@
 					<key>include</key>
 					<string>#numeric-values</string>
 				</dict>
+				<dict>
+					<key>match</key>
+					<string>[-/*+]</string>
+					<key>name</key>
+					<string>punctuation.operator.function.css</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>

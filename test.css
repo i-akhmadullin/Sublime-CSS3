@@ -187,8 +187,8 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     width: 4vmax;
     transform: rotate(0.25turn);
     transition: 0.2ms all;
-    width: calc(100px);
-    width: calc(100%/3);
+    width: calc(100px - 1px);
+    width: calc(100% + 3px);
     width: calc(100%/3 - 2*1em - 2*1px);
 }
 @media (min-resolution: 50dppx) {}
