@@ -704,7 +704,6 @@
 				|border(-bottom|-left|-right|-top)?-color|
 				|border(-bottom|-left|-right|-top)?-width|
 				|border(-bottom|-left|-right|-top|-width)|
-				|border|
 				|bottom|
 				|box-shadow|
 				|clip|
@@ -735,8 +734,8 @@
 				|z-index|
 				|zoom|
 				|columns|
-				|column(-count|-gap|-rule-color|-rule-width|-rule|-width)?|
-				|flex(-grow|-shrink|-basis)?|
+				|column(-count|-gap|-rule-color|-rule-width|-rule|-width)|
+				|flex(-grow|-shrink|-basis)|
 				|order|
 				|perspective(-origin)?|
 				|transform(-origin)?|
