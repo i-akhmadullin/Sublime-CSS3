@@ -1,18 +1,6 @@
 # Sublime Text CSS3 syntax highlight [![Build Status](https://travis-ci.org/i-akhmadullin/Sublime-CSS3.png?branch=master)](https://travis-ci.org/i-akhmadullin/Sublime-CSS3)
 
-<table>
-<tr>
-<td>
-Before:
-<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS3/master/before.png">
-</td>
-<td>
-After:
-<img src="https://raw.github.com/i-akhmadullin/Sublime-CSS3/master/after.png">
-</td>
-</tr>
-</table>
-
+<img src="http://i.imgur.com/q3ETMkT.png">
 
 ## How to install
 
