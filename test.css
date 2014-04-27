@@ -191,14 +191,22 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     width: calc(100% + 3px);
     width: calc(100%/3 - 2*1em - 2*1px);
 }
-@media (min-resolution: 50dppx) {}
+@media (min-resolution: 50dppx){}
+
+@-webkit-keyframes name-animation, name-animation2{}
+@-moz-keyframes name-animation, name-animation2{}
+@-o-keyframes name-animation, name-animation2{}
+@keyframes name-animation, name-animation2{}
+
 /* next @-rules should be colored
 */@media{}@font-face{}@keyframes t{}
-
-@-webkit-keyframes name-animation, name-animation2 {}
-@-moz-keyframes name-animation, name-animation2 {}
-@-o-keyframes name-animation, name-animation2 {}
-@keyframes name-animation, name-animation2 {}
+@media(min-resolution: 50dppx)
+{}
+@keyframes newlinetest
+{
+    from { text-align: center; }
+    to { text-align: center; }
+}
 
 :root {
     var-c: #06c;
