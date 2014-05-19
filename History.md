@@ -1,4 +1,14 @@
 
+1.0.6 / 2014-05-20
+==================
+
+ * add new shapes keyword to readme, group and sort similar groups in readme
+ * add highlight for css shapes level 1
+ * fix border,column,flex highlight bugs
+ * fix media,keyframes @-rules newline opening bracket highlight
+ * highlight calc math operators as punctuation
+ * fix media,font-face,keyframes highlight: @-rules dont have to start on new line
+
 1.0.5 / 2014-04-23
 ==================
 
