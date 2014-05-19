@@ -367,6 +367,12 @@
 	<array>
 		<dict>
 			<key>match</key>
+			<string>(--)</string>
+			<key>name</key>
+			<string>support.constant.custom-property-name.prefix.css</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>([_a-zA-Z]+[_a-zA-Z0-9-]*)</string>
 			<key>name</key>
 			<string>support.type.variable-name.css</string>
@@ -1111,6 +1117,27 @@
 				<dict>
 					<key>begin</key>
 					<string>\b(var-)([_a-zA-Z]+[_a-zA-Z0-9-]*)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.other.custom-property.prefix.css</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>support.type.custom-property.name.css</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\b</string>
+					<key>name</key>
+					<string>invalid.deprecated.custom-property.css</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(--)([_a-zA-Z]+[_a-zA-Z0-9-]*)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>

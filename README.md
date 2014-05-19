@@ -194,12 +194,12 @@ vw,vh,vmin,vmax,turn,ms,dppx
 
 #### Custom Properties for Cascading Variables
 ```
-var-my-variable: 20px;
+--my-variable: 20px;
 ```
 
 #### Functional Notation
 ```
-var(my-variable)
+var(--my-variable)
 calc()
 circle()
 ellipse()
