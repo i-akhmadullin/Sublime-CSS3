@@ -16,107 +16,66 @@
 #### Property names
 ```
 all
-
 appearance
-
-align-items
-align-content
-align-self
-
+align-items, align-content, align-self
 animation
-animation-delay
-animation-duration
-animation-iteration-count
-animation-fill-mode
-animation-name
-animation-play-state
-animation-timing-function
-
-background-clip
-background-origin
-background-size
-
-border-image
-border-image-outset
-border-image-repeat
-border-image-slice
-border-image-source
-border-image-width
-
-box-shadow
-box-sizing
-border-radius
-
-columns
-column-count
-column-fill
-column-gap
-column-rule
-column-rule-color
-column-rule-style
-column-rule-width
-column-span
-column-width
-
-font-effect
-font-emphasize
-font-emphasize-position
-font-emphasize-style
-flex
-flex-align
-flex-basis
-flex-direction
-flex-item-align
-flex-flow
-flex-grow
-flex-line-pack
-flex-order
-flex-pack
-flex-shrink
-flex-wrap
-box-align
-box-direction
-box-flex
-box-orient
-box-ordinal-group
-box-pack
-justify-content
-inline-flex
-order
-outline-offset
-group
+animation-delay, animation-duration, animation-iteration-count, animation-fill-mode
+animation-name, animation-play-state, animation-timing-function
+at
 
 backface-visibility
-perspective
-perspective-origin
-transform
-transform-style
-transform-origin
+background-clip, background-origin, background-size
+border-image, border-image-outset, border-image-repeat, border-image-slice, border-image-source, border-image-width
+border-radius
+box-align, box-direction, box-flex, box-ordinal-group, box-orient, box-pack
+box-shadow
+box-sizing
 
-transition
-transition-delay
-transition-duration
-transition-property
-transition-timing-function
+clip-path
+column-count, column-fill, column-gap
+column-rule, column-rule-color, column-rule-style, column-rule-width
+column-span, column-width
+columns
 
+filter
+flex, flex-align, flex-basis, flex-direction
+flex-flow, flex-grow, flex-item-align, flex-line-pack
+flex-order, flex-pack, flex-shrink, flex-wrap
+font-effect
+font-emphasize, font-emphasize-position, font-emphasize-style
+
+group
 hyphens
+inline-flex
+justify-content
+
+mask, mask-image, mask-size, mask-position
+
+order
+outline-offset
 overflow-scrolling
 overflow-wrap
+
+perspective, perspective-origin
+
+transform, transform-origin, transform-style
+transition, transition-delay, transition-duration, transition-property, transition-timing-function
+
+shape-image-threshold, shape-margin, shape-outside
+
 tab-size
 text-align-last
 text-emphasis
 text-overflow
 text-size-adjust
+
+user-select
 word-break
 
-clip-path
-filter
-user-select
-line-clamp
-mask, mask-image, mask-size, mask-position
-font-smoothing, webkit-font-smoothing, -moz-osx-font-smoothing
 behavior
+webkit-font-smoothing, -moz-osx-font-smoothing
 interpolation-mode
+line-clamp
 -ms-writing-mode
 ```
 
@@ -125,33 +84,31 @@ interpolation-mode
 All animatable properties plus
 ```
 bicubic
-contain, cover, local
 border-box, padding-box, border-box, content-box
+contain, cover, local
+infinite
+linear
 table-cell, table-caption, table-column-group, table-column, table-row-group, table-row
 
-linear
-infinite
-webkit-gradient
-radial-gradient
-repeating-radial-gradient
-linear-gradient
-repeating-linear-gradient
+linear-gradient, radial-gradient, webkit-gradient
+repeating-linear-gradient, repeating-radial-gradient
 
-flex-start, flex-end, space-between, space-around, stretch
 box, flexbox, flex, column, column-reverse, row, row-reverse,
+flex-start, flex-end, space-between, space-around, stretch
 wrap, wrap-reverse, start, inline-flex, inline-flexbox
 
-transform, translate, rotate, scale, matrix, skew,
 closest-side, closest-corner, farthest-side,
-farthest-corner, color-stop, preserve-3d, ellipse
 ease, ease-in-out, ease-in, ease-out, from, to
+farthest-corner, color-stop, preserve-3d, ellipse
+transform, translate, rotate, scale, matrix, skew,
 
-content
-antialiased, grayscale
+antialiased
 blink
+content
+grayscale
+image-set
 textfield
 touch
-image-set
 
 initial, unset
 
@@ -164,17 +121,14 @@ progid:DXImageTransform.Microsoft.Shadow
 
 #### Pseudo elements
 ```
-::-webkit-input-placeholder, ::-moz-placeholder, ::placeholder
-::selection, ::-moz-selection
-::-webkit-search-cancel-button
-::-webkit-search-decoration
+::-moz-focus-inner
 ::-ms-browse
 ::-ms-check
 ::-ms-clear
 ::-ms-expand
+::-ms-fill
 ::-ms-fill-lower
 ::-ms-fill-upper
-::-ms-fill
 ::-ms-reveal
 ::-ms-thumb
 ::-ms-ticks-after
@@ -182,7 +136,10 @@ progid:DXImageTransform.Microsoft.Shadow
 ::-ms-tooltip
 ::-ms-track
 ::-ms-value
-::-moz-focus-inner
+::-webkit-input-placeholder, ::-moz-placeholder, ::placeholder
+::-webkit-search-cancel-button
+::-webkit-search-decoration
+::selection, ::-moz-selection
 ```
 
 #### Pseudo classes
@@ -227,15 +184,7 @@ progid:DXImageTransform.Microsoft.Shadow
 
 #### Tags
 ```
-keygen
-main
-math
-menuitem
-picture
-source
-svg
-template
-track
+keygen, main, math, menuitem, picture, source, svg, template, track
 ```
 
 #### Units
@@ -251,5 +200,9 @@ var-my-variable: 20px;
 #### Functional Notation
 ```
 var(my-variable)
-calc
+calc()
+circle()
+ellipse()
+inset()
+polygon()
 ```
