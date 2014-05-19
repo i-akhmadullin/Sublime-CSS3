@@ -24,13 +24,21 @@
 				|box-shadow|
 				|clip|
 				|color|
+				|column(-count|-gap|-rule-color|-rule-width|-rule|-width)|
+				|columns|
 				|crop|
+				|fill(-opacity)?|
+				|flex(-grow|-shrink|-basis)|
+				|flood-color|
 				|font(-size-adjust|-size|-stretch|-weight)?|
 				|height|
 				|left|
 				|letter-spacing|
+				|lighting-color|
 				|line-height|
+				|margin-box|
 				|margin(-bottom|-left|-right|-top)?|
+				|marker-offset|
 				|max-height|
 				|max-lines|
 				|max-width|
@@ -38,44 +46,38 @@
 				|min-width|
 				|offset(-after|-before|-end|-start)?|
 				|opacity|
+				|order|
 				|outline(-color|-offset|-width)?|
+				|padding-box|
 				|padding(-bottom|-left|-right|-top)?|
+				|perspective(-origin)?|
 				|right|
+				|stop-color|
+				|stop-opacity|
+				|stroke(-dasharray|-dashoffset|-miterlimit|-opacity|-width)?|
 				|text(-decoration-color|-emphasis-color|-indent|-shadow|-size-adjust)?|
 				|top|
+				|transform(-origin)?|
 				|vertical-align|
 				|visibility|
 				|width|
 				|word-spacing|
 				|z-index|
 				|zoom|
-				|columns|
-				|column(-count|-gap|-rule-color|-rule-width|-rule|-width)|
-				|flex(-grow|-shrink|-basis)|
-				|order|
-				|perspective(-origin)?|
-				|transform(-origin)?|
-				|fill(-opacity)?|
-				|flood-color|
-				|lighting-color|
-				|marker-offset|
-				|stop-color|
-				|stop-opacity|
-				|stroke(-dasharray|-dashoffset|-miterlimit|-opacity|-width)?|
 				|viewport-fill(-opacity)?)\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(absolute|all-scroll|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|unset|
+			<string>\b(absolute|all-scroll|always|armenian|auto|avoid|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|geometricPrecision|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|unset|
 				|inline-block|inline-flex|inline-flexbox|inline-table|inline|
-				|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|pointer|pre(-(wrap|line))?|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll-position|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|
+				|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|pointer|pre(-(wrap|line))?|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll-position|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|
 				|table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
 				|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|fill|stroke|
 				|bicubic|
-				|border-box|padding-box|border-box|content-box|
-				|padding|border|content|infinite|ellipse|
+				|border-box|content-box|
+				|padding|border|content|infinite|
 				|radial-gradient|
 				|repeating-radial-gradient|
 				|linear-gradient|
@@ -95,6 +97,8 @@
 				|closest-corner|
 				|farthest-side|
 				|farthest-corner|
+				|at|
+				|round|
 				|textfield|
 				|antialiased|grayscale|
 				|blink|
@@ -108,6 +112,14 @@
 				|contents|
 				|box|flexbox|flex(-start|-end)?|space-between|space-around|stretch|(column|row|wrap)(-reverse)?|start|
 				|startColorStr|EndColorStr)\b</string>
+			<key>name</key>
+			<string>support.constant.property-value.css</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>can be either keywords or functions, therefore slightly more strict matching</string>
+			<key>match</key>
+			<string>\b(circle|ellipse|inset)[^(]\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
 		</dict>
@@ -216,6 +228,64 @@
 					<string>(end|start)+</string>
 					<key>name</key>
 					<string>support.keyword.timing-direction.css</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>support.type.shape.definition.css</string>
+			<key>begin</key>
+			<string>(circle|ellipse|inset|polygon)\s*(\()</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.shape.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#numeric-values</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(,)</string>
+					<key>name</key>
+					<string>punctuation.definition.arbitrary-repitition.css</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(at|
+						|bottom|
+						|center|
+						|closest-side|
+						|evenodd|
+						|farthest-side|
+						|left|
+						|nonzero|
+						|right|
+						|round|
+						|top)\b</string>
+					<key>name</key>
+					<string>support.constant.property-value.css</string>
 				</dict>
 			</array>
 		</dict>

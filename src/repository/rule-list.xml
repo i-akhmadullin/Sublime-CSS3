@@ -88,6 +88,7 @@
 						|overflow-scrolling|
 						|overflow-wrap|
 						|perspective(-origin)?|
+						|shape-(image-threshold|margin|outside)|
 						|tab-size|
 						|text-align-last|
 						|text-emphasis(-color|-position|-style)?|
