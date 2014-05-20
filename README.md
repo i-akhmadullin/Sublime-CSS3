@@ -105,6 +105,7 @@ transform, translate, rotate, scale, matrix, skew,
 antialiased
 blink
 content
+currentColor
 grayscale
 image-set
 textfield
