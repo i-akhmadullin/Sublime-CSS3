@@ -1,6 +1,6 @@
 {
   "name": "Sublime-CSS3",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "Sublime CSS3 syntax",
   "main": "index.js",
   "private": true,

@@ -1,4 +1,10 @@
 
+1.0.7 / 2014-05-23
+==================
+
+ * add currentColor keyword
+ * add new custom properties syntax support, deprecate previous syntax
+
 1.0.6 / 2014-05-20
 ==================
 
