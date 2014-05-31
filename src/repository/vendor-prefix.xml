@@ -1,0 +1,7 @@
+<key>vendor-prefix</key>
+<dict>
+	<key>match</key>
+	<string>-(webkit|moz|ms|o)-</string>
+	<key>name</key>
+	<string>support.type.vendor-prefix.css</string>
+</dict>

@@ -45,7 +45,8 @@
     background-attachment: fixed, scroll, local;
 }
 
-input:placeholder, input::-webkit-input-placeholder, input::-moz-placeholder, input::placeholder,
+input:placeholder, input::-webkit-input-placeholder,
+input::-moz-placeholder, input::placeholder,
 input::selection, input::-moz-selection,
 input::-webkit-search-cancel-button,
 input::-webkit-search-decoration,
