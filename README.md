@@ -25,6 +25,7 @@ at
 
 backface-visibility
 background-clip, background-origin, background-size
+background-blend-mode
 border-image, border-image-outset, border-image-repeat, border-image-slice, border-image-source, border-image-width
 border-radius
 box-align, box-direction, box-flex, box-ordinal-group, box-orient, box-pack
@@ -47,9 +48,11 @@ font-emphasize, font-emphasize-position, font-emphasize-style
 group
 hyphens
 inline-flex
+isolation
 justify-content
 
 mask, mask-image, mask-size, mask-position
+mix-blend-mode
 
 order
 outline-offset
@@ -102,12 +105,18 @@ ease, ease-in-out, ease-in, ease-out, from, to
 farthest-corner, color-stop, preserve-3d, ellipse
 transform, translate, rotate, scale, matrix, skew,
 
+color-burn, color-dodge, color,
+darken, difference, exclusion, hard-light,
+hue, lighten, luminosity, multiply,
+overlay, saturation, screen, soft-light
+
 antialiased
 blink
 content
 currentColor
 grayscale
 image-set
+isolate
 textfield
 touch
 

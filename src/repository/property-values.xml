@@ -4,9 +4,19 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>(-webkit-|-moz-|-ms-|-o-)</string>
+			<string>-(webkit|moz|ms|o)-</string>
 			<key>name</key>
 			<string>support.type.property-vendor.css</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>blend-mode and isolation-mode</string>
+			<key>match</key>
+			<string>\b(color-(burn|dodge)|darken|difference|exclusion|
+				|hard-light|hue|isolate|lighten|luminosity|multiply|overlay|saturation|
+				|screen|soft-light)\b</string>
+			<key>name</key>
+			<string>support.constant.property-value.css</string>
 		</dict>
 		<dict>
 			<key>comment</key>

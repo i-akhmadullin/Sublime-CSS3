@@ -694,9 +694,19 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>(-webkit-|-moz-|-ms-|-o-)</string>
+			<string>-(webkit|moz|ms|o)-</string>
 			<key>name</key>
 			<string>support.type.property-vendor.css</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>blend-mode and isolation-mode</string>
+			<key>match</key>
+			<string>\b(color-(burn|dodge)|darken|difference|exclusion|
+				|hard-light|hue|isolate|lighten|luminosity|multiply|overlay|saturation|
+				|screen|soft-light)\b</string>
+			<key>name</key>
+			<string>support.constant.property-value.css</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -1165,7 +1175,7 @@
 						|align(-items|-content|-self)?|
 						|animation(-delay|-direction|-duration|-fill-mode|-iteration-count|-name|-play-state|-timing-function)?|
 						|backface-visibility|
-						|background(-clip|-origin|-size)|
+						|background(-blend-mode|-clip|-origin|-size)|
 						|behavior|
 						|border-(bottom-|top-)?(right-|left-)?radius(-bottomleft|-bottomright|-topleft|-topright)?|
 						|border-image(-outset|-repeat|-slice|-source|-width)?|
@@ -1181,9 +1191,11 @@
 						|font-effect|font-emphasize(-position|-style)?|
 						|font-smoothing|osx-font-smoothing|
 						|hyphens|
+						|isolation|
 						|justify-content|
 						|line-clamp|
 						|mask(-image|-size|-position)?|
+						|mix-blend-mode|
 						|order|
 						|outline-offset|
 						|overflow-scrolling|

@@ -415,14 +415,25 @@ col.selected || td,
 
 /* http://www.w3.org/TR/css-shapes-1/ */
 .css-shapes {
-    shape-outside: url('path/to/image-with-shape.png');
-    shape-outside: polygon(0 0, 100% 100%, 0 100%);
-    shape-outside: inset(50% 50% 50% 50%);
-    shape-outside: inset(0 round 100px) margin-box;
-    shape-outside: ellipse(nonzero, farthest-side at left bottom) border-box;
-    shape-outside: ellipse(evenodd, at left bottom) border-box;
-    shape-outside: circle(250px at 50% 50%) padding-box;
-    shape-outside: circle(closest-side at center) content-box;
+    shape-outside:
+        url('path/to/image-with-shape.png'),
+        polygon(0 0, 100% 100%, 0 100%),
+        inset(50% 50% 50% 50%),
+        inset(0 round 100px) margin-box,
+        ellipse(nonzero, farthest-side at left bottom) border-box,
+        ellipse(evenodd, at left bottom) border-box,
+        circle(250px at 50% 50%) padding-box,
+        circle(closest-side at center) content-box;
     shape-image-threshold: 0.1;
     shape-margin: 10px;
+}
+
+/* http://www.w3.org/TR/compositing-1/ */
+.asd {
+    mix-blend-mode: color-burn, color-dodge, color,
+        darken, difference, exclusion,
+        hard-light,hue, lighten, multiply,
+        overlay, saturation, screen, soft-light;
+    background-blend-mode: luminosity;
+    isolation: isolate;
 }
