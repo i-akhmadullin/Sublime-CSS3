@@ -31,12 +31,7 @@
     -moz-border-radius-bottomleft: 5px;
     border-bottom-left-radius: 5px;
     border-image: none;
-    background: -webkit-linear-gradient(#eaf2f6 0, #e0ebf1 25%, #cfdeea 50%, #b8cfdb 75%, #a8c6d8 100%);
-    background: -moz-linear-gradient(#eaf2f6 0, #e0ebf1 25%, #cfdeea 50%, #b8cfdb 75%, #a8c6d8 100%);
-    background: -ms-linear-gradient(#eaf2f6 0, #e0ebf1 25%, #cfdeea 50%, #b8cfdb 75%, #a8c6d8 100%);
     background: linear-gradient(#eaf2f6 0, #e0ebf1 25%, #cfdeea 50%, #b8cfdb 75%, #a8c6d8 100%);
-    -webkit-box-shadow: inset 0 1px 2px rgba(20, 60, 75, .7), 0 1px 0 rgba(255, 255, 255, .65);
-    -moz-box-shadow: inset 0 1px 2px rgba(20, 60, 75, .7), 0 1px 0 rgba(255, 255, 255, .65);
     box-shadow: inset 0 1px 2px rgba(20, 60, 75, .7), 0 1px 0 rgba(255, 255, 255, .65);
 }
 .background {
@@ -168,15 +163,9 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     text-emphasis-color: 1;
     text-emphasis-style: 1;
     text-emphasis-position: 1;
-    -webkit-text-align-last: 1;
-    -moz-text-align-last: 1;
-    -ms-text-align-last: 1;
     text-align-last: 1;
-    -moz-tab-size: 1;
-    -o-tab-size: 1;
     tab-size: 1;
     -ms-writing-mode: rtl;
-    -ms-word-break: 1;
     word-break: 1;
 }
 
@@ -193,6 +182,10 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     width: calc(100%/3 - 2*1em - 2*1px);
 }
 @media (min-resolution: 50dppx){}
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-device-pixel-ratio: 2),
+       (min--moz-device-pixel-ratio: 2),
+       (min-resolution: 2dppx){}
 
 @-webkit-keyframes name-animation, name-animation2{}
 @-moz-keyframes name-animation, name-animation2{}
@@ -282,11 +275,9 @@ col.selected || td,
 :placeholder-shown,
 :user-error {}
 
-/* http://tabatkins.github.io/specs/css-will-change/ */
+/* http://dev.w3.org/csswg/css-will-change/ */
 .will-change {
-    will-change: scroll-position;
-    will-change: contents;
-    will-change: opacity;
+    will-change: scroll-position, contents, opacity;
 }
 
 .animation-and-easing {

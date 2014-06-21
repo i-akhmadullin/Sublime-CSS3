@@ -46,9 +46,11 @@
 					<key>begin</key>
 					<string>(?x)
                         (
+                            (-webkit-)?
                             ((min|max)-)?
+                            (-moz-)?
                             (
-                                ((device-)?(height|width|aspect-ratio))|
+                                ((device-)?(height|width|aspect-ratio|pixel-ratio))|
                                 (color(-index)?)|monochrome|resolution
                             )
                         )|grid|scan|orientation
@@ -59,6 +61,16 @@
 						<dict>
 							<key>name</key>
 							<string>support.type.property-name.media.css</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>support.type.vendor-prefix.css</string>
+						</dict>
+						<key>5</key>
+						<dict>
+							<key>name</key>
+							<string>support.type.vendor-prefix.css</string>
 						</dict>
 					</dict>
 					<key>end</key>
