@@ -421,11 +421,35 @@ col.selected || td,
 }
 
 /* http://www.w3.org/TR/compositing-1/ */
-.asd {
+.compositing {
     mix-blend-mode: color-burn, color-dodge, color,
         darken, difference, exclusion,
         hard-light,hue, lighten, multiply,
         overlay, saturation, screen, soft-light;
     background-blend-mode: luminosity;
     isolation: isolate;
+}
+
+/* http://www.w3.org/TR/css-masking/ */
+.css-masking {
+    clip-path: fill-box, stroke-box, view-box;
+    clip-rule: nonzero, evenodd;
+
+    mask: url(resources.svg#mask2);
+    mask-border-mode: luminance;
+    mask-border-outset: 0;
+    mask-border-repeat: stretch;
+    mask-border-slice: 0;
+    mask-border-source: url(mask.png);
+    mask-border-width: auto;
+    mask-border: 25 fill round;
+    mask-clip: no-clip;
+    mask-composite: add, exclude, intersect, subtract;
+    mask-image: url(resources.svg#mask2);
+    mask-mode: alpha;
+    mask-origin: view-box;
+    mask-position: 100% 100%;
+    mask-repeat: round space;
+    mask-size: border-box;
+    mask-type: luminance;
 }

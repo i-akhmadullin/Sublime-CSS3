@@ -89,7 +89,7 @@
 						|border-image(-outset|-repeat|-slice|-source|-width)?|
 						|box-sizing|
 						|box-align|box-pack|box-orient|box-direction|box-flex|(box-ordinal-)?group|
-						|clip-path|
+						|clip-(path|rule)|
 						|column(-count|-fill|-gap|-rule|-rule-color|-rule-style|-rule-width|-span|-width)|
 						|columns|
 						|inline-flex|
@@ -102,7 +102,7 @@
 						|isolation|
 						|justify-content|
 						|line-clamp|
-						|mask(-image|-size|-position)?|
+						|mask-(border-(mode|outset|repeat|slice|source|width)|border|clip|composite|image|mode|origin|position|repeat|size|type)|mask|
 						|mix-blend-mode|
 						|order|
 						|outline-offset|

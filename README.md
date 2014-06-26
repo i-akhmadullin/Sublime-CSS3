@@ -32,7 +32,7 @@ box-align, box-direction, box-flex, box-ordinal-group, box-orient, box-pack
 box-shadow
 box-sizing
 
-clip-path
+clip-path, clip-rule
 column-count, column-fill, column-gap
 column-rule, column-rule-color, column-rule-style, column-rule-width
 column-span, column-width
@@ -51,7 +51,23 @@ inline-flex
 isolation
 justify-content
 
-mask, mask-image, mask-size, mask-position
+mask
+mask-border
+mask-border-mode 
+mask-border-outset 
+mask-border-repeat 
+mask-border-slice 
+mask-border-source 
+mask-border-width 
+mask-clip
+mask-composite
+mask-image
+mask-mode
+mask-origin
+mask-position
+mask-repeat
+mask-size
+mask-type
 mix-blend-mode
 
 order
@@ -109,6 +125,13 @@ color-burn, color-dodge, color,
 darken, difference, exclusion, hard-light,
 hue, lighten, luminosity, multiply,
 overlay, saturation, screen, soft-light
+
+add, exclude, intersect, subtract
+evenodd, nonzero,
+fill-box, stroke-box, view-box,
+luminance,
+no-clip,
+round,
 
 antialiased
 blink

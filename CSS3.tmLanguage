@@ -729,8 +729,8 @@
 				|border-(bottom|left|right|top)-width|
 				|border-(bottom|color|left|radius|right|spacing|top|width)|
 				|bottom|box-shadow|
-				|clip|color|column(-count|-gap|-rule-color|-rule-width|-rule|-width)|columns|crop|
-				|fill(-opacity)?|flex(-grow|-shrink|-basis)|flood-color|
+				|color|column(-count|-gap|-rule-color|-rule-width|-rule|-width)|columns|crop|
+				|fill-opacity|flex(-grow|-shrink|-basis)|flood-color|
 				|font(-size-adjust|-size|-stretch|-weight)?|
 				|height|
 				|left|letter-spacing|lighting-color|line-height|
@@ -739,7 +739,7 @@
 				|offset(-after|-before|-end|-start)?|opacity|order|outline(-color|-offset|-width)?|
 				|padding-(box|bottom|left|right|top)|perspective(-origin)?|
 				|right|
-				|stop-(color|opacity)|stroke(-dasharray|-dashoffset|-miterlimit|-opacity|-width)?|
+				|stop-(color|opacity)|stroke(-dasharray|-dashoffset|-miterlimit|-opacity|-width)|
 				|text(-decoration-color|-emphasis-color|-indent|-shadow|-size-adjust)?|top|transform(-origin)?|
 				|vertical-align|visibility|viewport-fill(-opacity)?|
 				|width|word-spacing|
@@ -764,36 +764,40 @@
 				|katakana-iroha|katakana|keep-all|
 				|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|
 				|medium|middle|move|
-				|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|
+				|n-resize|ne-resize|newspaper|no-clip|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|
 				|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|
 				|pointer|pre(-(wrap|line))?|progress|
 				|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|
 				|s-resize|scroll-position|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|
 				|table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
-				|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|fill|stroke|
+				|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|
 				|repeating-(linear|radial)-gradient|
 				|border-box|
 				|content-box|
 				|radial-gradient|
 				|linear-gradient|
+				|fill-box|
+				|stroke-box|
+				|view-box|
 				|padding|
-				|alpha|alternate-reverse|alternate|antialiased|
+				|add|alpha|alternate-reverse|alternate|antialiased|
 				|backwards|blink|border|box|
-				|closest-(side|corner)|color-stop|cover|contain|content|contents|
-				|ease-in-out|ease-out|ease-in|ease|end|
+				|closest-(side|corner)|color-stop|cover|contain|content|contents|clip|
+				|ease-in-out|ease-out|ease-in|ease|end|evenodd|exclude|
 				|farthest-corner|farthest-side|
 				|forwards|flexbox|flex(-start|-end)?|
-				|gradient|
-				|grayscale|
-				|image-set|infinite|
-				|linear|local|
+				|gradient|grayscale|
+				|image-set|infinite|intersect|
+				|linear|local|luminance|
 				|matrix(3d)?|
+				|nonzero|
 				|paused|preserve-3d|progid:DXImageTransform.Microsoft.(Alpha|Blur|dropshadow|gradient|Shadow)|
 				|reverse|round|rotate(X|Y|Z|3d)?|running|
-				|scale(X|Y|Z|3d)?|skew(X|Y)?|space-between|space-around|stretch|start|step-(end|start)|
+				|scale(X|Y|Z|3d)?|skew(X|Y)?|space-between|space-around|space|start|step-(end|start)|stretch|stroke|subtract|
 				|textfield|to|touch|transform|translate(X|Y|Z|3d)?|
 				|unset|
 				|(column|row|wrap)(-reverse)?|
+				|fill|
 				|startColorStr|EndColorStr)\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
@@ -1161,7 +1165,7 @@
 						|border-image(-outset|-repeat|-slice|-source|-width)?|
 						|box-sizing|
 						|box-align|box-pack|box-orient|box-direction|box-flex|(box-ordinal-)?group|
-						|clip-path|
+						|clip-(path|rule)|
 						|column(-count|-fill|-gap|-rule|-rule-color|-rule-style|-rule-width|-span|-width)|
 						|columns|
 						|inline-flex|
@@ -1174,7 +1178,7 @@
 						|isolation|
 						|justify-content|
 						|line-clamp|
-						|mask(-image|-size|-position)?|
+						|mask-(border-(mode|outset|repeat|slice|source|width)|border|clip|composite|image|mode|origin|position|repeat|size|type)|mask|
 						|mix-blend-mode|
 						|order|
 						|outline-offset|
