@@ -1,4 +1,13 @@
 
+1.0.8 / 2014-06-27
+==================
+
+ * add css masking highlighting, fixes #6
+ * remove after/before images
+ * add pixel-ratio mq, sort props, cleaning
+ * use single prefix regex for props and values
+ * add compositing and blending level 1
+
 1.0.7 / 2014-05-23
 ==================
 
