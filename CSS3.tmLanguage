@@ -693,7 +693,7 @@
 			<key>match</key>
 			<string>(?x)
 			    (?:-|\+)?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+))
-			    ((?:px|pt|ch|cm|mm|in|r?em|ex|pc|deg|g?rad|turn|dpi|dpcm|dppx|s|ms|x|vh|vw|vmin|vmax)\b|%)?
+			    ((?:px|pt|ch|cm|deg|dpi|dpcm|dppx|em|ex|in|grad|fr|mm|ms|pc|rad|rem|s|turn|vh|vw|vmin|vmax|x)\b|%)?
 			</string>
 			<key>name</key>
 			<string>constant.numeric.css</string>
@@ -707,6 +707,10 @@
 		<dict>
 			<key>include</key>
 			<string>#vendor-prefix</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#repeat-notation</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -758,7 +762,7 @@
 				|geometricPrecision|georgian|groove|
 				|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|
 				|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|
-				|inline-block|inline-flex|inline-flexbox|inline-table|inline|
+				|inline-block|inline-flex|inline-flexbox|inline-grid|inline-table|inline|
 				|inside|inter-ideograph|inter-word|italic|
 				|justify|
 				|katakana-iroha|katakana|keep-all|
@@ -777,23 +781,25 @@
 				|radial-gradient|
 				|linear-gradient|
 				|fill-box|
+				|max-content|min-content|
 				|stroke-box|
 				|view-box|
 				|padding|
 				|add|alpha|alternate-reverse|alternate|antialiased|
 				|backwards|blink|border|box|
 				|closest-(side|corner)|color-stop|cover|contain|content|contents|clip|
+				|dense|
 				|ease-in-out|ease-out|ease-in|ease|end|evenodd|exclude|
 				|farthest-corner|farthest-side|
 				|forwards|flexbox|flex(-start|-end)?|
-				|gradient|grayscale|
+				|gradient|grayscale|grid|
 				|image-set|infinite|intersect|
 				|linear|local|luminance|
 				|matrix(3d)?|
 				|nonzero|
 				|paused|preserve-3d|progid:DXImageTransform.Microsoft.(Alpha|Blur|dropshadow|gradient|Shadow)|
 				|reverse|round|rotate(X|Y|Z|3d)?|running|
-				|scale(X|Y|Z|3d)?|skew(X|Y)?|space-between|space-around|space|start|step-(end|start)|stretch|stroke|subtract|
+				|scale(X|Y|Z|3d)?|skew(X|Y)?|space-between|space-around|space|span|stack|start|step-(end|start)|stretch|stroke|subtract|subgrid|
 				|textfield|to|touch|transform|translate(X|Y|Z|3d)?|
 				|unset|
 				|(column|row|wrap)(-reverse)?|
@@ -1024,7 +1030,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(format|local|url|attr|counter|counters)\s*(\()</string>
+			<string>(attr|counter|counters|format|local|minmax|url)\s*(\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1055,8 +1061,18 @@
 					<string>#string-single</string>
 				</dict>
 				<dict>
+					<key>match</key>
+					<string>(?:min|max)-content</string>
+					<key>name</key>
+					<string>support.constant.property-value.css</string>
+				</dict>
+				<dict>
 					<key>include</key>
 					<string>#string-double</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#numeric-values</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -1071,6 +1087,66 @@
 			<string>\!\s*important</string>
 			<key>name</key>
 			<string>keyword.other.important.css</string>
+		</dict>
+	</array>
+</dict>
+<key>repeat-notation</key>
+<dict>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>(repeat)\s*(\()</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.misc.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#string-single</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?:min|max)-content</string>
+					<key>name</key>
+					<string>support.constant.property-value.css</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string-double</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#numeric-values</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>[^'") \t]+</string>
+					<key>name</key>
+					<string>variable.parameter.misc.css</string>
+				</dict>
+			</array>
 		</dict>
 	</array>
 </dict>
@@ -1167,6 +1243,11 @@
 						|box-align|box-pack|box-orient|box-direction|box-flex|(box-ordinal-)?group|
 						|clip-(path|rule)|
 						|column(-count|-fill|-gap|-rule|-rule-color|-rule-style|-rule-width|-span|-width)|
+						|grid-template-(areas|columns|rows)|
+						|grid-column-(end|start)|
+						|grid-row-(end|start)|
+						|grid-auto-(columns|flow|rows)|
+						|grid-(area|column|row|template)|
 						|columns|
 						|inline-flex|
 						|interpolation-mode|

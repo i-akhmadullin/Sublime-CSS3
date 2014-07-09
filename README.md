@@ -46,6 +46,21 @@ font-effect
 font-emphasize, font-emphasize-position, font-emphasize-style
 
 group
+grid-area
+grid-auto-columns
+grid-auto-flow
+grid-auto-rows
+grid-column
+grid-column-end
+grid-column-start
+grid-row
+grid-row-end
+grid-row-start
+grid-template
+grid-template-areas
+grid-template-columns
+grid-template-rows
+
 hyphens
 inline-flex
 isolation
@@ -112,26 +127,30 @@ table-cell, table-caption, table-column-group, table-column, table-row-group, ta
 linear-gradient, radial-gradient, webkit-gradient
 repeating-linear-gradient, repeating-radial-gradient
 
-box, flexbox, flex, column, column-reverse, row, row-reverse,
+box, flexbox, flex, column, column-reverse, row, row-reverse
 flex-start, flex-end, space-between, space-around, stretch
 wrap, wrap-reverse, start, inline-flex, inline-flexbox
 
 closest-side, closest-corner, farthest-side,
 ease, ease-in-out, ease-in, ease-out, from, to
 farthest-corner, color-stop, preserve-3d, ellipse
-transform, translate, rotate, scale, matrix, skew,
+transform, translate, rotate, scale, matrix, skew
 
 color-burn, color-dodge, color,
 darken, difference, exclusion, hard-light,
-hue, lighten, luminosity, multiply,
+hue, lighten, luminosity, multiply
 overlay, saturation, screen, soft-light
 
+grid, inline-grid, subgrid
+max-content, min-content
+dense, stack
+
 add, exclude, intersect, subtract
-evenodd, nonzero,
-fill-box, stroke-box, view-box,
-luminance,
-no-clip,
-round,
+evenodd, nonzero
+fill-box, stroke-box, view-box
+luminance
+no-clip
+round
 
 antialiased
 blink
@@ -230,12 +249,14 @@ vw,vh,vmin,vmax,turn,ms,dppx
 --my-variable: 20px;
 ```
 
-#### Functional Notation
+#### Notations
 ```
 var(--my-variable)
 calc()
 circle()
 ellipse()
 inset()
+minmax()
 polygon()
+repeat()
 ```

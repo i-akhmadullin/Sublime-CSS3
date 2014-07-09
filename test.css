@@ -453,3 +453,29 @@ col.selected || td,
     mask-size: border-box;
     mask-type: luminance;
 }
+
+/* http://www.w3.org/TR/css-grid-1/ */
+.css3-grid {
+    display: grid;
+    display: inline-grid;
+    display: subgrid;
+    grid-template: none;
+    /* repeat and minmax should be highlighted as function */
+    grid-template-columns: repeat(4, 10px (col-start) 250px (col-end)) 10px;
+    grid-template-rows: auto minmax(min-content, 1fr) auto;
+    grid-template-areas: "logo content"
+                         "aside content";
+    grid-area: b;
+    grid-column: 1;
+    grid-column-end: end;
+    grid-column-start: start;
+    grid-row: 1 / span 2;
+    grid-row-end: 4;
+    grid-row-start: 1;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    grid-auto-flow: dense;
+    grid-auto-flow: row;
+    grid-auto-flow: stack;
+    grid-auto-rows: auto;
+}

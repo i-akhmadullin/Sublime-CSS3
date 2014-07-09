@@ -91,6 +91,11 @@
 						|box-align|box-pack|box-orient|box-direction|box-flex|(box-ordinal-)?group|
 						|clip-(path|rule)|
 						|column(-count|-fill|-gap|-rule|-rule-color|-rule-style|-rule-width|-span|-width)|
+						|grid-template-(areas|columns|rows)|
+						|grid-column-(end|start)|
+						|grid-row-(end|start)|
+						|grid-auto-(columns|flow|rows)|
+						|grid-(area|column|row|template)|
 						|columns|
 						|inline-flex|
 						|interpolation-mode|

@@ -28,7 +28,7 @@
 			<key>match</key>
 			<string>(?x)
 			    (?:-|\+)?(?:(?:[0-9]+(?:\.[0-9]+)?)|(?:\.[0-9]+))
-			    ((?:px|pt|ch|cm|mm|in|r?em|ex|pc|deg|g?rad|turn|dpi|dpcm|dppx|s|ms|x|vh|vw|vmin|vmax)\b|%)?
+			    ((?:px|pt|ch|cm|deg|dpi|dpcm|dppx|em|ex|in|grad|fr|mm|ms|pc|rad|rem|s|turn|vh|vw|vmin|vmax|x)\b|%)?
 			</string>
 			<key>name</key>
 			<string>constant.numeric.css</string>
