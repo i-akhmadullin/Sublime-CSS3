@@ -1,4 +1,9 @@
 
+1.0.10 / 2014-07-16
+==================
+
+ * add custom media queries highlight, add tests for media queries level 4 draft
+
 1.0.9 / 2014-07-10
 ==================
 
