@@ -232,6 +232,7 @@ progid:DXImageTransform.Microsoft.Shadow
 #### At-rules
 ```
 @keyframes (without keyframe selectors atm)
+@custom-media (custom media queries)
 ```
 
 #### Tags

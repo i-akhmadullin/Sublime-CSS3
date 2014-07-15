@@ -479,3 +479,37 @@ col.selected || td,
     grid-auto-flow: stack;
     grid-auto-rows: auto;
 }
+
+/* http://dev.w3.org/csswg/mediaqueries/ */
+@custom-media --narrow-window (max-width: 30em);
+@media (--narrow-window) and (script) { ... }
+
+@media (device-width < 800px) { ... }
+@media (resolution >= 2dppx) { ... }
+@media (update-frequency: none) { ... }
+@media (update-frequency: slow) { ... }
+@media (update-frequency: normal) { ... }
+@media (overflow-block: none) { ... }
+@media (overflow-block: scroll) { ... }
+@media (overflow-block: optional-paged) { ... }
+@media (overflow-block: paged) { ... }
+@media (overflow-inline: none) { ... }
+@media (overflow-inline: scroll) { ... }
+@media (color >= 8) { ... }
+@media (color-index >= 1) { ... }
+@media (pointer:coarse) { ... }
+@media (pointer:fine) {
+@media (any-pointer:coarse) { ... }
+@media (any-pointer:fine) {
+
+@media (hover:hover) { ... }
+@media (hover:on-demand) { ... }
+@media (any-hover:hover) { ... }
+@media (any-hover:on-demand) { ... }
+
+@media (light-level: normal) { ... }
+@media (light-level: dim) { ... }
+@media (light-level: washed) { ... }
+
+@media (scripting:initial-only) { ... }
+@media (scripting:enabled) { ... }
