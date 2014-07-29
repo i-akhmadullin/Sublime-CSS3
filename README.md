@@ -227,6 +227,8 @@ progid:DXImageTransform.Microsoft.Shadow
 
 :placeholder-shown
 :user-error
+
+dialog::backdrop
 ```
 
 #### At-rules

@@ -275,6 +275,7 @@ ul! li:hover,
 col.selected || td,
 :placeholder-shown,
 :user-error {}
+dialog::backdrop{}
 
 /* http://dev.w3.org/csswg/css-will-change/ */
 .will-change {

@@ -1494,7 +1494,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(:)(current|(first|last)-child|(first|last|nth|only)-of-type|empty|future|only-child|past|root|scope|target|first|left|right)\b</string>
+			<string>(:)(current|(first|last)-child|(first|last|nth|only)-of-type|backdrop|empty|first|future|left|only-child|past|right|root|scope|target)\b</string>
 			<key>name</key>
 			<string>entity.other.attribute-name.pseudo-class.css</string>
 		</dict>
