@@ -180,6 +180,7 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     width: calc(100px - 1px);
     width: calc(100% + 3px);
     width: calc(100%/3 - 2*1em - 2*1px);
+    width: calc((-50vh + 72px)/2 + 24px - 46px);
 }
 @media (min-resolution: 50dppx){}
 @media (-webkit-min-device-pixel-ratio: 2),

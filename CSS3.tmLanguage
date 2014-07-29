@@ -1063,6 +1063,12 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>match</key>
+					<string>[()]</string>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+				<dict>
 					<key>include</key>
 					<string>#cascading-variable</string>
 				</dict>
