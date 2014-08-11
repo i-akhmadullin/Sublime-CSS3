@@ -107,7 +107,8 @@ user-select
 word-break
 
 behavior
-webkit-font-smoothing, -moz-osx-font-smoothing
+-webkit-font-smoothing, -moz-osx-font-smoothing
+-webkit-text-fill-color
 interpolation-mode
 line-clamp
 -ms-writing-mode
@@ -192,6 +193,7 @@ progid:DXImageTransform.Microsoft.Shadow
 ::-webkit-search-cancel-button
 ::-webkit-search-decoration
 ::selection, ::-moz-selection
+dialog::backdrop
 ```
 
 #### Pseudo classes
@@ -227,8 +229,7 @@ progid:DXImageTransform.Microsoft.Shadow
 
 :placeholder-shown
 :user-error
-
-dialog::backdrop
+:-webkit-autofill
 ```
 
 #### At-rules

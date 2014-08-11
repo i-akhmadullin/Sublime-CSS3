@@ -43,6 +43,7 @@
 input:placeholder, input::-webkit-input-placeholder,
 input::-moz-placeholder, input::placeholder,
 input::selection, input::-moz-selection,
+input:-webkit-autofill,
 input::-webkit-search-cancel-button,
 input::-webkit-search-decoration,
 input::-moz-focus-inner,
@@ -60,9 +61,7 @@ input::-ms-ticks-before,
 input::-ms-tooltip,
 input::-ms-track,
 input::-ms-value {
-    position: absolute;
-
-    text-overflow: ellipsis;
+    -webkit-text-fill-color: initial;
 }
 .button-name {
     -webkit-mask-image: -webkit-linear-gradient(left, #000 0, #000 80%, rgba(0,0,0,0) 100%);

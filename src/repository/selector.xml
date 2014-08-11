@@ -103,7 +103,7 @@
 			<string>(:+)(after|before|first-letter|first-line|
 				|(-moz-)?selection|
 				|(-moz-|((-webkit|-ms)-input-))?placeholder|
-				|-webkit-search-(cancel-button|decoration)|
+				|-webkit-autofill|-webkit-search-(cancel-button|decoration)|
 				|-ms-browse|-ms-check|-ms-clear|-ms-expand|-ms-fill-lower|
 				|-ms-fill-upper|-ms-fill|-ms-reveal|-ms-thumb|-ms-ticks-after|
 				|-ms-ticks-before|-ms-tooltip|-ms-track|-ms-value|

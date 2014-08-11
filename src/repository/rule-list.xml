@@ -118,6 +118,7 @@
 						|tab-size|
 						|text-align-last|
 						|text-emphasis(-color|-position|-style)?|
+						|text-fill-color|
 						|text-overflow|
 						|text-size-adjust|
 						|transform(-origin(-x|-y)?|-style)?|
