@@ -24,8 +24,7 @@
 			<key>comment</key>
 			<string>animatable properties</string>
 			<key>match</key>
-			<string>\b(all|
-				|background(-color|-image|-position|-size)?|
+			<string>\b(background(-color|-image|-position|-size)?|
 				|border-(bottom-|top-)?(right-|left-)radius|
 				|border-(bottom|left|right|top)-color|
 				|border-(bottom|left|right|top)-width|
@@ -70,9 +69,11 @@
 				|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|
 				|pointer|pre(-(wrap|line))?|progress|
 				|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|
-				|s-resize|scroll-position|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|
+				|s-resize|scroll-position|scroll|se-resize|separate|solid|square|static|strict|sub|super|sw-resize|
 				|table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
-				|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|
+				|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|
+				|((all-)?(petite|small)|titling)-caps|
+				|((xx?-)?(small|large))|painted|
 				|repeating-(linear|radial)-gradient|
 				|border-box|
 				|content-box|
@@ -99,9 +100,19 @@
 				|reverse|round|rotate(X|Y|Z|3d)?|running|
 				|scale(X|Y|Z|3d)?|skew(X|Y)?|space-between|space-around|space|span|stack|start|step-(end|start)|stretch|stroke|subtract|subgrid|
 				|textfield|to|touch|transform|translate(X|Y|Z|3d)?|
-				|unset|
+				|unicase|unset|
 				|(column|row|wrap)(-reverse)?|
 				|fill|
+				|(diagonal|stacked)-fractions|
+				|ordinal|
+				|(?:ultra-|extra-|semi-)?(?:condensed|expanded)|
+				|(lining|oldstyle|proportional|tabular)-nums|
+				|slashed-zero|
+				|historical-forms|
+				|((no-)?(common|discretionary|historical))-ligatures|
+				|(no-)?contextual|
+				|all|
+				|jis04|jis78|jis83|jis90|simplified|traditional|(full|proportional)-width|ruby|
 				|startColorStr|EndColorStr)\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
@@ -119,6 +130,10 @@
 			<string>(\b(?i:arial|century|comic|courier|garamond|georgia|helvetica|impact|lucida|symbol|system|tahoma|times|trebuchet|utopia|verdana|webdings|sans-serif|serif|monospace)\b)</string>
 			<key>name</key>
 			<string>support.constant.font-name.css</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#unicode-range</string>
 		</dict>
 		<dict>
 			<key>include</key>

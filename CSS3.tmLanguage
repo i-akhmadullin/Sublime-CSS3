@@ -776,8 +776,7 @@
 			<key>comment</key>
 			<string>animatable properties</string>
 			<key>match</key>
-			<string>\b(all|
-				|background(-color|-image|-position|-size)?|
+			<string>\b(background(-color|-image|-position|-size)?|
 				|border-(bottom-|top-)?(right-|left-)radius|
 				|border-(bottom|left|right|top)-color|
 				|border-(bottom|left|right|top)-width|
@@ -822,9 +821,11 @@
 				|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|
 				|pointer|pre(-(wrap|line))?|progress|
 				|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|
-				|s-resize|scroll-position|scroll|se-resize|separate|small-caps|solid|square|static|strict|sub|super|sw-resize|
+				|s-resize|scroll-position|scroll|se-resize|separate|solid|square|static|strict|sub|super|sw-resize|
 				|table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
-				|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|((xx?-)?(small|large))|painted|
+				|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|
+				|((all-)?(petite|small)|titling)-caps|
+				|((xx?-)?(small|large))|painted|
 				|repeating-(linear|radial)-gradient|
 				|border-box|
 				|content-box|
@@ -851,9 +852,19 @@
 				|reverse|round|rotate(X|Y|Z|3d)?|running|
 				|scale(X|Y|Z|3d)?|skew(X|Y)?|space-between|space-around|space|span|stack|start|step-(end|start)|stretch|stroke|subtract|subgrid|
 				|textfield|to|touch|transform|translate(X|Y|Z|3d)?|
-				|unset|
+				|unicase|unset|
 				|(column|row|wrap)(-reverse)?|
 				|fill|
+				|(diagonal|stacked)-fractions|
+				|ordinal|
+				|(?:ultra-|extra-|semi-)?(?:condensed|expanded)|
+				|(lining|oldstyle|proportional|tabular)-nums|
+				|slashed-zero|
+				|historical-forms|
+				|((no-)?(common|discretionary|historical))-ligatures|
+				|(no-)?contextual|
+				|all|
+				|jis04|jis78|jis83|jis90|simplified|traditional|(full|proportional)-width|ruby|
 				|startColorStr|EndColorStr)\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
@@ -871,6 +882,10 @@
 			<string>(\b(?i:arial|century|comic|courier|garamond|georgia|helvetica|impact|lucida|symbol|system|tahoma|times|trebuchet|utopia|verdana|webdings|sans-serif|serif|monospace)\b)</string>
 			<key>name</key>
 			<string>support.constant.font-name.css</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#unicode-range</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -1309,8 +1324,6 @@
 						|interpolation-mode|
 						|filter|
 						|flex(-align|-basis|-direction|-flow|-grow|-item-align|-order|-shrink|-wrap|-pack|-line-pack)?|
-						|font-effect|font-emphasize(-position|-style)?|
-						|font-smoothing|osx-font-smoothing|
 						|hyphens|
 						|isolation|
 						|justify-content|
@@ -1333,7 +1346,13 @@
 						|transition(-delay|-duration|-property|-timing-function)?|
 						|user-select|
 						|will-change|word-break|writing-mode|
-						|background-attachment|background-color|background-image|background-position|background-repeat|background|box-shadow|border-radius|border-bottom-color|border-bottom-style|border-bottom-width|border-bottom|border-collapse|border-color|border-left-color|border-left-style|border-left-width|border-left|border-right-color|border-right-style|border-right-width|border-right|border-spacing|border-style|border-top-color|border-top-style|border-top-width|border-top|border-width|border|bottom|caption-side|clear|clip|color|content|counter-increment|counter-reset|cue-after|cue-before|cue|cursor|direction|display|elevation|empty-cells|float|font-family|font-size-adjust|font-size|font-stretch|font-style|font-variant|font-weight|font|height|image-rendering|left|letter-spacing|line-height|list-style-image|list-style-position|list-style-type|list-style|margin-bottom|margin-left|margin-right|margin-top|marker-offset|margin|marks|max-height|max-width|min-height|min-width|opacity|orphans|outline-color|outline-style|outline-width|outline|overflow(-[xy])?|padding-bottom|padding-left|padding-right|padding-top|padding|page-break-after|page-break-before|page-break-inside|page|pause-after|pause-before|pause|pitch-range|pitch|play-during|pointer-events|position|quotes|resize|richness|right|size|speak-header|speak-numeral|speak-punctuation|speech-rate|speak|src|stress|table-layout|text-(align|decoration|indent|rendering|shadow|transform)|top|unicode-bidi|vertical-align|visibility|voice-family|volume|white-space|widows|width|word-(spacing|wrap)|zoom|z-index|text-justify)\b</string>
+						|background-attachment|background-color|background-image|background-position|background-repeat|background|box-shadow|border-radius|border-bottom-color|border-bottom-style|border-bottom-width|border-bottom|border-collapse|border-color|border-left-color|border-left-style|border-left-width|border-left|border-right-color|border-right-style|border-right-width|border-right|border-spacing|border-style|border-top-color|border-top-style|border-top-width|border-top|border-width|border|bottom|caption-side|clear|clip|color|content|counter-increment|counter-reset|cue-after|cue-before|cue|cursor|direction|display|elevation|empty-cells|float|
+						|osx-font-smoothing|
+						|font(?:-)(?:effect|emphasize(-position|-style)?|family|feature-settings|kerning|language-override|size(?:-adjust)?|smoothing|stretch|style|synthesis|variant(?:-alternates|-caps|-east-asian|-ligatures|-numeric|-position)?|weight)?|
+						|height|image-rendering|left|letter-spacing|line-height|list-style-image|list-style-position|list-style-type|list-style|margin-bottom|margin-left|margin-right|margin-top|marker-offset|margin|marks|max-height|max-width|min-height|min-width|opacity|orphans|outline-color|outline-style|outline-width|outline|overflow(-[xy])?|padding-bottom|padding-left|padding-right|padding-top|padding|page-break-after|page-break-before|page-break-inside|page|pause-after|pause-before|pause|pitch-range|pitch|play-during|pointer-events|position|quotes|resize|richness|right|size|
+						|speak-header|speak-numeral|speak-punctuation|speech-rate|speak|src|stress|table-layout|text-(align|decoration|indent|rendering|shadow|transform)|top|
+						|unicode-(?:bidi|range)|
+						|vertical-align|visibility|voice-family|volume|white-space|widows|width|word-(spacing|wrap)|zoom|z-index|text-justify)\b</string>
 					<key>name</key>
 					<string>support.type.property-name.css</string>
 				</dict>
@@ -1695,6 +1714,40 @@
 			<string>\\.</string>
 			<key>name</key>
 			<string>constant.character.escape.css</string>
+		</dict>
+	</array>
+</dict>
+<key>unicode-range</key>
+<dict>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.constant.unicode-range.prefix.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.codepoint-range.css</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.range.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?xi)
+				(u\+)
+				([0-9a-f?]{1,6}
+				(?:(-)[0-9a-f]{1,6})?)
+			</string>
+			<key>name</key>
+			<string>support.unicode-range.css</string>
 		</dict>
 	</array>
 </dict>

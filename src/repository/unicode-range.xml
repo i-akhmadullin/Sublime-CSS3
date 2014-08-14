@@ -1,0 +1,34 @@
+<key>unicode-range</key>
+<dict>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.constant.unicode-range.prefix.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.codepoint-range.css</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.range.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?xi)
+				(u\+)
+				([0-9a-f?]{1,6}
+				(?:(-)[0-9a-f]{1,6})?)
+			</string>
+			<key>name</key>
+			<string>support.unicode-range.css</string>
+		</dict>
+	</array>
+</dict>

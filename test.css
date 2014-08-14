@@ -181,8 +181,9 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     width: calc(100%/3 - 2*1em - 2*1px);
     width: calc((-50vh + 72px)/2 + 24px - 46px);
 }
-@media (min-resolution: 50dppx){}
-@media (-webkit-min-device-pixel-ratio: 2),
+@media (min-resolution: 50dppx),
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 2),
        (min-device-pixel-ratio: 2),
        (min--moz-device-pixel-ratio: 2),
        (min-resolution: 2dppx){}
@@ -514,3 +515,41 @@ dialog::backdrop{}
 
 @media (scripting:initial-only) { ... }
 @media (scripting:enabled) { ... }
+
+/* http://www.w3.org/TR/css3-fonts/ */
+/* @font-feature-values support not implemented */
+.css3-fonts {
+    font-stretch:
+        ultra-condensed, extra-condensed, condensed, semi-condensed,
+        semi-expanded, expanded, extra-expanded, ultra-expanded;
+    font-synthesis: none;
+    font-feature-settings: "liga", "dlig", "tnum", 'hist';
+    font-language-override: "SRB";
+    font-variant-ligatures: common-ligatures, no-common-ligatures,
+        discretionary-ligatures, no-discretionary-ligatures,
+        historical-ligatures, no-historical-ligatures,
+        contextual, no-contextual;
+    font-variant-position: sub, super;
+    font-kerning: normal;
+    font-variant-caps:
+        small-caps, all-small-caps,
+        petite-caps, all-petite-caps,
+        unicase, titling-caps;
+    font-variant-numeric:
+        lining-nums, oldstyle-nums, proportional-nums, tabular-nums,
+        diagonal-fractions, stacked-fractions,
+        ordinal, slashed-zero;
+    /* partially hightlighted */
+    font-variant-alternates: historical-forms,
+        stylistic(<feature-value-name>),
+        styleset(<feature-value-name> #),
+        character-variant(<feature-value-name> #),
+        swash(<feature-value-name>),
+        ornaments(<feature-value-name>),
+        annotation(<feature-value-name>);
+    font-variant-east-asian:
+        jis78, jis83, jis90, jis04,
+        simplified, traditional,
+        full-width, proportional-width, ruby;
+    unicode-range: U+416, U+400-4ff, U+4??;
+}
