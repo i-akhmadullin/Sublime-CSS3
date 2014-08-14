@@ -1,4 +1,11 @@
 
+1.0.12 / 2014-08-14
+==================
+
+ * add css3-fonts and unicode-range highlight
+ * add webkit input pseudoclass and fill color
+ * fix package.json
+
 1.0.11 / 2014-07-30
 ==================
 
