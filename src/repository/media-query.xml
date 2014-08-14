@@ -46,7 +46,7 @@
 					<key>begin</key>
 					<string>(?x)
                         (
-                            (-webkit-)?
+                            (-webkit-|-o-)?
                             ((min|max)-)?
                             (-moz-)?
                             (
