@@ -18,7 +18,44 @@
 	<key>name</key>
 	<string>CSS3</string>
 	<key>patterns</key>
-%patterns-placeholder%
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#comment-block</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#selector</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#charset</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#import</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#font-face</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#media</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#custom-media</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#keyframes</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#property-list</string>
+		</dict>
+	</array>
 	<key>repository</key>
 	<dict>
 %repository-placeholder%

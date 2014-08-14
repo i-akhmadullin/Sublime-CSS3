@@ -1,0 +1,33 @@
+<key>charset</key>
+<dict>
+	<key>begin</key>
+	<string>\s*((@)charset\b)\s*</string>
+	<key>captures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>keyword.control.at-rule.charset.css</string>
+		</dict>
+		<key>2</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.definition.keyword.css</string>
+		</dict>
+	</dict>
+	<key>end</key>
+	<string>\s*((?=;|$))</string>
+	<key>name</key>
+	<string>meta.at-rule.charset.css</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#string-double</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#string-single</string>
+		</dict>
+	</array>
+</dict>

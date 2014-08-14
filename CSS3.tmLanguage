@@ -18,382 +18,44 @@
 	<key>name</key>
 	<string>CSS3</string>
 	<key>patterns</key>
-<array>
-	<dict>
-		<key>include</key>
-		<string>#comment-block</string>
-	</dict>
-	<dict>
-		<key>include</key>
-		<string>#selector</string>
-	</dict>
-	<dict>
-		<key>begin</key>
-		<string>\s*((@)charset\b)\s*</string>
-		<key>captures</key>
+	<array>
 		<dict>
-			<key>1</key>
-			<dict>
-				<key>name</key>
-				<string>keyword.control.at-rule.charset.css</string>
-			</dict>
-			<key>2</key>
-			<dict>
-				<key>name</key>
-				<string>punctuation.definition.keyword.css</string>
-			</dict>
+			<key>include</key>
+			<string>#comment-block</string>
 		</dict>
-		<key>end</key>
-		<string>\s*((?=;|$))</string>
-		<key>name</key>
-		<string>meta.at-rule.charset.css</string>
-		<key>patterns</key>
-		<array>
-			<dict>
-				<key>include</key>
-				<string>#string-double</string>
-			</dict>
-			<dict>
-				<key>include</key>
-				<string>#string-single</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>begin</key>
-		<string>\s*((@)import\b)\s*</string>
-		<key>captures</key>
 		<dict>
-			<key>1</key>
-			<dict>
-				<key>name</key>
-				<string>keyword.control.at-rule.import.css</string>
-			</dict>
-			<key>2</key>
-			<dict>
-				<key>name</key>
-				<string>punctuation.definition.keyword.css</string>
-			</dict>
+			<key>include</key>
+			<string>#selector</string>
 		</dict>
-		<key>end</key>
-		<string>\s*((?=;|\}))</string>
-		<key>name</key>
-		<string>meta.at-rule.import.css</string>
-		<key>patterns</key>
-		<array>
-			<dict>
-				<key>include</key>
-				<string>#string-double</string>
-			</dict>
-			<dict>
-				<key>include</key>
-				<string>#string-single</string>
-			</dict>
-			<dict>
-				<key>begin</key>
-				<string>\s*(url)\s*(\()\s*</string>
-				<key>beginCaptures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>support.function.url.css</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.section.function.css</string>
-					</dict>
-				</dict>
-				<key>end</key>
-				<string>\s*(\))\s*</string>
-				<key>endCaptures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.section.function.css</string>
-					</dict>
-				</dict>
-				<key>patterns</key>
-				<array>
-					<dict>
-						<key>match</key>
-						<string>[^'") \t]+</string>
-						<key>name</key>
-						<string>variable.parameter.url.css</string>
-					</dict>
-					<dict>
-						<key>include</key>
-						<string>#string-single</string>
-					</dict>
-					<dict>
-						<key>include</key>
-						<string>#string-double</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>include</key>
-				<string>#media-query-list</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>begin</key>
-		<string>\s*((@)font-face)\s*(?=\{)</string>
-		<key>beginCaptures</key>
 		<dict>
-			<key>1</key>
-			<dict>
-				<key>name</key>
-				<string>keyword.control.at-rule.font-face.css</string>
-			</dict>
-			<key>2</key>
-			<dict>
-				<key>name</key>
-				<string>punctuation.definition.keyword.css</string>
-			</dict>
+			<key>include</key>
+			<string>#charset</string>
 		</dict>
-		<key>end</key>
-		<string>\s*(\})</string>
-		<key>endCaptures</key>
 		<dict>
-			<key>1</key>
-			<dict>
-				<key>name</key>
-				<string>punctuation.section.property-list.css</string>
-			</dict>
+			<key>include</key>
+			<string>#import</string>
 		</dict>
-		<key>name</key>
-		<string>meta.at-rule.font-face.css</string>
-		<key>patterns</key>
-		<array>
-			<dict>
-				<key>include</key>
-				<string>#rule-list</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>begin</key>
-		<string>(?=\s*@media\s*.*?)</string>
-		<key>end</key>
-		<string>\s*(\})</string>
-		<key>endCaptures</key>
 		<dict>
-			<key>1</key>
-			<dict>
-				<key>name</key>
-				<string>punctuation.section.property-list.css</string>
-			</dict>
+			<key>include</key>
+			<string>#font-face</string>
 		</dict>
-		<key>patterns</key>
-		<array>
-			<dict>
-				<key>begin</key>
-				<string>\s*((@)media)(?=.*?)</string>
-				<key>beginCaptures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>keyword.control.at-rule.media.css</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.definition.keyword.css</string>
-					</dict>
-					<key>3</key>
-					<dict>
-						<key>name</key>
-						<string>support.constant.media.css</string>
-					</dict>
-				</dict>
-				<key>end</key>
-				<string>\s*(?=\{)</string>
-				<key>name</key>
-				<string>meta.at-rule.media.css</string>
-				<key>patterns</key>
-				<array>
-					<dict>
-						<key>include</key>
-						<string>#media-query-list</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>begin</key>
-				<string>\s*(\{)</string>
-				<key>beginCaptures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.section.property-list.css</string>
-					</dict>
-				</dict>
-				<key>end</key>
-				<string>(?=\})</string>
-				<key>patterns</key>
-				<array>
-					<dict>
-						<key>include</key>
-						<string>$self</string>
-					</dict>
-				</array>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>begin</key>
-		<string>(?=\s*@custom-media\s*.*?)</string>
-		<key>end</key>
-		<string>\s*;</string>
-		<key>endCaptures</key>
 		<dict>
-			<key>1</key>
-			<dict>
-				<key>name</key>
-				<string>punctuation.section.property-list.css</string>
-			</dict>
+			<key>include</key>
+			<string>#media</string>
 		</dict>
-		<key>patterns</key>
-		<array>
-			<dict>
-				<key>begin</key>
-				<string>\s*((@)custom-media)(?=.*?)</string>
-				<key>beginCaptures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>keyword.control.at-rule.custom-media.css</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.definition.keyword.css</string>
-					</dict>
-					<key>3</key>
-					<dict>
-						<key>name</key>
-						<string>support.constant.custom-media.css</string>
-					</dict>
-				</dict>
-				<key>end</key>
-				<string>\s*(?=;)</string>
-				<key>name</key>
-				<string>meta.at-rule.custom-media.css</string>
-				<key>patterns</key>
-				<array>
-					<dict>
-						<key>include</key>
-						<string>#media-query-list</string>
-					</dict>
-				</array>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>begin</key>
-		<string>(?=\s*@(-webkit-|-moz-|-o-)?keyframes\s*.*?)</string>
-		<key>end</key>
-		<string>\s*(\})</string>
-		<key>endCaptures</key>
 		<dict>
-			<key>1</key>
-			<dict>
-				<key>name</key>
-				<string>punctuation.section.property-list.css</string>
-			</dict>
+			<key>include</key>
+			<string>#custom-media</string>
 		</dict>
-		<key>patterns</key>
-		<array>
-			<dict>
-				<key>begin</key>
-				<string>\s*((@)(-webkit-|-moz-|-o-)?keyframes)(?=.*?)</string>
-				<key>beginCaptures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>keyword.control.at-rule.keyframe.css</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.definition.keyword.css</string>
-					</dict>
-					<key>3</key>
-					<dict>
-						<key>name</key>
-						<string>support.type.property-vendor.css</string>
-					</dict>
-					<key>4</key>
-					<dict>
-						<key>name</key>
-						<string>support.constant.keyframe.css</string>
-					</dict>
-				</dict>
-				<key>end</key>
-				<string>\s*(?=\{)</string>
-				<key>name</key>
-				<string>meta.at-rule.keyframe.css</string>
-				<key>patterns</key>
-				<array>
-					<dict>
-						<key>include</key>
-						<string>#keyframe-name-list</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>begin</key>
-				<string>\s*(\{)</string>
-				<key>beginCaptures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.section.property-list.css</string>
-					</dict>
-				</dict>
-				<key>end</key>
-				<string>(?=\})</string>
-				<key>patterns</key>
-				<array>
-					<dict>
-						<key>include</key>
-						<string>$self</string>
-					</dict>
-				</array>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>begin</key>
-		<string>(?=\{)</string>
-		<key>end</key>
-		<string>\}</string>
-		<key>endCaptures</key>
 		<dict>
-			<key>1</key>
-			<dict>
-				<key>name</key>
-				<string>punctuation.section.property-list.css</string>
-			</dict>
+			<key>include</key>
+			<string>#keyframes</string>
 		</dict>
-		<key>patterns</key>
-		<array>
-			<dict>
-				<key>include</key>
-				<string>#rule-list</string>
-			</dict>
-		</array>
-	</dict>
-</array>
+		<dict>
+			<key>include</key>
+			<string>#property-list</string>
+		</dict>
+	</array>
 	<key>repository</key>
 	<dict>
 <key>cascading-variable</key>
@@ -450,6 +112,39 @@
 	</dict>
 	<key>name</key>
 	<string>support.type.cascading-variable.css</string>
+</dict>
+<key>charset</key>
+<dict>
+	<key>begin</key>
+	<string>\s*((@)charset\b)\s*</string>
+	<key>captures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>keyword.control.at-rule.charset.css</string>
+		</dict>
+		<key>2</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.definition.keyword.css</string>
+		</dict>
+	</dict>
+	<key>end</key>
+	<string>\s*((?=;|$))</string>
+	<key>name</key>
+	<string>meta.at-rule.charset.css</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#string-double</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#string-single</string>
+		</dict>
+	</array>
 </dict>
 <key>color-values</key>
 <dict>
@@ -540,6 +235,175 @@
 	<key>name</key>
 	<string>comment.block.css</string>
 </dict>
+<key>custom-media</key>
+<dict>
+	<key>begin</key>
+	<string>(?=\s*@custom-media\s*.*?)</string>
+	<key>end</key>
+	<string>\s*;</string>
+	<key>endCaptures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.section.property-list.css</string>
+		</dict>
+	</dict>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>\s*((@)custom-media)(?=.*?)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.custom-media.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>support.constant.custom-media.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\s*(?=;)</string>
+			<key>name</key>
+			<string>meta.at-rule.custom-media.css</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#media-query-list</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+<key>font-face</key>
+<dict>
+	<key>begin</key>
+	<string>\s*((@)font-face)\s*(?=\{)</string>
+	<key>beginCaptures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>keyword.control.at-rule.font-face.css</string>
+		</dict>
+		<key>2</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.definition.keyword.css</string>
+		</dict>
+	</dict>
+	<key>end</key>
+	<string>\s*(\})</string>
+	<key>endCaptures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.section.property-list.css</string>
+		</dict>
+	</dict>
+	<key>name</key>
+	<string>meta.at-rule.font-face.css</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#rule-list</string>
+		</dict>
+	</array>
+</dict>
+<key>import</key>
+<dict>
+	<key>begin</key>
+	<string>\s*((@)import\b)\s*</string>
+	<key>captures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>keyword.control.at-rule.import.css</string>
+		</dict>
+		<key>2</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.definition.keyword.css</string>
+		</dict>
+	</dict>
+	<key>end</key>
+	<string>\s*((?=;|\}))</string>
+	<key>name</key>
+	<string>meta.at-rule.import.css</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#string-double</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#string-single</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\s*(url)\s*(\()\s*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.url.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\s*(\))\s*</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.function.css</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>[^'") \t]+</string>
+					<key>name</key>
+					<string>variable.parameter.url.css</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string-single</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string-double</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#media-query-list</string>
+		</dict>
+	</array>
+</dict>
 <key>keyframe-name-list</key>
 <dict>
 	<key>begin</key>
@@ -576,6 +440,83 @@
 			<string>punctuation.definition.arbitrary-repitition.css</string>
 		</dict>
 	</dict>
+</dict>
+<key>keyframes</key>
+<dict>
+	<key>begin</key>
+	<string>(?=\s*@(-webkit-|-moz-|-o-)?keyframes\s*.*?)</string>
+	<key>end</key>
+	<string>\s*(\})</string>
+	<key>endCaptures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.section.property-list.css</string>
+		</dict>
+	</dict>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>\s*((@)(-webkit-|-moz-|-o-)?keyframes)(?=.*?)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.keyframe.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>support.type.property-vendor.css</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>support.constant.keyframe.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\s*(?=\{)</string>
+			<key>name</key>
+			<string>meta.at-rule.keyframe.css</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#keyframe-name-list</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\s*(\{)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.property-list.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?=\})</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
 </dict>
 <key>media-query-list</key>
 <dict>
@@ -713,6 +654,78 @@
 		</dict>
 	</array>
 </dict>
+<key>media</key>
+<dict>
+	<key>begin</key>
+	<string>(?=\s*@media\s*.*?)</string>
+	<key>end</key>
+	<string>\s*(\})</string>
+	<key>endCaptures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.section.property-list.css</string>
+		</dict>
+	</dict>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>\s*((@)media)(?=.*?)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.media.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>support.constant.media.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\s*(?=\{)</string>
+			<key>name</key>
+			<string>meta.at-rule.media.css</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#media-query-list</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\s*(\{)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.property-list.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?=\})</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
 <key>numeric-values</key>
 <dict>
 	<key>patterns</key>
@@ -747,6 +760,28 @@
 			</string>
 			<key>name</key>
 			<string>constant.numeric.css</string>
+		</dict>
+	</array>
+</dict>
+<key>property-list</key>
+<dict>
+	<key>begin</key>
+	<string>(?=\{)</string>
+	<key>end</key>
+	<string>\}</string>
+	<key>endCaptures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.section.property-list.css</string>
+		</dict>
+	</dict>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#rule-list</string>
 		</dict>
 	</array>
 </dict>

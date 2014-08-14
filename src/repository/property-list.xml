@@ -1,0 +1,22 @@
+<key>property-list</key>
+<dict>
+	<key>begin</key>
+	<string>(?=\{)</string>
+	<key>end</key>
+	<string>\}</string>
+	<key>endCaptures</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>name</key>
+			<string>punctuation.section.property-list.css</string>
+		</dict>
+	</dict>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#rule-list</string>
+		</dict>
+	</array>
+</dict>
