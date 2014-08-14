@@ -14,9 +14,10 @@
 			<key>comment</key>
 			<string>blend-mode and isolation-mode</string>
 			<key>match</key>
-			<string>\b(color-(burn|dodge)|darken|difference|exclusion|
-				|hard-light|hue|isolate|lighten|luminosity|multiply|overlay|saturation|
-				|screen|soft-light)\b</string>
+			<string>\b(?x)
+				(color-(burn|dodge)|darken|difference|exclusion|
+				hard-light|hue|isolate|lighten|luminosity|multiply|overlay|
+				saturation|screen|soft-light)\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
 		</dict>
@@ -24,96 +25,98 @@
 			<key>comment</key>
 			<string>animatable properties</string>
 			<key>match</key>
-			<string>\b(background(-color|-image|-position|-size)?|
-				|border-(bottom-|top-)?(right-|left-)radius|
-				|border-(bottom|left|right|top)-color|
-				|border-(bottom|left|right|top)-width|
-				|border-(bottom|color|left|radius|right|spacing|top|width)|
-				|bottom|box-shadow|
-				|color|column(-count|-gap|-rule-color|-rule-width|-rule|-width)|columns|crop|
-				|fill-opacity|flex(-grow|-shrink|-basis)|flood-color|
-				|font(-size-adjust|-size|-stretch|-weight)?|
-				|height|
-				|left|letter-spacing|lighting-color|line-height|
-				|margin(-box|-bottom|-left|-right|-top)|margin|marker-offset|
-				|max-(height|lines|width)|min-(height|width)|
-				|offset(-after|-before|-end|-start)?|opacity|order|outline(-color|-offset|-width)?|
-				|padding-(box|bottom|left|right|top)|perspective(-origin)?|
-				|right|
-				|stop-(color|opacity)|stroke(-dasharray|-dashoffset|-miterlimit|-opacity|-width)|
-				|text(-decoration-color|-emphasis-color|-indent|-shadow|-size-adjust)?|top|transform(-origin)?|
-				|vertical-align|visibility|viewport-fill(-opacity)?|
-				|width|word-spacing|
-				|z-index|zoom)\b</string>
+			<string>\b(?x)(
+				background(-color|-image|-position|-size)?|
+				border-(bottom-|top-)?(right-|left-)radius|
+				border-(bottom|left|right|top)-color|
+				border-(bottom|left|right|top)-width|
+				border-(bottom|color|left|radius|right|spacing|top|width)|
+				bottom|box-shadow|
+				color|column(-count|-gap|-rule-color|-rule-width|-rule|-width)|columns|crop|
+				fill-opacity|flex(-grow|-shrink|-basis)|flood-color|
+				font(-size-adjust|-size|-stretch|-weight)?|
+				height|
+				left|letter-spacing|lighting-color|line-height|
+				margin(-box|-bottom|-left|-right|-top)|margin|marker-offset|
+				max-(height|lines|width)|min-(height|width)|
+				offset(-after|-before|-end|-start)?|opacity|order|outline(-color|-offset|-width)?|
+				padding-(box|bottom|left|right|top)|perspective(-origin)?|
+				right|
+				stop-(color|opacity)|stroke(-dasharray|-dashoffset|-miterlimit|-opacity|-width)|
+				text(-decoration-color|-emphasis-color|-indent|-shadow|-size-adjust)?|top|transform(-origin)?|
+				vertical-align|visibility|viewport-fill(-opacity)?|
+				width|word-spacing|
+				z-index|zoom)\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(absolute|all-scroll|always|armenian|at|auto|avoid|
-				|baseline|below|bicubic|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|
-				|capitalize|center|char|cjk-ideographic|col-resize|collapse|crosshair|currentColor|
-				|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|
-				|e-resize|ellipsis|
-				|fixed|from|
-				|geometricPrecision|georgian|groove|
-				|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|
-				|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|
-				|inline-block|inline-flex|inline-flexbox|inline-grid|inline-table|inline|
-				|inside|inter-ideograph|inter-word|italic|
-				|justify|
-				|katakana-iroha|katakana|keep-all|
-				|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|
-				|medium|middle|move|
-				|n-resize|ne-resize|newspaper|no-clip|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|
-				|oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|
-				|pointer|pre(-(wrap|line))?|progress|
-				|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|
-				|s-resize|scroll-position|scroll|se-resize|separate|solid|square|static|strict|sub|super|sw-resize|
-				|table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
-				|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|
-				|((all-)?(petite|small)|titling)-caps|
-				|((xx?-)?(small|large))|painted|
-				|repeating-(linear|radial)-gradient|
-				|border-box|
-				|content-box|
-				|radial-gradient|
-				|linear-gradient|
-				|fill-box|
-				|max-content|min-content|
-				|stroke-box|
-				|view-box|
-				|padding|
-				|add|alpha|alternate-reverse|alternate|antialiased|
-				|backwards|blink|border|box|
-				|closest-(side|corner)|color-stop|cover|contain|content|contents|clip|
-				|dense|
-				|ease-in-out|ease-out|ease-in|ease|end|evenodd|exclude|
-				|farthest-corner|farthest-side|
-				|forwards|flexbox|flex(-start|-end)?|
-				|gradient|grayscale|grid|
-				|image-set|infinite|intersect|
-				|linear|local|luminance|
-				|matrix(3d)?|
-				|nonzero|
-				|paused|preserve-3d|progid:DXImageTransform.Microsoft.(Alpha|Blur|dropshadow|gradient|Shadow)|
-				|reverse|round|rotate(X|Y|Z|3d)?|running|
-				|scale(X|Y|Z|3d)?|skew(X|Y)?|space-between|space-around|space|span|stack|start|step-(end|start)|stretch|stroke|subtract|subgrid|
-				|textfield|to|touch|transform|translate(X|Y|Z|3d)?|
-				|unicase|unset|
-				|(column|row|wrap)(-reverse)?|
-				|fill|
-				|(diagonal|stacked)-fractions|
-				|ordinal|
-				|(?:ultra-|extra-|semi-)?(?:condensed|expanded)|
-				|(lining|oldstyle|proportional|tabular)-nums|
-				|slashed-zero|
-				|historical-forms|
-				|((no-)?(common|discretionary|historical))-ligatures|
-				|(no-)?contextual|
-				|all|
-				|jis04|jis78|jis83|jis90|simplified|traditional|(full|proportional)-width|ruby|
-				|startColorStr|EndColorStr)\b</string>
+			<string>\b(?x)(
+				absolute|all-scroll|always|armenian|at|auto|avoid|
+				baseline|below|bicubic|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|
+				capitalize|center|char|cjk-ideographic|col-resize|collapse|crosshair|currentColor|
+				dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|
+				e-resize|ellipsis|
+				fixed|from|
+				geometricPrecision|georgian|groove|
+				hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|
+				ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|
+				inline-block|inline-flex|inline-flexbox|inline-grid|inline-table|inline|
+				inside|inter-ideograph|inter-word|italic|
+				justify|
+				katakana-iroha|katakana|keep-all|
+				left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|
+				medium|middle|move|
+				n-resize|ne-resize|newspaper|no-clip|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|
+				oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|
+				pointer|pre(-(wrap|line))?|progress|
+				relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|
+				s-resize|scroll-position|scroll|se-resize|separate|solid|square|static|strict|sub|super|sw-resize|
+				table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
+				tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|
+				((all-)?(petite|small)|titling)-caps|
+				((xx?-)?(small|large))|painted|
+				repeating-(linear|radial)-gradient|
+				border-box|
+				content-box|
+				radial-gradient|
+				linear-gradient|
+				fill-box|
+				max-content|min-content|
+				stroke-box|
+				view-box|
+				padding|
+				add|alpha|alternate-reverse|alternate|antialiased|
+				backwards|blink|border|box|
+				closest-(side|corner)|color-stop|cover|contain|content|contents|clip|
+				dense|
+				ease-in-out|ease-out|ease-in|ease|end|evenodd|exclude|
+				farthest-corner|farthest-side|
+				forwards|flexbox|flex(-start|-end)?|
+				gradient|grayscale|grid|
+				image-set|infinite|intersect|
+				linear|local|luminance|
+				matrix(3d)?|
+				nonzero|
+				paused|preserve-3d|progid:DXImageTransform.Microsoft.(Alpha|Blur|dropshadow|gradient|Shadow)|
+				reverse|round|rotate(X|Y|Z|3d)?|running|
+				scale(X|Y|Z|3d)?|skew(X|Y)?|space-between|space-around|space|span|stack|start|step-(end|start)|stretch|stroke|subtract|subgrid|
+				textfield|to|touch|transform|translate(X|Y|Z|3d)?|
+				unicase|unset|
+				(column|row|wrap)(-reverse)?|
+				fill|
+				(diagonal|stacked)-fractions|
+				ordinal|
+				(?:ultra-|extra-|semi-)?(?:condensed|expanded)|
+				(lining|oldstyle|proportional|tabular)-nums|
+				slashed-zero|
+				historical-forms|
+				((no-)?(common|discretionary|historical))-ligatures|
+				(no-)?contextual|
+				all|
+				jis04|jis78|jis83|jis90|simplified|traditional|(full|proportional)-width|ruby|
+				startColorStr|EndColorStr)\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
 		</dict>
@@ -279,17 +282,16 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(at|
-						|bottom|
-						|center|
-						|closest-side|
-						|evenodd|
-						|farthest-side|
-						|left|
-						|nonzero|
-						|right|
-						|round|
-						|top)\b</string>
+					<string>\b(?x)(
+						at|
+						bottom|
+						center|closest-side|
+						evenodd|
+						farthest-side|
+						left|
+						nonzero|
+						right|round|
+						top)\b</string>
 					<key>name</key>
 					<string>support.constant.property-value.css</string>
 				</dict>
