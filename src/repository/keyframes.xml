@@ -1,7 +1,7 @@
 <key>keyframes</key>
 <dict>
 	<key>begin</key>
-	<string>(?=\s*@(-webkit-|-moz-|-o-)?keyframes\s*.*?)</string>
+	<string>(?=\s*@(?:-webkit-|-moz-|-o-)?keyframes\s*.*?)</string>
 	<key>end</key>
 	<string>\s*(\})</string>
 	<key>endCaptures</key>
@@ -47,8 +47,17 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>include</key>
-					<string>#keyframe-name-list</string>
+					<key>begin</key>
+					<string>\s*(?=[^{;])</string>
+					<key>end</key>
+					<string>\s*(?=[{;])</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#keyframe-name</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
