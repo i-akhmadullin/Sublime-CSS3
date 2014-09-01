@@ -1,5 +1,5 @@
-[![Stories in Ready](https://badge.waffle.io/i-akhmadullin/Sublime-CSS3.png?label=ready&title=Ready)](https://waffle.io/i-akhmadullin/Sublime-CSS3)
-# Sublime Text CSS3 syntax highlight [![Build Status](https://travis-ci.org/i-akhmadullin/Sublime-CSS3.png?branch=master)](https://travis-ci.org/i-akhmadullin/Sublime-CSS3)
+[![Build Status](https://travis-ci.org/i-akhmadullin/Sublime-CSS3.png?branch=master)](https://travis-ci.org/i-akhmadullin/Sublime-CSS3) [![Stories in Ready](https://badge.waffle.io/i-akhmadullin/Sublime-CSS3.png?label=ready&title=Ready)](https://waffle.io/i-akhmadullin/Sublime-CSS3)
+# Sublime Text CSS3 syntax highlight
 
 <img src="http://i.imgur.com/q3ETMkT.png">
 
