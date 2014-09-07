@@ -22,8 +22,6 @@
 			<string>support.constant.property-value.css</string>
 		</dict>
 		<dict>
-			<key>comment</key>
-			<string>animatable properties</string>
 			<key>match</key>
 			<string>\b(?x)(
 				background(-color|-image|-position|-size)?|
@@ -36,25 +34,21 @@
 				fill-opacity|flex(-grow|-shrink|-basis)|flood-color|
 				font(-size-adjust|-size|-stretch|-weight)?|
 				height|
-				left|letter-spacing|lighting-color|line-height|
+				left|letter-spacing|lighting-color|
 				margin(-box|-bottom|-left|-right|-top)|margin|marker-offset|
-				max-(height|lines|width)|min-(height|width)|
+				max-(height|lines|size|width)|min-(height|width)|
 				offset(-after|-before|-end|-start)?|opacity|order|outline(-color|-offset|-width)?|
 				padding-(box|bottom|left|right|top)|perspective(-origin)?|
 				right|
 				stop-(color|opacity)|stroke(-dasharray|-dashoffset|-miterlimit|-opacity|-width)|
-				text(-decoration-color|-emphasis-color|-indent|-shadow|-size-adjust)?|top|transform(-origin)?|
+				text(-decoration-color|-emphasis-color|-indent|-shadow|-size-adjust|-size)|top|transform(-origin)?|
 				vertical-align|visibility|viewport-fill(-opacity)?|
 				width|word-spacing|
-				z-index|zoom)\b</string>
-			<key>name</key>
-			<string>support.constant.property-value.css</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(?x)(
+				z-index|zoom|
+				block-line-height|line-height|
 				absolute|all-scroll|always|armenian|at|auto|avoid|
-				baseline|below|bicubic|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|
+				baseline|below|bicubic|bidi-override|
+				|bold|bolder|both|bottom|break-all|break-word|
 				capitalize|center|char|cjk-ideographic|col-resize|collapse|crosshair|currentColor|
 				dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|
 				e-resize|ellipsis|
@@ -62,8 +56,23 @@
 				geometricPrecision|georgian|groove|
 				hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|
 				ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|
-				inline-block|inline-flex|inline-flexbox|inline-grid|inline-table|inline|
+				inline-(box|block|flex|flexbox|grid|table|line-height)|inline|
 				inside|inter-ideograph|inter-word|italic|
+				(exclude|include)-ruby|
+				(consider|disregard)-shifts|
+				alphabetic|
+				central|
+				hanging|
+				ideographic|
+				last|
+				mathematical|
+				middle|
+				no-change|
+				reset-size|
+				text-over-edge|
+				text-under-edge|
+				use-script|
+				(over|under)-edge|
 				justify|
 				katakana-iroha|katakana|keep-all|
 				left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|
@@ -74,7 +83,14 @@
 				relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|
 				s-resize|scroll-position|scroll|se-resize|separate|solid|square|static|strict|sub|super|sw-resize|
 				table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
-				tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|w-resize|wait|whitespace|zero|smaller|larger|
+				tb-rl|
+				text-bottom|text-top|text|
+				thick|thin|top|transparent|
+				underline|upper-alpha|upper-latin|upper-roman|uppercase|
+				vertical(-(ideographic|text))?|visible(Painted|Fill|Stroke)?|
+				w-resize|wait|whitespace|
+				zero|
+				smaller|larger|
 				((all-)?(petite|small)|titling)-caps|
 				((xx?-)?(small|large))|painted|
 				repeating-(linear|radial)-gradient|
@@ -94,13 +110,13 @@
 				ease-in-out|ease-out|ease-in|ease|end|evenodd|exclude|
 				farthest-corner|farthest-side|
 				forwards|flexbox|flex(-start|-end)?|
-				gradient|grayscale|grid|
+				gradient|grayscale|grid(-height)?|glyphs|
 				image-set|infinite|intersect|
 				linear|local|luminance|
 				matrix(3d)?|
 				nonzero|
 				paused|preserve-3d|progid:DXImageTransform.Microsoft.(Alpha|Blur|dropshadow|gradient|Shadow)|
-				reverse|round|rotate(X|Y|Z|3d)?|running|
+				replaced|reverse|round|rotate(X|Y|Z|3d)?|running|
 				scale(X|Y|Z|3d)?|skew(X|Y)?|space-between|space-around|space|span|stack|start|step-(end|start)|stretch|stroke|subtract|subgrid|
 				textfield|to|touch|transform|translate(X|Y|Z|3d)?|
 				unicase|unset|

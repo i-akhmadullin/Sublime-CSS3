@@ -554,3 +554,25 @@ dialog::backdrop{}
         full-width, proportional-width, ruby;
     unicode-range: U+416, U+400-4ff, U+4??;
 }
+
+/* http://dev.w3.org/csswg/css-inline/ */
+.css3-inline-layout {
+    text-height: font-size, text-size, max-size;
+    line-box-contain: glyphs, replaced, inline-box;
+    line-stacking-strategy: inline-line-height,
+        block-line-height, max-height, grid-height;
+    line-stacking-ruby: exclude-ruby, include-ruby;
+    line-stacking-shift: consider-shifts, disregard-shifts;
+    line-stacking: exclude-ruby disregard-shifts;
+    dominant-baseline: use-script, no-change, reset-size,
+        alphabetic, hanging, ideographic, mathematical,
+        central, middle, text-under-edge, text-over-edge;
+    alignment-baseline: baseline, use-script, over-edge,
+        text-over-edge, under-edge, text-under-edge, central,
+        middle, ideographic, alphabetic, hanging, mathematical;
+    alignment-adjust: auto;
+    baseline-shift: super;
+    inline-box-align: last;
+    initial-letter: 1 3;
+    initial-letter-align: alphabetic, hanging, ideographic;
+}

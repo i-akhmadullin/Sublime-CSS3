@@ -91,20 +91,24 @@
 						box-align|box-pack|box-orient|box-direction|box-flex|(box-ordinal-)?group|
 						clip-(path|rule)|
 						column(-count|-fill|-gap|-rule|-rule-color|-rule-style|-rule-width|-span|-width)|
+						(alignment|dominant)-baseline|
+						alignment-adjust|
+						baseline-shift|
 						grid-template-(areas|columns|rows)|
 						grid-column-(end|start)|
 						grid-row-(end|start)|
 						grid-auto-(columns|flow|rows)|
 						grid-(area|column|row|template)|
 						columns|
-						inline-flex|
+						initial-letter-align|initial-letter|
+						inline-flex|inline-box-align|
 						interpolation-mode|
 						filter|
 						flex(-align|-basis|-direction|-flow|-grow|-item-align|-order|-shrink|-wrap|-pack|-line-pack)?|
 						hyphens|
 						isolation|
 						justify-content|
-						line-clamp|
+						line-(box-contain|stacking-ruby|stacking-shift|stacking-strategy|stacking|clamp)|
 						mask-(border-(mode|outset|repeat|slice|source|width)|border|clip|composite|image|mode|origin|position|repeat|size|type)|mask|
 						mix-blend-mode|
 						order|
@@ -118,6 +122,7 @@
 						text-emphasis(-color|-position|-style)?|
 						text-fill-color|
 						text-overflow|
+						text-height|
 						text-size-adjust|
 						transform(-origin(-x|-y)?|-style)?|
 						transition(-delay|-duration|-property|-timing-function)?|
