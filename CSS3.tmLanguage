@@ -824,6 +824,7 @@
 				padding-(box|bottom|left|right|top)|perspective(-origin)?|
 				right|
 				stop-(color|opacity)|stroke(-dasharray|-dashoffset|-miterlimit|-opacity|-width)|
+				shape-(image-threshold|margin|outside)|
 				text(-decoration-color|-emphasis-color|-indent|-shadow|-size-adjust|-size)|top|transform(-origin)?|
 				vertical-align|visibility|viewport-fill(-opacity)?|
 				width|word-spacing|
