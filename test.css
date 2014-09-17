@@ -1,4 +1,6 @@
 .button {
+    display: block;
+    display: inline-block;
     display: table-column;
     display: table-row-group;
     display: table-cell;

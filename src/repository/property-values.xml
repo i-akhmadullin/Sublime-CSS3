@@ -61,6 +61,7 @@
 				(exclude|include)-ruby|
 				(consider|disregard)-shifts|
 				alphabetic|
+				block|
 				central|
 				hanging|
 				ideographic|
