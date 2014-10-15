@@ -1,4 +1,12 @@
 
+1.0.15 / 2014-10-16
+==================
+
+ * add css images level 3
+ * add filter to animatable props, more animation-related rules to test
+ * add shapes animatable values
+ * fix lost block keyword
+
 1.0.14 / 2014-09-08
 ==================
 
