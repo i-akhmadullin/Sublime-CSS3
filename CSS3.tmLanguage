@@ -814,7 +814,7 @@
 				border-(bottom|color|left|radius|right|spacing|top|width)|
 				bottom|box-shadow|
 				color|column(-count|-gap|-rule-color|-rule-width|-rule|-width)|columns|crop|
-				fill-opacity|flex(-grow|-shrink|-basis)|flood-color|
+				fill-opacity|filter|flex(-grow|-shrink|-basis)|flood-color|
 				font(-size-adjust|-size|-stretch|-weight)?|
 				height|
 				left|letter-spacing|lighting-color|

@@ -286,8 +286,11 @@ dialog::backdrop{}
 
 .animation-and-easing {
     animation: ease, ease-in-out, ease-in, ease-out;
+    animation-name: somerandomname;
     animation-fill-mode: forwards, both, backwards, none;
     animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 1s;
     animation-direction: alternate, alternate-reverse, reverse;
     animation-play-state: paused, running;
     animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1),
@@ -331,6 +334,7 @@ dialog::backdrop{}
         clip,
         color,
         crop,
+        filter,
         font,
         font-size-adjust,
         font-size,
