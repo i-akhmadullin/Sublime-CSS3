@@ -23,7 +23,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?x)(
+			<string>(?x)\b(
 				background(-color|-image|-position|-size)?|
 				border-(bottom-|top-)?(right-|left-)radius|
 				border-(bottom|left|right|top)-color|
@@ -53,7 +53,7 @@
 				capitalize|center|char|cjk-ideographic|col-resize|collapse|crosshair|currentColor|
 				dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|
 				e-resize|ellipsis|
-				fixed|from|
+				fixed|from-image|from|
 				geometricPrecision|georgian|groove|
 				hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|
 				ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|
@@ -81,7 +81,7 @@
 				medium|middle|move|
 				n-resize|ne-resize|newspaper|no-clip|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|
 				oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|
-				pointer|pre(-(wrap|line))?|progress|
+				pixelated|pointer|pre(-(wrap|line))?|progress|
 				relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|
 				s-resize|scroll-position|scroll|se-resize|separate|solid|square|static|strict|sub|super|sw-resize|
 				table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
@@ -102,18 +102,18 @@
 				linear-gradient|
 				fill-box|
 				max-content|min-content|
-				stroke-box|
+				stroke-box|scale-down|snap|
 				view-box|
 				padding|
 				add|alpha|alternate-reverse|alternate|antialiased|
 				backwards|blink|border|box|
-				closest-(side|corner)|color-stop|cover|contain|content|contents|clip|
+				closest-(side|corner)|color-stop|cover|contain|content|contents|clip|crisp-edges|
 				dense|
 				ease-in-out|ease-out|ease-in|ease|end|evenodd|exclude|
 				farthest-corner|farthest-side|
 				forwards|flexbox|flex(-start|-end)?|
 				gradient|grayscale|grid(-height)?|glyphs|
-				image-set|infinite|intersect|
+				infinite|intersect|
 				linear|local|luminance|
 				matrix(3d)?|
 				nonzero|
@@ -123,7 +123,7 @@
 				textfield|to|touch|transform|translate(X|Y|Z|3d)?|
 				unicase|unset|
 				(column|row|wrap)(-reverse)?|
-				fill|
+				fill|flip|
 				(diagonal|stacked)-fractions|
 				ordinal|
 				(?:ultra-|extra-|semi-)?(?:condensed|expanded)|
@@ -142,7 +142,7 @@
 			<key>comment</key>
 			<string>can be either keywords or functions, therefore slightly more strict matching</string>
 			<key>match</key>
-			<string>\b(circle|ellipse|inset)[^(]\b</string>
+			<string>\b(circle|ellipse|inset)(?!\()\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
 		</dict>
@@ -369,7 +369,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(attr|counter|counters|format|local|minmax|url)\s*(\()</string>
+			<string>(attr|counter|counters|cross-fade|format|image-set|image|local|minmax|url)\s*(\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -412,6 +412,10 @@
 				<dict>
 					<key>include</key>
 					<string>#numeric-values</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#color-values</string>
 				</dict>
 				<dict>
 					<key>match</key>

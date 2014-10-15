@@ -806,7 +806,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?x)(
+			<string>(?x)\b(
 				background(-color|-image|-position|-size)?|
 				border-(bottom-|top-)?(right-|left-)radius|
 				border-(bottom|left|right|top)-color|
@@ -836,7 +836,7 @@
 				capitalize|center|char|cjk-ideographic|col-resize|collapse|crosshair|currentColor|
 				dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|
 				e-resize|ellipsis|
-				fixed|from|
+				fixed|from-image|from|
 				geometricPrecision|georgian|groove|
 				hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|
 				ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|
@@ -864,7 +864,7 @@
 				medium|middle|move|
 				n-resize|ne-resize|newspaper|no-clip|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|
 				oblique|optimize(Legibility|Quality|Speed)|outset|outside|overline|
-				pointer|pre(-(wrap|line))?|progress|
+				pixelated|pointer|pre(-(wrap|line))?|progress|
 				relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|
 				s-resize|scroll-position|scroll|se-resize|separate|solid|square|static|strict|sub|super|sw-resize|
 				table(-footer-group|-header-group|-cell|-caption|-column-group|-column|-row-group|-row)?|
@@ -885,18 +885,18 @@
 				linear-gradient|
 				fill-box|
 				max-content|min-content|
-				stroke-box|
+				stroke-box|scale-down|snap|
 				view-box|
 				padding|
 				add|alpha|alternate-reverse|alternate|antialiased|
 				backwards|blink|border|box|
-				closest-(side|corner)|color-stop|cover|contain|content|contents|clip|
+				closest-(side|corner)|color-stop|cover|contain|content|contents|clip|crisp-edges|
 				dense|
 				ease-in-out|ease-out|ease-in|ease|end|evenodd|exclude|
 				farthest-corner|farthest-side|
 				forwards|flexbox|flex(-start|-end)?|
 				gradient|grayscale|grid(-height)?|glyphs|
-				image-set|infinite|intersect|
+				infinite|intersect|
 				linear|local|luminance|
 				matrix(3d)?|
 				nonzero|
@@ -906,7 +906,7 @@
 				textfield|to|touch|transform|translate(X|Y|Z|3d)?|
 				unicase|unset|
 				(column|row|wrap)(-reverse)?|
-				fill|
+				fill|flip|
 				(diagonal|stacked)-fractions|
 				ordinal|
 				(?:ultra-|extra-|semi-)?(?:condensed|expanded)|
@@ -925,7 +925,7 @@
 			<key>comment</key>
 			<string>can be either keywords or functions, therefore slightly more strict matching</string>
 			<key>match</key>
-			<string>\b(circle|ellipse|inset)[^(]\b</string>
+			<string>\b(circle|ellipse|inset)(?!\()\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
 		</dict>
@@ -1152,7 +1152,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(attr|counter|counters|format|local|minmax|url)\s*(\()</string>
+			<string>(attr|counter|counters|cross-fade|format|image-set|image|local|minmax|url)\s*(\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1195,6 +1195,10 @@
 				<dict>
 					<key>include</key>
 					<string>#numeric-values</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#color-values</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -1380,7 +1384,7 @@
 						filter|
 						flex(-align|-basis|-direction|-flow|-grow|-item-align|-order|-shrink|-wrap|-pack|-line-pack)?|
 						hyphens|
-						isolation|
+						isolation|image-orientation|image-resolution|
 						justify-content|
 						line-(box-contain|stacking-ruby|stacking-shift|stacking-strategy|stacking|clamp)|
 						mask-(border-(mode|outset|repeat|slice|source|width)|border|clip|composite|image|mode|origin|position|repeat|size|type)|mask|
@@ -1402,13 +1406,27 @@
 						transition(-delay|-duration|-property|-timing-function)?|
 						user-select|
 						will-change|word-break|writing-mode|
-						background-attachment|background-color|background-image|background-position|background-repeat|background|box-shadow|border-radius|border-bottom-color|border-bottom-style|border-bottom-width|border-bottom|border-collapse|border-color|border-left-color|border-left-style|border-left-width|border-left|border-right-color|border-right-style|border-right-width|border-right|border-spacing|border-style|border-top-color|border-top-style|border-top-width|border-top|border-width|border|bottom|caption-side|clear|clip|color|content|counter-increment|counter-reset|cue-after|cue-before|cue|cursor|direction|display|elevation|empty-cells|float|
+						background-attachment|background-color|background-image|background-position|background-repeat|background|box-shadow|border-radius|border-bottom-color|border-bottom-style|border-bottom-width|border-bottom|border-collapse|border-color|border-left-color|border-left-style|border-left-width|border-left|border-right-color|border-right-style|border-right-width|border-right|border-spacing|border-style|border-top-color|border-top-style|border-top-width|border-top|border-width|border|bottom|
+						caption-side|clear|clip|color|content|counter-increment|counter-reset|cue-after|cue-before|cue|cursor|
+						direction|display|
+						elevation|empty-cells|
+						float|
 						osx-font-smoothing|
 						font(?:(?:-)(?:effect|emphasize(-position|-style)?|family|feature-settings|kerning|language-override|size(?:-adjust)?|smoothing|stretch|style|synthesis|variant(?:-alternates|-caps|-east-asian|-ligatures|-numeric|-position)?|weight))?|
-						height|image-rendering|left|letter-spacing|line-height|list-style-image|list-style-position|list-style-type|list-style|margin-bottom|margin-left|margin-right|margin-top|marker-offset|margin|marks|max-height|max-width|min-height|min-width|opacity|orphans|outline-color|outline-style|outline-width|outline|overflow(-[xy])?|padding-bottom|padding-left|padding-right|padding-top|padding|page-break-after|page-break-before|page-break-inside|page|pause-after|pause-before|pause|pitch-range|pitch|play-during|pointer-events|position|quotes|resize|richness|right|size|
-						speak-header|speak-numeral|speak-punctuation|speech-rate|speak|src|stress|table-layout|text-(align|decoration|indent|rendering|shadow|transform)|top|
+						height|
+						image-rendering|
+						left|letter-spacing|line-height|list-style-image|list-style-position|list-style-type|list-style|
+						margin-bottom|margin-left|margin-right|margin-top|marker-offset|margin|marks|max-height|max-width|min-height|min-width|
+						object-fit|object-position|opacity|orphans|outline-color|outline-style|outline-width|outline|overflow(-[xy])?|
+						padding-bottom|padding-left|padding-right|padding-top|padding|page-break-after|page-break-before|page-break-inside|page|pause-after|pause-before|pause|pitch-range|pitch|play-during|pointer-events|position|
+						quotes|
+						resize|richness|right|
+						size|speak-header|speak-numeral|speak-punctuation|speech-rate|speak|src|stress|
+						table-layout|text-(align|decoration|indent|rendering|shadow|transform)|top|text-justify
 						unicode-(?:bidi|range)|
-						vertical-align|visibility|voice-family|volume|white-space|widows|width|word-(spacing|wrap)|zoom|z-index|text-justify)\b</string>
+						vertical-align|visibility|voice-family|volume|
+						white-space|widows|width|word-(spacing|wrap)|
+						zoom|z-index)\b</string>
 					<key>name</key>
 					<string>support.type.property-name.css</string>
 				</dict>

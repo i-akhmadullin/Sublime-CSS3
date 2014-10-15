@@ -154,6 +154,7 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
     /**/
 }
 
+
 .weird-or-rare {
     font-effect: 1;
     font-emphasize: 1;
@@ -193,7 +194,10 @@ keygen,main,math,menuitem,picture,source,svg,template,track {
 @-webkit-keyframes name-animation, name-animation2{}
 @-moz-keyframes name-animation, name-animation2{}
 @-o-keyframes name-animation, name-animation2{}
-@keyframes name-animation, name-animation2{}
+@keyframes name-animation, name-animation2 {
+    5% { text-align: center; }
+    to { text-align: center; }
+}
 
 /* next @-rules should be colored
 */@media{}@font-face{}@keyframes t{}
@@ -584,4 +588,40 @@ dialog::backdrop{}
     inline-box-align: last;
     initial-letter: 1 3;
     initial-letter-align: alphabetic, hanging, ideographic;
+}
+
+/* http://www.w3.org/TR/css3-images/ */
+/* http://dev.w3.org/csswg/css-images-3/ */
+@media (min-resolution: 1dpi) {}
+@media (min-resolution: 1dpcm) {}
+@media (min-resolution: 1dppx) {}
+.css3-images {
+    background-image:
+        image('sprites.svg#xywh=40,0,20,20'),
+        image("wavy.svg", 'wavy.png' , "wavy.gif"),
+        image(rgba(0,0,255,.5)), url("bg.png");
+    background-image: image-set("1x.png" 1x, "2x.png" 2x, "print.png" 600dpi);
+    background-image: cross-fade(50% url("pic1.png"), url("pic2.png"));
+    background-image:
+        linear-gradient(to top, blue, yellow),
+        linear-gradient(to bottom, yellow 0%, blue 100%),
+        linear-gradient(135deg, yellow, blue);
+    background-image:
+        radial-gradient(5em circle at top left, yellow, blue),
+        radial-gradient(circle, #006, white 100%),
+        radial-gradient(ellipse, #006, white 100%),
+        radial-gradient(farthest-corner at 50% 50%, yellow, green),
+        radial-gradient(closest-corner at 50% 50%, yellow, green),
+        radial-gradient(farthest-side at 50% 50%, yellow, green),
+        radial-gradient(closest-side at 50% 50%, yellow, green);
+    background-image:
+        repeating-linear-gradient(red, blue 20px, red 40px),
+        repeating-radial-gradient(circle closest-side at 20px 30px, red, yellow, green 100%, yellow 150%, red 200%);
+
+    object-fit: fill, contain, cover, none, scale-down;
+    object-position: 50% 50%;
+    image-orientation: from-image 90deg flip;
+    image-resolution: 300dpi snap;
+    image-resolution: snap from-image;
+    image-rendering: crisp-edges, pixelated;
 }

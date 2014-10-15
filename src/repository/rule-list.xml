@@ -106,7 +106,7 @@
 						filter|
 						flex(-align|-basis|-direction|-flow|-grow|-item-align|-order|-shrink|-wrap|-pack|-line-pack)?|
 						hyphens|
-						isolation|
+						isolation|image-orientation|image-resolution|
 						justify-content|
 						line-(box-contain|stacking-ruby|stacking-shift|stacking-strategy|stacking|clamp)|
 						mask-(border-(mode|outset|repeat|slice|source|width)|border|clip|composite|image|mode|origin|position|repeat|size|type)|mask|
@@ -128,13 +128,27 @@
 						transition(-delay|-duration|-property|-timing-function)?|
 						user-select|
 						will-change|word-break|writing-mode|
-						background-attachment|background-color|background-image|background-position|background-repeat|background|box-shadow|border-radius|border-bottom-color|border-bottom-style|border-bottom-width|border-bottom|border-collapse|border-color|border-left-color|border-left-style|border-left-width|border-left|border-right-color|border-right-style|border-right-width|border-right|border-spacing|border-style|border-top-color|border-top-style|border-top-width|border-top|border-width|border|bottom|caption-side|clear|clip|color|content|counter-increment|counter-reset|cue-after|cue-before|cue|cursor|direction|display|elevation|empty-cells|float|
+						background-attachment|background-color|background-image|background-position|background-repeat|background|box-shadow|border-radius|border-bottom-color|border-bottom-style|border-bottom-width|border-bottom|border-collapse|border-color|border-left-color|border-left-style|border-left-width|border-left|border-right-color|border-right-style|border-right-width|border-right|border-spacing|border-style|border-top-color|border-top-style|border-top-width|border-top|border-width|border|bottom|
+						caption-side|clear|clip|color|content|counter-increment|counter-reset|cue-after|cue-before|cue|cursor|
+						direction|display|
+						elevation|empty-cells|
+						float|
 						osx-font-smoothing|
 						font(?:(?:-)(?:effect|emphasize(-position|-style)?|family|feature-settings|kerning|language-override|size(?:-adjust)?|smoothing|stretch|style|synthesis|variant(?:-alternates|-caps|-east-asian|-ligatures|-numeric|-position)?|weight))?|
-						height|image-rendering|left|letter-spacing|line-height|list-style-image|list-style-position|list-style-type|list-style|margin-bottom|margin-left|margin-right|margin-top|marker-offset|margin|marks|max-height|max-width|min-height|min-width|opacity|orphans|outline-color|outline-style|outline-width|outline|overflow(-[xy])?|padding-bottom|padding-left|padding-right|padding-top|padding|page-break-after|page-break-before|page-break-inside|page|pause-after|pause-before|pause|pitch-range|pitch|play-during|pointer-events|position|quotes|resize|richness|right|size|
-						speak-header|speak-numeral|speak-punctuation|speech-rate|speak|src|stress|table-layout|text-(align|decoration|indent|rendering|shadow|transform)|top|
+						height|
+						image-rendering|
+						left|letter-spacing|line-height|list-style-image|list-style-position|list-style-type|list-style|
+						margin-bottom|margin-left|margin-right|margin-top|marker-offset|margin|marks|max-height|max-width|min-height|min-width|
+						object-fit|object-position|opacity|orphans|outline-color|outline-style|outline-width|outline|overflow(-[xy])?|
+						padding-bottom|padding-left|padding-right|padding-top|padding|page-break-after|page-break-before|page-break-inside|page|pause-after|pause-before|pause|pitch-range|pitch|play-during|pointer-events|position|
+						quotes|
+						resize|richness|right|
+						size|speak-header|speak-numeral|speak-punctuation|speech-rate|speak|src|stress|
+						table-layout|text-(align|decoration|indent|rendering|shadow|transform)|top|text-justify
 						unicode-(?:bidi|range)|
-						vertical-align|visibility|voice-family|volume|white-space|widows|width|word-(spacing|wrap)|zoom|z-index|text-justify)\b</string>
+						vertical-align|visibility|voice-family|volume|
+						white-space|widows|width|word-(spacing|wrap)|
+						zoom|z-index)\b</string>
 					<key>name</key>
 					<string>support.type.property-name.css</string>
 				</dict>
