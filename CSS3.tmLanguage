@@ -840,7 +840,7 @@
 				geometricPrecision|georgian|groove|
 				hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|
 				ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|initial|
-				inline-(box|block|flex|flexbox|grid|table|line-height)|inline|
+				inline-(box|block|flex|flexbox|grid|table|line-height)|inline|block|
 				inside|inter-ideograph|inter-word|italic|
 				(exclude|include)-ruby|
 				(consider|disregard)-shifts|
